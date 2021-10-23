@@ -1,5 +1,11 @@
 # @sveltejs/kit
 
+## 1.0.0
+
+### Patch Changes
+
+- Beginnings
+
 ## 1.0.0-next.188
 
 ### Patch Changes

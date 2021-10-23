@@ -1,7 +1,7 @@
 {
   "name": "@resistjs/bins",
   "description": "TODO",
-  "version": "1.0.0-next.1",
+  "version": "1.0.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/resist-js/resist.git",
@@ -26,7 +26,7 @@
     "bin"
   ],
   "dependencies": {
-    "@resistjs/utils": "^1.0.0-next.1",
+    "@resistjs/utils": "^1.0.0",
     "kleur": "^4.1.4",
     "prompts": "^2.4.2"
   },
