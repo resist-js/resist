@@ -1,11 +1,11 @@
 # Contributor Covenant Code of Conduct
 
-As a member of the Open JS Foundation, @resistjs/server has adopted the
+As a member of the Open JS Foundation, @resistjs/conformances has adopted the
 [Contributor Covenant 2.0][cc-20-doc].
 
 If an issue arises and you cannot resolve it directly with the parties
-involved, you can report it to the @resistjs/server project TC through the following
-email: @resistjs/server-coc@lists.openjsf.org
+involved, you can report it to the @resistjs/conformances project TC through the following
+email: @resistjs/conformances-coc@lists.openjsf.org
 
 In addition, the OpenJS Foundation maintains a Code of Conduct Panel (CoCP).
 This is a foundation-wide team established to manage escalation when a reporter

@@ -50,6 +50,6 @@ module.exports = {
     'jsdoc/require-returns-description': ['error'],
     'jsdoc/require-returns-type': ['error'],
     'jsdoc/require-returns': ['error'],
-    'jsdoc/valid-types': ['error']
+    'jsdoc/valid-types': ['error'],
   },
 }

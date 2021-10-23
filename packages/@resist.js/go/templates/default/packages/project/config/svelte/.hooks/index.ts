@@ -10,7 +10,7 @@ export async function handle({ request, resolve }) {
 }
 
 export async function handleError({ error, request }) {
-  // TODO
+  // TODO: Implement Error Handling
 }
 
 export async function externalFetch(request) {

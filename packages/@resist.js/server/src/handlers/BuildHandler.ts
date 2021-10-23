@@ -52,8 +52,8 @@ const BuildHandler: IHandler = async (request: FastifyRequest | any, response: F
       ip: request.ip,
       ips: request.ips,
       referer: request.headers.referer,
-      from: '', // TODO
-      to: '', // TODO
+      from: '', // TODO: Implement From Route
+      to: '', // TODO: Implement To Route
       user_agent: request.headers['user-agent'],
     },
   })

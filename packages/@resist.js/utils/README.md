@@ -1,12 +1,12 @@
 <p align="center">
 
-<img width=128 src="~HOMEPAGE~logo-128.png">
-<br/><span style="font-size:24px"><strong>~APP_NAME~</strong> 📦 ~VERSION~</span><br/><em>~TAGLINE~</em><br/>~DESCRIPTION~<br/><br/>
+<img width=128 src="https://resistjs.devlogo-128.png">
+<br/><span style="font-size:24px"><strong>@resistjs/utils</strong> 📦 1.0.0</span><br/><em></em><br/>Utility functions for resist.js.<br/><br/>
 
 <br/><br/></p>
 
-# ~APP_NAME~<br/><br/>
+# @resistjs/utils<br/><br/>
 
 ## Everything You Need To Know 📖
 
-You can find everything you need to know [here](~HOMEPAGE~).
+You can find everything you need to know [here](https://resistjs.dev).

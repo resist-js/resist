@@ -1,6 +1,6 @@
 {
   "name": "@resistjs/server",
-  "description": "TODO",
+  "description": "resist.js swiss-army knife server for serving your project.",
   "version": "1.0.0",
   "repository": {
     "type": "git",
@@ -19,7 +19,7 @@
   },
   "scripts": {
     "start": "./bin/start.sh",
-    "check": "resist-conform default check"
+    "check": "resist-conform default && resist-conform default check"
   },
   "bin": {
     "resist-server": "./bin/resist-server.sh"

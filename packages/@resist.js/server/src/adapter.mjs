@@ -13,16 +13,17 @@ import zlib from 'zlib'
 
 const pipe = promisify(pipeline)
 
+// eslint-disable-next-line jsdoc/require-param
 /**
- * TODO: Commenting
+ * Svelte adapter for building.
  *
- * @export
- * @param {*} [{ out = 'build', assets = 'assets' }={}]
- * @return {*}
+ * @exports
+ * @param {!object} [{ out = 'build', assets = 'assets' }={}]
+ * @returns {!object} Adapter instance.
  */
 export default function ({ out = 'build', assets = 'assets' } = {}) {
   /** @type {import('@resistjs/svelte-kit').Adapter} */
-  const adapter = {
+  return {
     name: '@resistjs/svelte-adapter-resistjs',
 
     async adapt({ utils }) {
@@ -60,12 +61,12 @@ export default function ({ out = 'build', assets = 'assets' } = {}) {
       } catch (e) {}
     },
   }
-
-  return adapter
 }
 
 /**
- * @param {string} directory
+ * Compress resources.
+ *
+ * @param {string} directory Path.
  */
 async function compress(directory) {
   const files = await glob('**/*.{html,js,json,css,svg,xml}', {
@@ -79,8 +80,10 @@ async function compress(directory) {
 }
 
 /**
- * @param {string} file
- * @param {'gz' | 'br'} format
+ * Compress files.
+ *
+ * @param {string} file The file.
+ * @param {'gz' | 'br'} format The format (gz, br).
  */
 async function compress_file(file, format = 'gz') {
   const compress =

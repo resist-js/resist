@@ -1,6 +1,6 @@
 {
   "name": "@resistjs/utils",
-  "description": "TODO",
+  "description": "Utility functions for resist.js.",
   "version": "1.0.0",
   "repository": {
     "type": "git",
@@ -17,7 +17,7 @@
   "type": "module",
   "main": "node.js",
   "scripts": {
-    "check": "resist-conform default check"
+    "check": "resist-conform && resist-conform default check"
   },
   "files": [
     "node.js"

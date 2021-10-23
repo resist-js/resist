@@ -1,6 +1,6 @@
 {
   "name": "@resistjs/bins",
-  "description": "TODO",
+  "description": "Global package for resist.js that supports Starting, Stopping, Uninstalling resist.js projects and uninstalling reist.js itself.",
   "version": "1.0.0",
   "repository": {
     "type": "git",
@@ -16,7 +16,7 @@
   "funding": "https://opencollective.com/resist.js",
   "type": "module",
   "scripts": {
-    "check": "resist-conform default check"
+    "check": "resist-conform default && resist-conform default check"
   },
   "bin": {
     "resist": "./bin/resist.js"

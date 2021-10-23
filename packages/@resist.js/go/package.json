@@ -1,6 +1,6 @@
 {
   "name": "@resistjs/go",
-  "description": "TODO",
+  "description": "The kitchen sink you've been waiting for.",
   "version": "1.0.0",
   "repository": {
     "type": "git",
@@ -16,7 +16,7 @@
   "funding": "https://opencollective.com/resist.js",
   "type": "module",
   "scripts": {
-    "check": "resist-conform default check"
+    "check": "resist-conform default && resist-conform default check"
   },
   "bin": "./bin/helper.js",
   "files": [

@@ -1,4 +1,4 @@
-# Contributing to @resistjs/go
+# Contributing to @resistjs/conformances
 
 The [Open Source Guides](https://opensource.guide/) website has a collection of resources for individuals, communities, and companies. These resources help people who want to learn how to run and contribute to projects in an effective way. Contributors and people new to will find the following guides especially useful:
 
@@ -7,9 +7,9 @@ The [Open Source Guides](https://opensource.guide/) website has a collection of 
 
 ## Get involved
 
-There are many ways to contribute to @resistjs/go, and many of them do not involve writing any code. Here's a few ideas to get started:
+There are many ways to contribute to @resistjs/conformances, and many of them do not involve writing any code. Here's a few ideas to get started:
 
-- Simply start using @resistjs/go. Go through the [Getting Started](https://resistjs.devstart) guide. Does everything work as expected? If not, we're always looking for improvements. Let us know by [opening an issue](#reporting-new-issues).
+- Simply start using @resistjs/conformances. Go through the [Getting Started](https://resistjs.devstart) guide. Does everything work as expected? If not, we're always looking for improvements. Let us know by [opening an issue](#reporting-new-issues).
 - Look through the [open issues](https://github.com/resist-js/resistissues). A good starting point would be issues tagged [good first issue](https://github.com/resist-js/resistissues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22). Provide workarounds, ask for clarification, or suggest labels. Help [triage issues](#triaging-issues-and-pull-requests).
 - If you find an issue you would like to fix, [open a pull request](#your-first-pull-request).
 - Read through our [tutorials](https://resistjs.devstart). If you find anything that is confusing or can be improved, you can make make a Pull Request.
@@ -30,7 +30,7 @@ One great way you can contribute to the project without writing any code is to h
 
 We use [GitHub issues](https://github.com/resist-js/resistissues) for our public bugs. If you would like to report a problem, take a look around and see if someone already opened an issue about it. If you are certain this is a new unreported bug, you can submit a [bug report](#reporting-new-issues).
 
-If you have questions about using @resistjs/go, contact us on Discord at [https://resistjs.devchat]((https://resistjs.devchat), and we will do our best to answer your questions.
+If you have questions about using @resistjs/conformances, contact us on Discord at [https://resistjs.devchat]((https://resistjs.devchat), and we will do our best to answer your questions.
 
 If you see anything you'd like to be implemented, create a [feature request issue](https://github.com/resist-js/resistissues/new?template=feature_request.md)
 
@@ -124,7 +124,7 @@ When adding a new breaking change, follow this template in your pull request:
 
 ### What happens next?
 
-The core @resistjs/go team will be monitoring for pull requests. Do help us by making your pull request easy to review by following the guidelines above.
+The core @resistjs/conformances team will be monitoring for pull requests. Do help us by making your pull request easy to review by following the guidelines above.
 
 ## Style guide
 

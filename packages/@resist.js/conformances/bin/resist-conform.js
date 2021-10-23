@@ -6,49 +6,56 @@
 //
 // NOTE: Do not make changes here without approval from @resist-js/core.
 
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const fs = require('fs')
 
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const { exec } = require('child_process')
 
 /**
  * The path that "conformances" is executed from.
  *
  * @type {!string}
- *
  * @see https://resistjs.dev/docs/conformances
- **/
+ */
 const destination = process.cwd()
 
 /**
  * The path that "conformances" lives in.
  *
  * @type {!string}
- *
  * @see https://resistjs.dev/docs/conformances
- **/
+ */
 const LIB_DIR = `${process.argv[1].replace('/bin/process.js', '')}/templates/`
 
 /**
  * The path where the template conformances are.
  *
  * @type {!string}
- *
  * @see https://resistjs.dev/docs/conformances
- **/
+ */
 const source = process.argv[2] === 'svelte' ? `${LIB_DIR}svelte` : `${LIB_DIR}default`
+
+/**
+ * The absolute path of the current working directory.
+ *
+ * @type {!string}
+ * @exports
+ */
+const CWD = process.cwd() || '.'
 
 /**
  * Determine whether to call eslint & prettier.
  *
  * @type {!boolean}
- *
  * @see https://resistjs.dev/docs/conformances
- **/
+ */
 const lintThings = process.argv[3] === 'check'
 
 /**
  * Entry Point.
  */
+// eslint-disable-next-line sonarjs/cognitive-complexity
 function main() {
   const Launch = (command, ignoreErrors = false) => {
     try {
@@ -109,4 +116,5 @@ function main() {
 }
 
 // Copy default conformances onto @destination, overwriting what's already there.
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 require('./copydir')(source, destination, {}, main)

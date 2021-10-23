@@ -2,8 +2,8 @@
 
 The [Open Source Guides](https://opensource.guide/) website has a collection of resources for individuals, communities, and companies. These resources help people who want to learn how to run and contribute to projects in an effective way. Contributors and people new to will find the following guides especially useful:
 
-* [How to Contribute to Open Source](https://opensource.guide/how-to-contribute/)
-* [Building Welcoming Communities](https://opensource.guide/building-community/)
+- [How to Contribute to Open Source](https://opensource.guide/how-to-contribute/)
+- [Building Welcoming Communities](https://opensource.guide/building-community/)
 
 ## Get involved
 
@@ -133,6 +133,7 @@ The core ~APP_NAME~ team will be monitoring for pull requests. Do help us by mak
 ### Coding style
 
 There are a few guidelines we follow:
+
 - Internal variables are written with `snake_case` while external APIs are written with `camelCase`
 - Provide a single object as the argument to public APIs. This object can have multiple properties
 - Avoid creating new test projects under `packages/*/test/apps` but reuse an existing one when possible

@@ -6,7 +6,7 @@ This document describes the management of vulnerabilities for this project.
 
 Individuals who find potential vulnerabilities in this project are invited
 to complete a vulnerability report via the dedicated HackerOne page:
-[https://hackerone.com/~APP_NAME~](https://hackerone.com/~APP_NAME~).
+[https://hackerone.com/@resistjs/go](https://hackerone.com/@resistjs/go).
 
 ### Strict measures when reporting vulnerabilities
 
