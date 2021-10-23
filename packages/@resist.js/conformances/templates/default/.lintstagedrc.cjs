@@ -1,3 +1,7 @@
+// @final
+//
+// NOTE: Do not make changes here without approval from @resist-js/core.
+
 /* jshint esversion: 9 */
 
 const $fix = 'prettier --write . --ignore-path .gitignore --plugin-search-dir=. --loglevel=warn && eslint . --ignore-path .gitignore .'

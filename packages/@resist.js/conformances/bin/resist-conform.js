@@ -4,7 +4,7 @@
 
 // @final
 //
-// NOTE: Do not make changes here without approval.
+// NOTE: Do not make changes here without approval from @resist-js/core.
 
 const fs = require('fs')
 
@@ -85,8 +85,8 @@ function main() {
     const package = require(`${CWD}/package.json`)
 
     const Replacer = s => {
-      const data = readFileSync(`${CWD}/${s}`, 'utf-8')
-      writeFileSync(
+      const data = fs.readFileSync(`${CWD}/${s}`, 'utf-8')
+      fs.writeFileSync(
         `${CWD}/${s}`,
         data
           .replace(/~APP_NAME~/g, package.name)

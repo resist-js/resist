@@ -1,4 +1,9 @@
 #!/bin/sh
+
+## @final
+##
+## NOTE: Do not make changes here without approval from @resist-js/core.
+
 . "$(dirname "$0")/_/husky.sh"
 
 pnpm list @resistjs/conformances -g || pnpm i -g @resistjs/conformances@latest --reporter=silent
