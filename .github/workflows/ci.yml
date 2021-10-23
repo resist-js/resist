@@ -25,7 +25,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-${{ matrix.node-version }}
       - run: npm install -g pnpm
-      - run: pnpm i -g @resistjs/conformances
+      - run: npm i -g @resistjs/conformances
       - run: pnpm install --frozen-lockfile
       - run: pnpm build --filter ./packages
       - run: pnpm check
@@ -37,7 +37,7 @@ jobs:
         with:
           node-version: '14.x'
       - name: Install dependencies
-        run: npm install -g pnpm && pnpm install --frozen-lockfile
+        run: npm install -g pnpm && pnpm install
       - name: Generate docs
         run: pnpm run docs
       - name: Version docs
