@@ -1,0 +1,1736 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>resist documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css" media="(prefers-color-scheme: dark)">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">resist documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content miscellaneous-variables">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Miscellaneous</li>
+  <li>Variables</li>
+</ol>
+
+<section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <ul class="index-list">
+                        <li>
+                            <a href="#AssetsHandler" title="packages/@resist.js/server/src/handlers/AssetsHandler.ts" ><b>AssetsHandler</b>&nbsp;&nbsp;&nbsp;(packages/.../AssetsHandler.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#Book" title="packages/@resist.js/server/src/Book.ts" ><b>Book</b>&nbsp;&nbsp;&nbsp;(packages/.../Book.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#BuildHandler" title="packages/@resist.js/server/src/handlers/BuildHandler.ts" ><b>BuildHandler</b>&nbsp;&nbsp;&nbsp;(packages/.../BuildHandler.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#DEVELOPMENT" title="packages/@resist.js/server/src/constants/EnvironmentConstants.ts" ><b>DEVELOPMENT</b>&nbsp;&nbsp;&nbsp;(packages/.../EnvironmentConstants.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#DOC_ERROR_URL" title="packages/@resist.js/server/src/constants/Constants.ts" ><b>DOC_ERROR_URL</b>&nbsp;&nbsp;&nbsp;(packages/.../Constants.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#DOC_URL" title="packages/@resist.js/server/src/constants/Constants.ts" ><b>DOC_URL</b>&nbsp;&nbsp;&nbsp;(packages/.../Constants.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#Handler" title="packages/@resist.js/server/src/handlers/ErrorNotFound.ts" ><b>Handler</b>&nbsp;&nbsp;&nbsp;(packages/.../ErrorNotFound.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#Handler" title="packages/@resist.js/server/src/handlers/Errors.ts" ><b>Handler</b>&nbsp;&nbsp;&nbsp;(packages/.../Errors.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#Handler" title="packages/@resist.js/server/src/handlers/Headers.ts" ><b>Handler</b>&nbsp;&nbsp;&nbsp;(packages/.../Headers.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#Handler" title="packages/@resist.js/server/src/handlers/Redirects.ts" ><b>Handler</b>&nbsp;&nbsp;&nbsp;(packages/.../Redirects.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#Handler" title="packages/@resist.js/server/src/handlers/RequestResponse.ts" ><b>Handler</b>&nbsp;&nbsp;&nbsp;(packages/.../RequestResponse.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#Handler" title="packages/@resist.js/server/src/handlers/Rewrites.ts" ><b>Handler</b>&nbsp;&nbsp;&nbsp;(packages/.../Rewrites.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#Headers" title="packages/@resist.js/server/src/headers/Headers.ts" ><b>Headers</b>&nbsp;&nbsp;&nbsp;(packages/.../Headers.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#HealthHandler" title="packages/@resist.js/server/src/handlers/HealthHandler.ts" ><b>HealthHandler</b>&nbsp;&nbsp;&nbsp;(packages/.../HealthHandler.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#Logger" title="packages/@resist.js/server/src/logger/Logger.ts" ><b>Logger</b>&nbsp;&nbsp;&nbsp;(packages/.../Logger.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#MetricsHandler" title="packages/@resist.js/server/src/handlers/MetricsHandler.ts" ><b>MetricsHandler</b>&nbsp;&nbsp;&nbsp;(packages/.../MetricsHandler.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#PRODUCTION" title="packages/@resist.js/server/src/constants/EnvironmentConstants.ts" ><b>PRODUCTION</b>&nbsp;&nbsp;&nbsp;(packages/.../EnvironmentConstants.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#QA" title="packages/@resist.js/server/src/constants/EnvironmentConstants.ts" ><b>QA</b>&nbsp;&nbsp;&nbsp;(packages/.../EnvironmentConstants.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#Redirects" title="packages/@resist.js/server/src/redirects/Redirects.ts" ><b>Redirects</b>&nbsp;&nbsp;&nbsp;(packages/.../Redirects.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#REMOVE" title="packages/@resist.js/server/src/constants/PoisonTypeConstants.ts" ><b>REMOVE</b>&nbsp;&nbsp;&nbsp;(packages/.../PoisonTypeConstants.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#RequestLogger" title="packages/@resist.js/server/src/handlers/RequestLogger.ts" ><b>RequestLogger</b>&nbsp;&nbsp;&nbsp;(packages/.../RequestLogger.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#Rewrites" title="packages/@resist.js/server/src/rewrites/Rewrites.ts" ><b>Rewrites</b>&nbsp;&nbsp;&nbsp;(packages/.../Rewrites.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#TestHandler" title="packages/@resist.js/server/src/handlers/TestHandler.ts" ><b>TestHandler</b>&nbsp;&nbsp;&nbsp;(packages/.../TestHandler.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#urlExists" title="packages/@resist.js/server/src/Utils.ts" ><b>urlExists</b>&nbsp;&nbsp;&nbsp;(packages/.../Utils.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#util" title="packages/@resist.js/server/src/Utils.ts" ><b>util</b>&nbsp;&nbsp;&nbsp;(packages/.../Utils.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#VERSION" title="packages/@resist.js/server/src/constants/Constants.ts" ><b>VERSION</b>&nbsp;&nbsp;&nbsp;(packages/.../Constants.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#yaml" title="packages/@resist.js/server/index.ts" ><b>yaml</b>&nbsp;&nbsp;&nbsp;(packages/.../index.ts)</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+    <h3>packages/@resist.js/server/src/handlers/AssetsHandler.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="AssetsHandler"></a>
+                    <span class="name">
+                        <span ><b>AssetsHandler</b></span>
+                        <a href="#AssetsHandler"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>(server: FastifyInstance | any): void &#x3D;&gt; {
+  // eslint-disable-next-line @typescript-eslint/no-var-requires
+  const sirv &#x3D; require(&#x27;sirv&#x27;)
+
+  const options &#x3D; {
+    etag: true,
+    gzip: true,
+    brotli: true,
+    setHeaders: reply &#x3D;&gt; {
+      Headers(null, reply)
+    },
+  }
+
+  const prerendered &#x3D; sirv(&#x60;${Book.server.build}prerendered&#x60;, options)
+  const assets &#x3D; sirv(&#x60;${Book.server.build}assets&#x60;, options)
+
+  server.use(prerendered)
+  server.use(assets)
+}</code>
+                    </td>
+                </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Assets Handling.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</section>
+    <h3>packages/@resist.js/server/src/Book.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="Book"></a>
+                    <span class="name">
+                        <span ><b>Book</b></span>
+                        <a href="#Book"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/IBook.html" target="_self" >IBook</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{
+  FRAMEWORK: &#x27;resist.js&#x27;,
+  environment: &lt;EnvironmentTypes&gt;(global.config.environment ?? &#x27;development&#x27;),
+  isBuilt: &lt;EnvironmentTypes&gt;(global.config.environment ?? &#x27;development&#x27;) &#x3D;&#x3D;&#x3D; &lt;EnvironmentTypes&gt;&#x27;production&#x27;,
+  server: {
+    build: &#x27;/usr/local/build/&#x27;,
+    settings: {
+      port: Number(global.config[&#x27;server.port&#x27;] ?? 0),
+      logRequests: Boolean(global.config[&#x27;log.requests&#x27;]),
+      bodyLimit: Number(global.config[&#x27;server.body_limit&#x27;]) &gt; 0 ? Number(global.config[&#x27;server.body_limit&#x27;]) : 999999,
+      logNotFound: Boolean(global.config[&#x27;log.notfound&#x27;]),
+    },
+    cookieSecret: global.config[&#x27;session.secret&#x27;],
+    plugins: [
+      {
+        enabled: true,
+        description: &#x27;Middleware Handler.&#x27;,
+        options: {},
+        fromPackage: &#x27;fastify-express&#x27;,
+        environments: [&#x27;production&#x27;, &#x27;development&#x27;, &#x27;qa&#x27;],
+      },
+      {
+        enabled: true,
+        description: &#x27;Brotli Compression.&#x27;,
+        options: { global: true },
+        fromPackage: &#x27;fastify-compress&#x27;,
+        environments: [&#x27;production&#x27;, &#x27;development&#x27;, &#x27;qa&#x27;],
+      },
+      {
+        enabled: true,
+        description: &#x27;favicon Handler.&#x27;,
+        options: {},
+        fromPackage: &#x27;fastify-no-icon&#x27;,
+        environments: [&#x27;production&#x27;, &#x27;development&#x27;, &#x27;qa&#x27;],
+      },
+      {
+        enabled: false,
+        description: &#x27;Graceful Shutdown Handler.&#x27;,
+        options: {},
+        fromPackage: &#x27;@dnlup/fastify-traps&#x27;,
+        environments: [],
+      },
+      {
+        enabled: true,
+        description: &#x27;Cookie Handler.&#x27;,
+        options: { secret: global.config[&#x27;session.secret&#x27;] ?? &#x27;resist_12345678901234567890&#x27; },
+        fromPackage: &#x27;fastify-cookie&#x27;,
+        environments: [&#x27;production&#x27;, &#x27;development&#x27;, &#x27;qa&#x27;],
+      },
+      {
+        enabled: true,
+        description: &#x27;Session Handler.&#x27;,
+        options: {
+          secret: global.config[&#x27;session.secret&#x27;] ?? &#x27;resist_12345678901234567890&#x27;,
+          expires: 1800000,
+        },
+        fromPackage: &#x27;fastify-session&#x27;,
+        environments: [&#x27;production&#x27;, &#x27;development&#x27;, &#x27;qa&#x27;],
+      },
+      {
+        enabled: true,
+        description: &#x27;Peekaboo Handler.&#x27;,
+        options: {},
+        fromPackage: &#x27;fastify-peekaboo&#x27;,
+        environments: [&#x27;production&#x27;],
+      },
+      {
+        enabled: true,
+        description: &#x27;Security Headers.&#x27;,
+        options: {
+          enableCSPNonces: false,
+          contentSecurityPolicy: false,
+        },
+        environments: [&#x27;production&#x27;],
+        fromPackage: &#x27;fastify-helmet&#x27;,
+      },
+    ],
+    headers: [...Headers, ...(&lt;IHeader[]&gt;(&lt;unknown&gt;(global.config.headers ?? [])))],
+    redirects: [...Redirects, ...(&lt;IRedirects[]&gt;(&lt;unknown&gt;(global.config.redirects ?? [])))],
+    rewrites: [...Rewrites, ...(&lt;IRewrites[]&gt;(&lt;unknown&gt;(global.config.rewrites ?? [])))],
+  },
+  metrics: {
+    enabled: Boolean(global.config[&#x27;metrics.enabled&#x27;]),
+    url: global.config[&#x27;metrics.url&#x27;],
+    users: &lt;IBookMetricsUser[]&gt;(&lt;unknown&gt;(global.config[&#x27;metrics.users&#x27;] ?? [])),
+    elasticSearch: {
+      url: global.config[&#x27;elastic.url&#x27;],
+      username: global.config[&#x27;elastic.username&#x27;],
+      password: global.config[&#x27;elastic.password&#x27;],
+    },
+  },
+  flags: {
+    enabled: Boolean(global.config[&#x27;flags.enabled&#x27;]),
+    url: global.config[&#x27;flags.url&#x27;],
+  },
+  storybook: {
+    enabled: Boolean(global.config[&#x27;storybook.enabled&#x27;]),
+    url: global.config[&#x27;storybook.url&#x27;],
+  },
+  nodeVersion: process.version,
+  processId: process.pid,
+  platform: &#x60;${process.platform} ${process.arch}&#x60;,
+  workingPath: process.cwd(),
+}</code>
+                    </td>
+                </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Book.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</section>
+    <h3>packages/@resist.js/server/src/handlers/BuildHandler.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="BuildHandler"></a>
+                    <span class="name">
+                        <span ><b>BuildHandler</b></span>
+                        <a href="#BuildHandler"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/IHandler.html" target="_self" >IHandler</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>async (request: FastifyRequest | any, response: FastifyReply): Promise&lt;void&gt; &#x3D;&gt; {
+  if (request.url.includes(&#x27;/resist&#x27;) &amp;&amp; !request.url.includes(&#x27;/resist/setup&#x27;)) return
+  if (request.url.includes(&#x27;/api/ping&#x27;)) return
+
+  const host &#x3D; &#x60;${request.headers[&#x27;x-forwarded-proto&#x27;]}://${request.headers.host}&#x60;
+  const { pathname } &#x3D; new URL(request.url || &#x27;&#x27;, host)
+
+  const { render, init } &#x3D; await import(&#x60;${Book.server.build}app.mjs&#x60;)
+
+  await init()
+  const rendered &#x3D; await render({
+    host,
+    method: request.method,
+    headers: request.headers,
+    path: pathname,
+    query: new URLSearchParams(&#x27;&#x27;),
+    body: await getBody(request),
+    info: {
+      request_uuid: request.id,
+      response_time: response.getResponseTime(),
+
+      session_uuid: request.session.sessionId ?? request.cookies.session_uuid,
+      session_uuid_enc: request.session.encryptedSessionId,
+
+      user_uuid: request.cookies.user_uuid,
+
+      ip: request.ip,
+      ips: request.ips,
+      referer: request.headers.referer,
+      from: &#x27;&#x27;, // TODO
+      to: &#x27;&#x27;, // TODO
+      user_agent: request.headers[&#x27;user-agent&#x27;],
+    },
+  })
+
+  if (rendered) {
+    const { status, headers, body } &#x3D; rendered
+
+    if (status &#x3D;&#x3D;&#x3D; 404) {
+      RequestLogger(404, request, response)
+    }
+
+    response.status(status)
+    response.headers(headers)
+    response.header(&#x27;X-Request-Id&#x27;, request.id)
+    response.header(&#x27;Content-Type&#x27;, &#x27;text/html&#x27;)
+    response.type(&#x27;text/html&#x27;)
+    response.send(body)
+  }
+}</code>
+                    </td>
+                </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Build Handling.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</section>
+    <h3>packages/@resist.js/server/src/constants/EnvironmentConstants.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="DEVELOPMENT"></a>
+                    <span class="name">
+                        <span ><b>DEVELOPMENT</b></span>
+                        <a href="#DEVELOPMENT"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../miscellaneous/typealiases.html#EnvironmentTypes" target="_self" >EnvironmentTypes</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;development&#x27;</code>
+                    </td>
+                </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Development Environment.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="PRODUCTION"></a>
+                    <span class="name">
+                        <span ><b>PRODUCTION</b></span>
+                        <a href="#PRODUCTION"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../miscellaneous/typealiases.html#EnvironmentTypes" target="_self" >EnvironmentTypes</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;production&#x27;</code>
+                    </td>
+                </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Production Environment.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="QA"></a>
+                    <span class="name">
+                        <span ><b>QA</b></span>
+                        <a href="#QA"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../miscellaneous/typealiases.html#EnvironmentTypes" target="_self" >EnvironmentTypes</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;qa&#x27;</code>
+                    </td>
+                </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>QA Environment.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</section>
+    <h3>packages/@resist.js/server/src/constants/Constants.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="DOC_ERROR_URL"></a>
+                    <span class="name">
+                        <span ><b>DOC_ERROR_URL</b></span>
+                        <a href="#DOC_ERROR_URL"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x60;${DOC_URL}/errors&#x60;</code>
+                    </td>
+                </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Documentation Error URL.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="DOC_URL"></a>
+                    <span class="name">
+                        <span ><b>DOC_URL</b></span>
+                        <a href="#DOC_URL"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;https://resistjs.dev/doc&#x27;</code>
+                    </td>
+                </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Documentation URL.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="VERSION"></a>
+                    <span class="name">
+                        <span ><b>VERSION</b></span>
+                        <a href="#VERSION"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>Package.version ?? &#x27;n/a&#x27;</code>
+                    </td>
+                </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Application Version.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</section>
+    <h3>packages/@resist.js/server/src/handlers/ErrorNotFound.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="Handler"></a>
+                    <span class="name">
+                        <span ><b>Handler</b></span>
+                        <a href="#Handler"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/IHandler.html" target="_self" >IHandler</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>async (request: FastifyRequest, reply: FastifyReply): Promise&lt;void&gt; &#x3D;&gt; {
+  const data: ILogObject &#x3D; RequestLogger(404, request, reply)
+
+  data
+}</code>
+                    </td>
+                </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Handler for responding to 404s.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</section>
+    <h3>packages/@resist.js/server/src/handlers/Errors.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="Handler"></a>
+                    <span class="name">
+                        <span ><b>Handler</b></span>
+                        <a href="#Handler"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../miscellaneous/functions.html#Error" target="_self" >IErrorHandler</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>async (
+  error: FastifyError,
+  request: FastifyRequest,
+  reply: FastifyReply,
+): Promise&lt;void&gt; &#x3D;&gt; {
+  const data: ILogObject &#x3D; RequestLogger(error.statusCode, request, reply, error)
+
+  data
+}</code>
+                    </td>
+                </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Handler for responding to errors.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</section>
+    <h3>packages/@resist.js/server/src/handlers/Headers.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="Handler"></a>
+                    <span class="name">
+                        <span ><b>Handler</b></span>
+                        <a href="#Handler"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/IHandler.html" target="_self" >IHandler</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>async (request: FastifyRequest, reply: FastifyReply): Promise&lt;void&gt; &#x3D;&gt; {
+  for (const header of &lt;IHeader[]&gt;(
+    Book.server.headers.filter(
+      header &#x3D;&gt;
+        header.environments.includes(Book.environment) &amp;&amp; (!header.routes || header.routes?.includes(request.url)),
+    )
+  )) {
+    reply.header(header.key, header.value)
+  }
+}</code>
+                    </td>
+                </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Handler for Headers.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</section>
+    <h3>packages/@resist.js/server/src/handlers/Redirects.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="Handler"></a>
+                    <span class="name">
+                        <span ><b>Handler</b></span>
+                        <a href="#Handler"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/IHandler.html" target="_self" >IHandler</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>async (request: FastifyRequest, reply: FastifyReply): Promise&lt;void&gt; &#x3D;&gt; {
+  for (const redirect of &lt;IRedirects[]&gt;(
+    Book.server.redirects.filter(redirect &#x3D;&gt; redirect.environments.includes(Book.environment))
+  )) {
+    if (request.url &#x3D;&#x3D;&#x3D; redirect.source) {
+      reply.redirect(redirect.statusCode, redirect.destination)
+    }
+  }
+}</code>
+                    </td>
+                </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Handler for Redirects.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</section>
+    <h3>packages/@resist.js/server/src/handlers/RequestResponse.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="Handler"></a>
+                    <span class="name">
+                        <span ><b>Handler</b></span>
+                        <a href="#Handler"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/IHandler.html" target="_self" >IHandler</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>async (request: FastifyRequest, reply: FastifyReply): Promise&lt;void&gt; &#x3D;&gt; {
+  RequestLogger(reply.statusCode, request, reply)
+}</code>
+                    </td>
+                </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Handler for recording Requests and Responses.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</section>
+    <h3>packages/@resist.js/server/src/handlers/Rewrites.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="Handler"></a>
+                    <span class="name">
+                        <span ><b>Handler</b></span>
+                        <a href="#Handler"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/IRewriteHandler.html" target="_self" >IRewriteHandler</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>(request: FastifyRequest): string &#x3D;&gt; {
+  for (const rewrite of &lt;IRewrites[]&gt;(
+    Book.server.rewrites.filter(rewrite &#x3D;&gt; rewrite.environments.includes(Book.environment))
+  )) {
+    if (request.url &#x3D;&#x3D;&#x3D; rewrite.source) {
+      return rewrite.destination
+    }
+  }
+
+  return request.url
+}</code>
+                    </td>
+                </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Handler for Rewrites.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</section>
+    <h3>packages/@resist.js/server/src/headers/Headers.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="Headers"></a>
+                    <span class="name">
+                        <span ><b>Headers</b></span>
+                        <a href="#Headers"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/IHeader.html" target="_self" >IHeader[]</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[
+  {
+    key: &#x27;Strict-Transport-Security&#x27;,
+    value: &#x27;max-age&#x3D;63072000; includeSubDomains; preload&#x27;,
+    environments: [&#x27;development&#x27;, &#x27;production&#x27;, &#x27;qa&#x27;],
+  },
+  {
+    key: &#x27;X-Powered-By&#x27;,
+    value: &#x27;resist.js&#x27;,
+    environments: [&#x27;development&#x27;, &#x27;production&#x27;, &#x27;qa&#x27;],
+  },
+]</code>
+                    </td>
+                </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Server Headers.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</section>
+    <h3>packages/@resist.js/server/src/handlers/HealthHandler.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="HealthHandler"></a>
+                    <span class="name">
+                        <span ><b>HealthHandler</b></span>
+                        <a href="#HealthHandler"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>(server: FastifyInstance | any, startupState: any): void &#x3D;&gt; {
+  if (startupState.length &gt; 0) {
+    setTimeout(() &#x3D;&gt; {
+      try {
+        Warn(
+          &#x60;🥺 Errors were encountered while starting: Navigate to https://${server.server.address().address}:${
+            server.server.address().port
+          }/resist/state to see what happened.&#x60;,
+        )
+      } catch (e) {
+        Warn(
+          &#x60;🥺 Errors were encountered while starting: Navigate to https://localhost:3000/resist/state to see what happened.&#x60;,
+        )
+      }
+    }, 1000)
+  }
+
+  server.get(&#x27;/api/ping&#x27;, (request: FastifyRequest, reply: FastifyReply): void &#x3D;&gt; {
+    reply.status(200)
+    reply.header(&#x27;Content-Type&#x27;, &#x27;application/json&#x27;)
+    reply.type(&#x27;application/json&#x27;)
+    reply.send(&#x27;pong&#x27;)
+  })
+
+  if (startupState.length &gt; 0) {
+    server.get(&#x27;/&#x27;, async (request: FastifyRequest, reply: FastifyReply): Promise&lt;void&gt; &#x3D;&gt; {
+      reply.redirect(&#x27;/resist/state&#x27;)
+    })
+  }
+
+  if (!global.config.setup_complete) {
+    server.get(&#x27;/&#x27;, async (request: FastifyRequest, reply: FastifyReply): Promise&lt;void&gt; &#x3D;&gt; {
+      reply.redirect(&#x27;/resist/setup&#x27;)
+    })
+  }
+
+  server.get(&#x27;/resist/state&#x27;, async (request: FastifyRequest, reply: FastifyReply): Promise&lt;void&gt; &#x3D;&gt; {
+    const RenderErrors &#x3D; (): string &#x3D;&gt; {
+      let html &#x3D; &#x27;&#x27;
+      if (startupState?.length &gt; 0) {
+        html +&#x3D;
+          &#x27;&lt;p class&#x3D;&quot;pill&quot;&gt;Startup encountered one or more errors and could not proceed. Check and resolve each Error below by clicking on each one.&lt;/p&gt;&#x27;
+
+        for (let i &#x3D; 0; startupState.length &gt; i; i++) {
+          html +&#x3D; &#x60;&lt;div class&#x3D;&#x27;error&#x27;&gt;&lt;a target&#x3D;&quot;_blank&quot; rel&#x3D;&quot;nofollow, noreferrer, noopener&quot; href&#x3D;&quot;${DOC_ERROR_URL}/${startupState[i]}&quot;&gt;Error #${startupState[i]}&lt;/a&gt;&lt;/div&gt;&#x60;
+        }
+      }
+      return html
+    }
+    const p &#x3D; (thing, bool &#x3D; false): string &#x3D;&gt; {
+      if (thing &#x3D;&#x3D;&#x3D; null || thing &#x3D;&#x3D;&#x3D; undefined || thing &#x3D;&#x3D;&#x3D; &#x27;&#x27;) {
+        return &#x60;&lt;div class&#x3D;&#x27;pill-warn&#x27;&gt;🔆 Not provided&lt;/div&gt;&#x60;
+      }
+      if (bool) return thing ? &#x27;✅&#x27; : &#x27;🚫&#x27;
+      return thing
+    }
+
+    const CookieSecret &#x3D; (thing): string &#x3D;&gt; {
+      if (thing &amp;&amp; thing.length &gt;&#x3D; 32) return p(thing)
+      else {
+        return &#x60;&lt;div class&#x3D;&#x27;pill-warn&#x27;&gt;❌ Must be at least 32-characters!&lt;/div&gt;&#x60;
+      }
+    }
+
+    const RenderToPillList &#x3D; (thing: string | any, prop1: string, prop2: string): string &#x3D;&gt; {
+      let html &#x3D; &#x27;&lt;div style&#x3D;&quot;padding:20px&quot;&gt;&#x27;
+
+      if (!thing || 0 &gt;&#x3D; thing.length) html +&#x3D; p(null)
+      else {
+        for (let i &#x3D; 0; thing.length &gt; i; i++) {
+          html +&#x3D; &#x60;&lt;div class&#x3D;&#x27;pill-gray&#x27;&gt;${thing[i][prop1]}, ${thing[i][prop2]}&lt;/div&gt;&#x60;
+        }
+      }
+      html +&#x3D; &#x27;&lt;/div&gt;&#x27;
+
+      return html
+    }
+
+    const ServerPlugins &#x3D; (thing: string | any): string &#x3D;&gt; {
+      let html &#x3D; &#x27;&lt;div style&#x3D;&quot;padding:20px&quot;&gt;&#x27;
+
+      if (!thing || 0 &gt;&#x3D; thing.length) html +&#x3D; p(null)
+      else {
+        for (let i &#x3D; 0; thing.length &gt; i; i++) {
+          html +&#x3D; &#x60;&lt;div class&#x3D;&#x27;pill-gray&#x27;&gt;${thing[i].description}&lt;br/&gt;Enabled: ${
+            thing[i].enabled ? &#x27;Yes&#x27; : &#x27;No&#x27;
+          }&lt;br/&gt;Package: ${thing[i].fromPackage}&lt;br/&gt;Environments: ${thing[i].environments.join(
+            &#x27;, &#x27;,
+          )}&lt;br/&gt;Options: ${JSON.stringify(thing[i].options)}&lt;/div&gt;&#x60;
+        }
+      }
+      html +&#x3D; &#x27;&lt;/div&gt;&#x27;
+
+      return html
+    }
+
+    const Reachable &#x3D; async (url: string): Promise&lt;string&gt; &#x3D;&gt; {
+      if (!url || url &#x3D;&#x3D;&#x3D; &#x27;&#x27;) {
+        return &#x27;🚫&#x27;
+      } else {
+        return (await IsUp(url)) ? &#x27;✅&#x27; : &#x27;🚫&#x27;
+      }
+    }
+
+    const ElasticReachable &#x3D; await Reachable(Book.metrics.elasticSearch.url)
+    const FlagReachable &#x3D; await Reachable(Book.flags.url)
+    const StorybookReachable &#x3D; await Reachable(Book.storybook.url)
+
+    reply.status(200)
+    reply.header(&#x27;Content-Type&#x27;, &#x27;text/html&#x27;)
+    reply.type(&#x27;text/html&#x27;)
+    reply.send(&#x60;
+      &lt;!DOCTYPE html&gt;
+      &lt;html dir&#x3D;&quot;ltr&quot; lang&#x3D;&quot;en&quot;&gt;
+        &lt;head&gt;
+          &lt;meta charset&#x3D;&quot;utf-8&quot; /&gt;
+          &lt;meta http-equiv&#x3D;&quot;x-ua-compatible&quot; content&#x3D;&quot;IE&#x3D;edge,chrome&#x3D;1&quot; /&gt;
+          &lt;meta http-equiv&#x3D;&quot;content-type&quot; content&#x3D;&quot;text/html; charset&#x3D;utf-8&quot; /&gt;
+          &lt;meta name&#x3D;&quot;viewport&quot; content&#x3D;&quot;width&#x3D;device-width, initial-scale&#x3D;1, shrink-to-fit&#x3D;no&quot; /&gt;
+          &lt;meta content&#x3D;&#x27;noindex, nofollow&#x27; name&#x3D;&#x27;robots&#x27; /&gt;
+          &lt;title&gt;${Book.FRAMEWORK} - Startup Information&lt;/title&gt;
+
+          &lt;style type&#x3D;&quot;text/css&quot;&gt;
+            :root {
+              font-family: -apple-system, BlinkMacSystemFont, &#x27;Segoe UI&#x27;, Roboto, Oxygen, Ubuntu, Cantarell,
+&#x27;Open Sans&#x27;, &#x27;Helvetica Neue&#x27;, sans-serif
+            }
+
+            ::selection {
+              background-color: #47a3f3;
+              color: #fefefe
+            }
+
+            body {
+              background-color: #202124;
+              color: #efefef
+            }
+
+            .main {
+              padding: 30px;
+              display: flex;
+              align-items: center
+            }
+
+            .main svg {
+              width: 64px;
+              height: 64px
+            }
+
+            .main div {
+              font-size: 24px;
+              padding-left: 15px
+            }
+
+            .pill {
+              border-radius: 12px;
+              background: #502124;
+              padding: 5px
+            }
+
+            .pill-warn {
+              border-radius: 12px;
+              background: #502124;
+              padding: 5px;
+              padding-left: 15px;
+              width: fit-content;
+              margin-left: 15px;
+              padding-right: 15px;
+              list-style: none !important; /* :D */
+            }
+
+            .pill-gray {
+              border-radius: 12px;
+              background: #333;
+              padding: 5px;
+              width: fit-content;
+              margin-left: 15px;
+              padding-left: 15px;
+              padding-right: 15px;
+              margin-bottom: 10px;
+              list-style: none !important; /* :D */
+            }
+
+            .pill-green {
+              border-radius: 12px;
+              background: #506124;
+              padding: 5px
+            }
+
+            .content {
+              display: flex;
+              flex-direction: column;
+              padding: 50px
+            }
+
+            .error {
+              display: list-item;
+              list-style: &#x27;🚫&#x27;;
+              padding-left: 10px;
+              padding-bottom: 15px;
+              margin-left: 30px
+            }
+
+            .content div a {
+              color: inherit;
+              text-decoration: none;
+              transition: 0.3s all
+            }
+
+            .content div a:hover, .content div a:focus {
+              color: inherit;
+              opacity: 0.5
+            }
+
+            .flex {
+              display: flex;
+              align-items: center
+            }
+            
+            .flex div {
+              padding-left: 15px
+            }
+            
+            .list_item {
+              display: list-item;
+              list-style: disc;
+              min-height: 48px;
+              margin-left: 30px
+            }
+
+            .button_group {
+              display: flex;
+              flex-direction: row
+            }
+
+            .button {
+              cursor: pointer;
+              transition: 0.3s all;
+              padding-top: 15px;
+              padding-bottom: 15px;
+              padding-left: 20px;
+              padding-right: 20px;
+              border: 1px solid #ccc;
+              border-radius: 6px;
+              margin-right: 15px;
+              min-width: fit-content;
+            }
+
+            .button:hover {
+              opacity: 0.5;
+            }
+          &lt;/style&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+        &lt;div class&#x3D;&#x27;main&#x27;&gt;
+        &lt;svg xmlns&#x3D;&quot;http://www.w3.org/2000/svg&quot; width&#x3D;&quot;682.667&quot; height&#x3D;&quot;682.667&quot; viewBox&#x3D;&quot;0 0 512 512&quot; xmlns:v&#x3D;&quot;https://vecta.io/nano&quot;&gt;&lt;path d&#x3D;&quot;M225.73 0h6.6c8.27.97 16.3 4.47 22.12 10.53L371.9 128.01c10.78 10.9 12.67 28.91 4.9 42.04l93.25.07c17.4.37 32.78 15.56 33.4 32.95 0 8.65 1.02 17.72-2.49 25.89-4.22 10.67-13.99 18.75-25.16 21.21l-.11 105.89c-.48 25.21-8.36 50.22-22.48 71.12-8.71 13.34-20.64 24.03-31.74 35.3l-15.98 15.93c-2.82 2.91-7.66 2.69-10.57.05-2.65-2.85-2.95-7.68-.11-10.51l14.55-14.63c-18.17-21.27-23.22-52.7-12.45-78.54 10.33-26.12 35.88-45.31 63.87-47.88l-.02-14.17-.01-30.62-.04-31.15c-50.05-.03-100.1.03-150.15-.01l-.05 79.06c.13 3.8-.54 7.68-2.43 11.01-1.69 3.19-4.5 5.55-6.98 8.1l-19.92 20c-10.97 11.32-18.22 26.14-20.53 41.73 13.98 1.5 27.46 6.62 39.26 14.21 7.2 4.65 13.79 10.24 19.63 16.52 13.8 14.99 23.22 34.3 24.97 54.72 8.66-1.17 17.06-3.87 24.86-7.79 3.48-1.93 7.93-.38 10 2.86 1.71 3.29.94 7.72-2.21 9.86-12.08 6.73-25.85 10.05-39.6 10.77h-4.22c-28.32-.29-56.05-14.73-72.25-38.01-12.65-17.82-18.21-40.37-15.71-62.05 2.18-19.91 11.14-39.02 25.12-53.38l23.48-23.54c1.13-1 1.62-2.51 1.53-3.98l.02-80.82c-8.79-2.05-16.76-7.32-21.82-14.82l-29.75 29.54c-23.77 22.53-56.15 35.61-88.9 35.95l-58.07.01c-22.45-.27-44.61-9.43-60.76-25.02-14.56-13.89-24.24-32.78-26.92-52.73-2.64-19.2 1.09-39.26 10.7-56.12 11.14-19.93 30.15-35.31 51.98-42.01 3.68-.84 7.41 1.68 8.59 5.14 1.09 3.82-1.11 8.16-4.94 9.34-7.67 2.67-15.01 6.33-21.55 11.15 17.14 21.39 23.13 50.43 18.45 77.18l-.46 2.41c-3.1 14.65-9.43 28.72-19.12 40.2 9.07 6.9 19.69 11.9 30.93 13.97l2.4.49c14.19 1.96 28.58.62 42.86 1.08l.2-.67.21-2.06.27-2.52.63-3.45.52-2.4c4.2-18.14 15.32-34.42 30.41-45.27.06-.04.19-.14.26-.19l2.73-1.82c.06-.04.19-.13.26-.17 1.46-.89 2.96-1.7 4.41-2.59l1.04-.51.86-.51c.28-.14.85-.4 1.13-.53l.88-.43 1.09-.48c5.37-2.44 11.03-4.18 16.79-5.44l2.42-.43c8.41-1.35 17.04-1.38 25.45-.01l2.42.43c5.77 1.19 11.41 2.98 16.8 5.38l1.13.49.97.5.96.48 1.18.58 1.96.91.2.15c.07.05.21.15.27.2 1.48 1.04 3.04 1.96 4.55 2.97 2 1.33 3.89 2.82 5.8 4.28l12.99-13.01c-.15-9.68-1.37-19.93 2.86-29 4.99-11.45 16.49-19.64 28.94-20.68l-17.14-17.2-77.81-77.79c-.86-.66-1.42-1.89-2.53-2.13l-56.6 56.58c-2 2.03-4.37 3.68-7.04 4.71-.05.02-.17.06-.23.09l-2.15.71-2.41.43-25.73.04c-3.97.07-7.17-3.55-7.39-7.38.2-3.87 3.28-7.53 7.32-7.53l23.85-.08c1.29-.02 2.41-.75 3.27-1.66l57.19-57.19c-6.35-9.95-7.48-23.08-2.39-33.81 3.17-7.32 9.51-12.43 14.97-17.99 5.56-5.6 13.1-8.75 20.81-9.98m-4.74 16.83c-3.84 1.62-6.56 4.86-9.46 7.71-2.79 2.87-6 5.5-7.73 9.21-3.76 7.34-2.26 16.89 3.51 22.77l27.56 27.52 35.93-35.93-27.45-27.45c-5.72-5.73-15.06-7.31-22.36-3.83m60.34 41.95L245.49 94.7l41.53 41.28 35.79-35.87-41.48-41.33m16.21 87.96c2.8 2.84 5.7 5.59 8.55 8.39 4.7 5.14 9.8 10 14.77 14.91l36.13-.02c5.54-4.75 10.33-11.36 9.49-19.05-.09-5.8-3.35-11.03-7.59-14.79l-25.23-25.3c-12.29 11.63-24.08 23.93-36.12 35.86M42.86 160.9c-4.69 5.13-8.64 10.93-11.74 17.14-13.2 26.23-8.92 60.19 10.86 82 7.54-8.81 12.26-19.73 14.94-30.94 5.17-23.22.97-49.32-14.06-68.2m239.89 44.18c.28 6.49-1.06 13.44 2 19.48 3.23 6.86 10.59 11.44 18.17 11.35l38.41.01v-50.84c-13.11-.01-26.22-.03-39.33.01-10.41.13-19.5 9.59-19.25 19.99m73.58-19.98v50.81l58.6.02v-50.86c-19.54.01-39.07-.04-58.6.03m73.62-.02v50.84l39.06-.03c9.77-.07 18.59-8.25 19.41-17.98.2-4.92.18-9.87.01-14.8-.78-9.73-9.57-17.96-19.34-18.03-13.05-.03-26.1-.02-39.14 0M168.26 243.3c-13.37 10.14-22.3 25.93-23.92 42.65 7.2-.01 14.43.11 21.59-.76 23.61-2.46 46.34-12.42 64.24-28 4.85-4.21 9.28-8.86 13.83-13.37l-.08-.53c-7.7-5.91-16.79-9.86-26.29-11.79l-.9.38-.11-.73-1.75.09c-16.26-2.65-33.58 1.96-46.61 12.06m249.11 125.07c-7.86 11.19-11.76 25.06-10.97 38.7.6 12.93 5.54 25.53 13.64 35.59 5.32-5.25 10.66-10.51 15.26-16.41 12.38-15.54 20.69-34.28 23.86-53.89 1.78-10.01 1.65-20.2 1.6-30.32-17.33 2.11-33.52 11.93-43.39 26.33M259.9 425.86c.72 17.97 8.29 35.52 20.86 48.39 12.73 13.18 30.42 21.45 48.73 22.56-1.14-11.14-6.55-21.35-13.19-30.19-9.55-12.39-21.52-22.84-34.71-31.2-6.77-4.08-13.82-8.16-21.69-9.56zm135.18-135.88c-.15-5.54 6.75-9.42 11.37-6.28 3.64 2.9 6.63 6.52 10.03 9.69 4.05 3.97 1.67 11.5-3.86 12.57-4.97 1.08-8.09-3.39-11.17-6.38-2.57-2.82-6.56-5.3-6.37-9.6zm-20.72 34.48c4.07-2.7 10.2-.18 11.17 4.6.65 3.97.11 8.09-1.02 11.93-3.79 13.03-17.56 22.26-31.07 20.45-4.8-.83-7.52-6.85-4.96-11.01 1.46-2.63 4.54-4.1 7.51-3.76 7.96.5 15.25-6.69 14.83-14.66-.34-2.93.97-6.02 3.54-7.55zm-66.55 57.77c-3.02-4.58.72-11.35 6.17-11.29 4.37-.31 6.87 3.74 9.71 6.33 2.94 3.06 7.33 6.03 6.49 10.93-.93 5.68-8.58 8.27-12.67 4.12-3.14-3.45-6.83-6.42-9.7-10.09z&quot;/&gt;&lt;path d&#x3D;&quot;M220.99 16.83c7.3-3.48 16.64-1.9 22.36 3.83l27.45 27.45-35.93 35.93-27.56-27.52c-5.77-5.88-7.27-15.43-3.51-22.77 1.73-3.71 4.94-6.34 7.73-9.21 2.9-2.85 5.62-6.09 9.46-7.71zm60.34 41.95l41.48 41.33-35.79 35.87c-14.08-13.44-27.67-27.55-41.53-41.28l35.84-35.92zm16.21 87.96l36.12-35.86 25.23 25.3c4.24 3.76 7.5 8.99 7.59 14.79-4.8-.95-9.65.15-14.47.19-12.34.1-24.68-.09-37.01.08-3.99.17-7.89-.84-11.86-1.01.99 1.63 2.05 3.21 2.95 4.9l-8.55-8.39zm-106.2 69.38l1.92.39-2.42.43.5-.82zm-23.08 27.18c13.03-10.1 30.35-14.71 46.61-12.06l.3.69 1.56-.05.9-.38c9.5 1.93 18.59 5.88 26.29 11.79l.08.53c-4.55 4.51-8.98 9.16-13.83 13.37-17.9 15.58-40.63 25.54-64.24 28-7.16.87-14.39.75-21.59.76 1.62-16.72 10.55-32.51 23.92-42.65zm-38.34 33.17l1.06-1.59-.52 2.4-.54-.81z&quot; fill&#x3D;&quot;#ff6b6b&quot;/&gt;&lt;path fill&#x3D;&quot;#ffa6a6&quot; d&#x3D;&quot;M202.26 73.06c1.11.24 1.67 1.47 2.53 2.13l77.81 77.79c-.83 2.11-3.07 2.78-4.88 3.77-13.77 7.01-24.25 20.17-27.82 35.22-2.29 8.51-1.6 17.39-1.62 26.1-.11 3.54 1.17 6.98.87 10.52-1.51-1.01-3.07-1.93-4.55-2.97-.06-.05-.2-.15-.27-.2l-.2-.15-1.96-.91-1.18-.58-.96-.48-.97-.5-.45-.53-.68.04c-5.39-2.4-11.03-4.19-16.8-5.38l-1.63-.95-.79.52c-8.41-1.37-17.04-1.34-25.45.01l-1.92-.39-.5.82c-5.76 1.26-11.42 3-16.79 5.44l-.65-.01-.44.49-.88.43-1.13.53-.86.51-1.04.51c-1.45.89-2.95 1.7-4.41 2.59-.07.04-.2.13-.26.17l-2.73 1.82-.26.19c-15.09 10.85-26.21 27.13-30.41 45.27l-1.06 1.59.54.81-.63 3.45-.66.61.39 1.91c-.06.51-.16 1.54-.21 2.06-2.39-.22-5.31.49-7.14-1.51-19.26-17.79-32.54-41.52-39.35-66.73-7.42-27.5-6.67-57.11 2.06-84.21.42-1.42 1.38-2.57 2.25-3.73 4.47-.73 9.02-.7 13.54-.89.22 3.83 3.42 7.45 7.39 7.38l25.73-.04 1.89.32.52-.75 2.15-.71c.06-.03.18-.07.23-.09 2.67-1.03 5.04-2.68 7.04-4.71l56.6-56.58z&quot;/&gt;&lt;path d&#x3D;&quot;M80.58 130.16c2.2-.3 4.34-1.02 6.59-1.03-.87 1.16-1.83 2.31-2.25 3.73-8.73 27.1-9.48 56.71-2.06 84.21 6.81 25.21 20.09 48.94 39.35 66.73 1.83 2 4.75 1.29 7.14 1.51l-.2.67c-14.28-.46-28.67.88-42.86-1.08l-.47-.82-1.93.33c-11.24-2.07-21.86-7.07-30.93-13.97 9.69-11.48 16.02-25.55 19.12-40.2l.98-1.61-.52-.8c4.68-26.75-1.31-55.79-18.45-77.18 6.54-4.82 13.88-8.48 21.55-11.15 3.83-1.18 6.03-5.52 4.94-9.34zm202.02 22.82l17.14 17.2c-12.45 1.04-23.95 9.23-28.94 20.68-4.23 9.07-3.01 19.32-2.86 29l-12.99 13.01c-1.91-1.46-3.8-2.95-5.8-4.28.3-3.54-.98-6.98-.87-10.52.02-8.71-.67-17.59 1.62-26.1 3.57-15.05 14.05-28.21 27.82-35.22 1.81-.99 4.05-1.66 4.88-3.77z&quot; fill&#x3D;&quot;#ff8182&quot;/&gt;&lt;path d&#x3D;&quot;M138.39 134.44c.06-.03.18-.07.23-.09l-.23.09zm-4.56 1.14l2.41-.43-.52.75-1.89-.32zm169.31 14.65c3.97.17 7.87 1.18 11.86 1.01l37.01-.08c4.82-.04 9.67-1.14 14.47-.19.84 7.69-3.95 14.3-9.49 19.05l-36.13.02c-4.97-4.91-10.07-9.77-14.77-14.91-.9-1.69-1.96-3.27-2.95-4.9zM42.86 160.9c15.03 18.88 19.23 44.98 14.06 68.2-2.68 11.21-7.4 22.13-14.94 30.94-19.78-21.81-24.06-55.77-10.86-82 3.1-6.21 7.05-12.01 11.74-17.14zm175.85 55.6l.79-.52 1.63.95-2.42-.43zm-45.31 5.87l.65.01-1.09.48.44-.49zm64.53-.06l.68-.04.45.53-1.13-.49zm-66.98 1.51l1.13-.53-1.13.53zm69.08-.52l.96.48-.96-.48zm-70.98 1.54l1.04-.51-1.04.51zm73.12-.48l1.96.91-1.96-.91zm2.16 1.06l.27.2a6.32 6.32 0 0 0-.27-.2zm-79.95 2.18l.26-.17c-.07.04-.2.13-.26.17zm-92.3 2.64l.46-2.41.52.8-.98 1.61zm89.31-.63l.26-.19-.26.19zm53.48 1.63l1.75-.09.11.73-1.56.05-.3-.69zm-85.7 50.1l.66-.61-.27 2.52-.39-1.91zm-45.28 3.07l1.93-.33.47.82-2.4-.49z&quot; fill&#x3D;&quot;#ff4041&quot;/&gt;&lt;path d&#x3D;&quot;M282.75 205.08c-.25-10.4 8.84-19.86 19.25-19.99l39.33-.01v50.84c-12.8.01-25.61.03-38.41-.01-7.58.09-14.94-4.49-18.17-11.35-3.06-6.04-1.72-12.99-2-19.48zm73.58-19.98l58.6-.03v50.86c-19.53-.01-39.07.03-58.6-.02V185.1zm73.62-.02h39.14c9.77.07 18.56 8.3 19.34 18.03.17 4.93.19 9.88-.01 14.8-.82 9.73-9.64 17.91-19.41 17.98l-39.06.03v-50.84zm-12.58 183.29c9.87-14.4 26.06-24.22 43.39-26.33.05 10.12.18 20.31-1.6 30.32-3.17 19.61-11.48 38.35-23.86 53.89-4.6 5.9-9.94 11.16-15.26 16.41-8.1-10.06-13.04-22.66-13.64-35.59-.79-13.64 3.11-27.51 10.97-38.7zM259.9 425.86c7.87 1.4 14.92 5.48 21.69 9.56 13.19 8.36 25.16 18.81 34.71 31.2 6.64 8.84 12.05 19.05 13.19 30.19-18.31-1.11-36-9.38-48.73-22.56-12.57-12.87-20.14-30.42-20.86-48.39z&quot; fill&#x3D;&quot;#a0bce7&quot;/&gt;&lt;path fill&#x3D;&quot;#c7e7fa&quot; d&#x3D;&quot;M310.56 250.95l150.15.01.04 31.15c-5-4.67-11.95-7.18-18.79-6.13-10.72 1.27-19.89 8.41-25.48 17.41-3.4-3.17-6.39-6.79-10.03-9.69-4.62-3.14-11.52.74-11.37 6.28-.19 4.3 3.8 6.78 6.37 9.6 3.08 2.99 6.2 7.46 11.17 6.38-.59 6.06.99 12.58 5.42 16.95 4.93 5.25 12.69 6.93 19.6 5.69 9.53-1.69 17.8-7.91 23.12-15.87l.02 14.17c-27.99 2.57-53.54 21.76-63.87 47.88-10.77 25.84-5.72 57.27 12.45 78.54l-14.55 14.63c-2.84 2.83-2.54 7.66.11 10.51-4.74 4.81-9.9 9.2-15.55 12.91-2.07-3.24-6.52-4.79-10-2.86-7.8 3.92-16.2 6.62-24.86 7.79-1.75-20.42-11.17-39.73-24.97-54.72 16.7.09 31.87-14.02 33.43-30.55.82-7.83-2.88-16.28-9.93-20.11-3.88-2.3-8.47-2.61-12.86-2.72.84-4.9-3.55-7.87-6.49-10.93-2.84-2.59-5.34-6.64-9.71-6.33-5.45-.06-9.19 6.71-6.17 11.29 2.87 3.67 6.56 6.64 9.7 10.09-11.19 6.69-19.08 19.42-17.6 32.74-11.8-7.59-25.28-12.71-39.26-14.21 2.31-15.59 9.56-30.41 20.53-41.73l19.92-20c2.48-2.55 5.29-4.91 6.98-8.1 1.89-3.33 2.56-7.21 2.43-11.01l.05-79.06m63.8 73.51c-2.57 1.53-3.88 4.62-3.54 7.55.42 7.97-6.87 15.16-14.83 14.66-2.97-.34-6.05 1.13-7.51 3.76-2.56 4.16.16 10.18 4.96 11.01 13.51 1.81 27.28-7.42 31.07-20.45 1.13-3.84 1.67-7.96 1.02-11.93-.97-4.78-7.1-7.3-11.17-4.6z&quot;/&gt;&lt;path d&#x3D;&quot;M416.48 293.39c5.59-9 14.76-16.14 25.48-17.41 6.84-1.05 13.79 1.46 18.79 6.13l.01 30.62c-5.32 7.96-13.59 14.18-23.12 15.87-6.91 1.24-14.67-.44-19.6-5.69-4.43-4.37-6.01-10.89-5.42-16.95 5.53-1.07 7.91-8.6 3.86-12.57zm-86.3 94.81c4.39.11 8.98.42 12.86 2.72 7.05 3.83 10.75 12.28 9.93 20.11-1.56 16.53-16.73 30.64-33.43 30.55-5.84-6.28-12.43-11.87-19.63-16.52-1.48-13.32 6.41-26.05 17.6-32.74 4.09 4.15 11.74 1.56 12.67-4.12z&quot; fill&#x3D;&quot;#fff&quot;/&gt;&lt;/svg&gt;&lt;div&gt;${
+          Book.FRAMEWORK
+        }&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&#x27;content&#x27;&gt;
+          &lt;div class&#x3D;&#x27;button_group&#x27; style&#x3D;&#x27;margin-bottom: 15px&#x27;&gt;
+            &lt;div class&#x3D;&#x27;button&#x27;&gt;Kill Server&lt;/div&gt;
+            &lt;div class&#x3D;&#x27;button&#x27;&gt;Kill Cluster&lt;/div&gt;
+            &lt;div class&#x3D;&#x27;button&#x27;&gt;Restart Cluster&lt;/div&gt;
+            &lt;div class&#x3D;&#x27;button&#x27;&gt;Restart Server&lt;/div&gt;
+            &lt;div class&#x3D;&#x27;button&#x27;&gt;Rebuild Server&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&#x27;button_group&#x27; style&#x3D;&#x27;margin-bottom: 15px&#x27;&gt;
+            &lt;div class&#x3D;&#x27;button&#x27;&gt;Restart Flag&lt;/div&gt;
+            &lt;div class&#x3D;&#x27;button&#x27;&gt;Restart Elastic&lt;/div&gt;
+            &lt;div class&#x3D;&#x27;button&#x27;&gt;Restart Storybook&lt;/div&gt;
+            &lt;div class&#x3D;&#x27;button&#x27;&gt;Rebuild Elastic&lt;/div&gt;
+            &lt;div class&#x3D;&#x27;button&#x27;&gt;Rebuild Flag&lt;/div&gt;
+            &lt;div class&#x3D;&#x27;button&#x27;&gt;Rebuild Storybook&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&#x27;button_group&#x27;&gt;
+            &lt;div class&#x3D;&#x27;button&#x27;&gt;&lt;a target&#x3D;&quot;_blank&quot; rel&#x3D;&quot;nofollow, noreferrer, noopener&quot; href&#x3D;&quot;&quot;&gt;Open Metrics&lt;/a&gt;&lt;/div&gt;
+            &lt;div class&#x3D;&#x27;button&#x27;&gt;&lt;a target&#x3D;&quot;_blank&quot; rel&#x3D;&quot;nofollow, noreferrer, noopener&quot; href&#x3D;&quot;&quot;&gt;Open Elastic&lt;/a&gt;&lt;/div&gt;
+            &lt;div class&#x3D;&#x27;button&#x27;&gt;&lt;a target&#x3D;&quot;_blank&quot; rel&#x3D;&quot;nofollow, noreferrer, noopener&quot; href&#x3D;&quot;&quot;&gt;Open Storybook&lt;/a&gt;&lt;/div&gt;
+            &lt;div class&#x3D;&#x27;button&#x27;&gt;&lt;a target&#x3D;&quot;_blank&quot; rel&#x3D;&quot;nofollow, noreferrer, noopener&quot; href&#x3D;&quot;&quot;&gt;Open Flags&lt;/a&gt;&lt;/div&gt;
+            &lt;div class&#x3D;&#x27;button&#x27;&gt;&lt;a target&#x3D;&quot;_blank&quot; rel&#x3D;&quot;nofollow, noreferrer, noopener&quot; href&#x3D;&quot;${DOC_URL}&quot;&gt;Open Documentation&lt;/a&gt;&lt;/div&gt;
+          &lt;/div&gt;
+          ${RenderErrors()}
+          &lt;p class&#x3D;&quot;pill-green&quot;&gt;Useful Information&lt;/p&gt;
+          &lt;div class&#x3D;&#x27;list_item&#x27;&gt;Framework Version: ${VERSION}&lt;/div&gt;
+          &lt;div class&#x3D;&#x27;list_item&#x27;&gt;Has Been Built: ${Book.isBuilt ? &#x27;Yes&#x27; : &#x27;No&#x27;}&lt;/div&gt;
+          &lt;div class&#x3D;&#x27;list_item&#x27;&gt;&lt;div class&#x3D;&#x27;flex&#x27;&gt;Port: ${p(Book.server.settings.port)}&lt;/div&gt;&lt;/div&gt;
+          &lt;div class&#x3D;&#x27;list_item&#x27;&gt;&lt;div class&#x3D;&#x27;flex&#x27;&gt;Environment: ${p(Book.environment)}&lt;/div&gt;&lt;/div&gt;
+          &lt;div class&#x3D;&#x27;list_item&#x27;&gt;Platform: ${Book.platform}&lt;/div&gt;
+          &lt;div class&#x3D;&#x27;list_item&#x27;&gt;Working Path: ${Book.workingPath}&lt;/div&gt;
+          &lt;div class&#x3D;&#x27;list_item&#x27;&gt;Node Version: ${Book.nodeVersion}&lt;/div&gt;
+          &lt;div class&#x3D;&#x27;list_item&#x27;&gt;Process Id: ${Book.processId}&lt;/div&gt;
+          &lt;div class&#x3D;&#x27;list_item&#x27;&gt;Memory Usage: ~${MemoryUsage()} MB&lt;/div&gt;
+          
+          &lt;div class&#x3D;&#x27;list_item&#x27;&gt;Active Connections: ${server._connections}&lt;/div&gt;
+          &lt;div class&#x3D;&#x27;list_item&#x27;&gt;Cases Sensitive Routes: ${p(server.initialConfig.caseSensitive, true)}&lt;/div&gt;
+          &lt;div class&#x3D;&#x27;list_item&#x27;&gt;Connection Timeout: ${server.initialConfig.connectionTimeout}&lt;/div&gt;
+          &lt;div class&#x3D;&#x27;list_item&#x27;&gt;HTTP/2 Session Timeout: ${server.initialConfig.http2SessionTimeout}&lt;/div&gt;
+          &lt;div class&#x3D;&#x27;list_item&#x27;&gt;Ignore Trailing Slash In Route: ${p(
+            server.initialConfig.ignoreTrailingSlash,
+            true,
+          )}&lt;/div&gt;
+          &lt;div class&#x3D;&#x27;list_item&#x27;&gt;Max Param Length: ${server.initialConfig.maxParamLength}&lt;/div&gt;
+          &lt;div class&#x3D;&#x27;list_item&#x27;&gt;Max Requests Per Socket: ${server.initialConfig.maxRequestsPerSocket}&lt;/div&gt;
+
+          &lt;div class&#x3D;&#x27;list_item&#x27;&gt;&lt;div class&#x3D;&#x27;flex&#x27;&gt;Cookie Secret: ${CookieSecret(Book.server.cookieSecret)}&lt;/div&gt;&lt;/div&gt;
+          &lt;div class&#x3D;&#x27;list_item&#x27;&gt;&lt;div class&#x3D;&#x27;flex&#x27;&gt;Server Body Limit: ${p(Book.server.settings.bodyLimit)}&lt;/div&gt;&lt;/div&gt;
+          &lt;div class&#x3D;&#x27;list_item&#x27;&gt;&lt;div class&#x3D;&#x27;flex&#x27;&gt;Log Server Not Found: ${p(
+            Book.server.settings.logNotFound,
+            true,
+          )}&lt;/div&gt;&lt;/div&gt;
+          &lt;div class&#x3D;&#x27;list_item&#x27;&gt;&lt;div class&#x3D;&#x27;flex&#x27;&gt;Log Server Requests/Responses: ${p(
+            Book.server.settings.logRequests,
+            true,
+          )}&lt;/div&gt;&lt;/div&gt;
+          &lt;div class&#x3D;&#x27;list_item&#x27;&gt;&lt;div class&#x3D;&#x27;flex&#x27;&gt;Path To Build: ${p(Book.server.build)}&lt;/div&gt;&lt;/div&gt;
+          &lt;div class&#x3D;&#x27;list_item&#x27;&gt;&lt;div class&#x3D;&#x27;flex&#x27;&gt;Metrics Enabled: ${p(Book.metrics.enabled, true)}&lt;/div&gt;&lt;/div&gt;
+          &lt;div class&#x3D;&#x27;list_item&#x27;&gt;&lt;div class&#x3D;&#x27;flex&#x27;&gt;Metrics URL: ${p(Book.metrics.url)}&lt;/div&gt;&lt;/div&gt;
+          &lt;div class&#x3D;&#x27;list_item&#x27;&gt;Elastic Search Reachable: ${ElasticReachable}&lt;/div&gt;
+          &lt;div class&#x3D;&#x27;list_item&#x27;&gt;&lt;div class&#x3D;&#x27;flex&#x27;&gt;Elastic Search URL: ${p(Book.metrics.elasticSearch.url)}&lt;/div&gt;&lt;/div&gt;
+          &lt;div class&#x3D;&#x27;list_item&#x27;&gt;&lt;div class&#x3D;&#x27;flex&#x27;&gt;Elastic Search Username: ${p(
+            Book.metrics.elasticSearch.username,
+          )}&lt;/div&gt;&lt;/div&gt;
+          &lt;div class&#x3D;&#x27;list_item&#x27;&gt;&lt;div class&#x3D;&#x27;flex&#x27;&gt;Elastic Search Password: ${p(
+            Book.metrics.elasticSearch.password,
+          )}&lt;/div&gt;&lt;/div&gt;
+          &lt;div class&#x3D;&#x27;list_item&#x27;&gt;Metrics Users: ${RenderToPillList(Book.metrics.users, &#x27;username&#x27;, &#x27;password&#x27;)}&lt;/div&gt;
+          &lt;div class&#x3D;&#x27;list_item&#x27;&gt;&lt;div class&#x3D;&#x27;flex&#x27;&gt;Feature Flag Service Enabled: ${p(
+            Book.flags.enabled,
+            true,
+          )}&lt;/div&gt;&lt;/div&gt;
+          &lt;div class&#x3D;&#x27;list_item&#x27;&gt;&lt;div class&#x3D;&#x27;flex&#x27;&gt;Feature Flag Service URL: ${p(Book.flags.url)}&lt;/div&gt;&lt;/div&gt;
+          &lt;div class&#x3D;&#x27;list_item&#x27;&gt;&lt;div class&#x3D;&#x27;flex&#x27;&gt;Storybook Service Enabled: ${p(
+            Book.storybook.enabled,
+            true,
+          )}&lt;/div&gt;&lt;/div&gt;
+          &lt;div class&#x3D;&#x27;list_item&#x27;&gt;&lt;div class&#x3D;&#x27;flex&#x27;&gt;Storybook Service URL: ${p(Book.storybook.url)}&lt;/div&gt;&lt;/div&gt;
+          &lt;div class&#x3D;&#x27;list_item&#x27;&gt;Feature Flag Service Reachable: ${FlagReachable}&lt;/div&gt;
+          &lt;div class&#x3D;&#x27;list_item&#x27;&gt;Storybook Service Reachable: ${StorybookReachable}&lt;/div&gt;
+          &lt;div class&#x3D;&#x27;list_item&#x27;&gt;Headers: ${RenderToPillList(Book.server.headers, &#x27;key&#x27;, &#x27;value&#x27;)}&lt;/div&gt;
+          &lt;div class&#x3D;&#x27;list_item&#x27;&gt;Redirect: ${RenderToPillList(Book.server.redirects, &#x27;source&#x27;, &#x27;destination&#x27;)}&lt;/div&gt;
+          &lt;div class&#x3D;&#x27;list_item&#x27;&gt;Rewrites: ${RenderToPillList(Book.server.rewrites, &#x27;source&#x27;, &#x27;destination&#x27;)}&lt;/div&gt;
+          &lt;div class&#x3D;&#x27;list_item&#x27;&gt;Server Plugins: ${ServerPlugins(Book.server.plugins)}&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;/body&gt;
+      &lt;/html&gt;
+    &#x60;)
+  })
+}</code>
+                    </td>
+                </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Health Handling.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</section>
+    <h3>packages/@resist.js/server/src/logger/Logger.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="Logger"></a>
+                    <span class="name">
+                        <span ><b>Logger</b></span>
+                        <a href="#Logger"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>pino({
+  redact: [&#x27;headers.authorization&#x27;],
+})</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+</section>
+    <h3>packages/@resist.js/server/src/handlers/MetricsHandler.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="MetricsHandler"></a>
+                    <span class="name">
+                        <span ><b>MetricsHandler</b></span>
+                        <a href="#MetricsHandler"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>(server: FastifyInstance): void &#x3D;&gt; {
+  if (Book.metrics.enabled) {
+    Info(&#x60;Registering ${Book.FRAMEWORK} Plugin: Metrics&#x60;)
+
+    // eslint-disable-next-line @typescript-eslint/no-var-requires
+    const metrics: any &#x3D; require(&#x27;swagger-stats&#x27;)
+
+    server.register(metrics.getFastifyPlugin, {
+      name: &#x60;${Book.FRAMEWORK} metrics&#x60;,
+      version: VERSION,
+      timelineBucketDuration: 60000,
+      uriPath: Book.metrics.url,
+      durationBuckets: [50, 100, 200, 500, 1000, 5000],
+      requestSizeBuckets: [500, 5000, 15000, 50000],
+      responseSizeBuckets: [600, 6000, 6000, 60000],
+      apdexThreshold: 50,
+      authentication: true,
+      elasticsearch: Book.metrics.elasticSearch.url,
+      elasticsearchUsername: Book.metrics.elasticSearch.username,
+      elasticsearchPassword: Book.metrics.elasticSearch.password,
+      onAuthenticate: function (req, username, password) {
+        return Book.metrics.users.filter(user &#x3D;&gt; user.username &#x3D;&#x3D;&#x3D; username &amp;&amp; user.password &#x3D;&#x3D;&#x3D; password).length &gt; 0
+      },
+    })
+  } else {
+    Info(&#x60;Metrics are disabled.&#x60;)
+  }
+}</code>
+                    </td>
+                </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Metrics Handling.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</section>
+    <h3>packages/@resist.js/server/src/redirects/Redirects.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="Redirects"></a>
+                    <span class="name">
+                        <span ><b>Redirects</b></span>
+                        <a href="#Redirects"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/IRedirects.html" target="_self" >IRedirects[]</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Server Redirects.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</section>
+    <h3>packages/@resist.js/server/src/constants/PoisonTypeConstants.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="REMOVE"></a>
+                    <span class="name">
+                        <span ><b>REMOVE</b></span>
+                        <a href="#REMOVE"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../miscellaneous/typealiases.html#PoisonTypes" target="_self" >PoisonTypes</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;remove&#x27;</code>
+                    </td>
+                </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Remove Poison Type.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</section>
+    <h3>packages/@resist.js/server/src/handlers/RequestLogger.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="RequestLogger"></a>
+                    <span class="name">
+                        <span ><b>RequestLogger</b></span>
+                        <a href="#RequestLogger"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>(
+  code: number,
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  request: FastifyRequest | any,
+  reply: FastifyReply,
+  error?: FastifyError,
+): ILogObject &#x3D;&gt; {
+  const data: ILogObject &#x3D; {
+    statusCode: code,
+    id: request.id,
+    params: request.params,
+    url: request.url,
+    method: request.method,
+    headers: request.headers,
+    protocol: request.protocol,
+    hostname: request.hostname,
+    path: request.routerPath,
+    ip: request.ip,
+    ips: request.ips,
+    version: VERSION,
+    appVersion: global.config[&#x27;app_version&#x27;],
+    nodeVersion: Book.nodeVersion,
+    platform: Book.platform,
+    processId: Book.processId,
+    message: error?.message,
+    uuid: request.id,
+
+    localAddress: request.connection.localAddress,
+    localPort: request.connection.localPort,
+    remoteAddress: request.connection.remoteAddress,
+    remotePort: request.connection.remotePort,
+    referer: request.headers.referer,
+    authorization: request.headers.authorization,
+    cookie: request.headers.cookie,
+    origin: request.headers.origin,
+    date: request.headers.date,
+    etag: request.headers.etag,
+    routerMethod: request.routerMethod,
+
+    responseTime: reply.getResponseTime(),
+
+    sessionUUID: request.session.sessionId,
+    sessionUUIDEnc: request.session.encryptedSessionId,
+
+    userUUID: request.cookies.user_uuid,
+    metrics: {},
+  }
+
+  if (code &#x3D;&#x3D;&#x3D; 404 &amp;&amp; Book.server.settings.logNotFound) {
+    HandleNormalErrors(JSON.stringify(data))
+  } else if (code !&#x3D;&#x3D; 404 &amp;&amp; code !&#x3D;&#x3D; 200 &amp;&amp; code !&#x3D;&#x3D; 301) {
+    HandleNormalErrors(JSON.stringify(data))
+  } else {
+    HandleInfo(JSON.stringify(data))
+  }
+
+  return data
+}</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+</section>
+    <h3>packages/@resist.js/server/src/rewrites/Rewrites.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="Rewrites"></a>
+                    <span class="name">
+                        <span ><b>Rewrites</b></span>
+                        <a href="#Rewrites"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/IRewrites.html" target="_self" >IRewrites[]</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Server Rewrites.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</section>
+    <h3>packages/@resist.js/server/src/handlers/TestHandler.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="TestHandler"></a>
+                    <span class="name">
+                        <span ><b>TestHandler</b></span>
+                        <a href="#TestHandler"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>(server: FastifyInstance): void &#x3D;&gt; {
+  const StandardHandler &#x3D; (request: FastifyRequest, reply: FastifyReply): void &#x3D;&gt; {
+    let status: any | number &#x3D; request.url.split(&#x27;/&#x27;)
+    status &#x3D; Number(status[status.length - 1])
+
+    reply.status(status)
+    reply.header(&#x27;Content-Type&#x27;, &#x27;text/html&#x27;)
+    reply.type(&#x27;text/html&#x27;)
+    reply.send(&#x27;&#x27;)
+  }
+
+  server.get(&#x27;/resist/test/301&#x27;, StandardHandler)
+  server.get(&#x27;/resist/test/403&#x27;, StandardHandler)
+  server.get(&#x27;/resist/test/404&#x27;, StandardHandler)
+  server.get(&#x27;/resist/test/500&#x27;, StandardHandler)
+}</code>
+                    </td>
+                </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Test Routes Handling.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</section>
+    <h3>packages/@resist.js/server/src/Utils.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="urlExists"></a>
+                    <span class="name">
+                        <span ><b>urlExists</b></span>
+                        <a href="#urlExists"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>util.promisify(require(&#x27;url-exists&#x27;))</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="util"></a>
+                    <span class="name">
+                        <span ><b>util</b></span>
+                        <a href="#util"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>require(&#x27;util&#x27;)</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+</section>
+    <h3>packages/@resist.js/server/index.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="yaml"></a>
+                    <span class="name">
+                        <span ><b>yaml</b></span>
+                        <a href="#yaml"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>require(&#x27;js-yaml&#x27;)</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'miscellaneous-variables';
+            var COMPODOC_CURRENT_PAGE_URL = 'variables.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

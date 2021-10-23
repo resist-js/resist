@@ -1,0 +1,702 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>resist documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css" media="(prefers-color-scheme: dark)">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">resist documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content interface">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Interfaces</li>
+  <li
+  >
+  IServerSettings</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>packages/@resist.js/server/src/interfaces/IServerSettings.ts</code>
+        </p>
+
+
+            <p class="comment">
+                <h3>Description</h3>
+            </p>
+            <p class="comment">
+                <p>IServerSettings interface.</p>
+<p>See <a href="https://resistjs.dev/doc/settings">https://resistjs.dev/doc/settings</a></p>
+
+            </p>
+
+
+        <section>
+            <h3 id="index">Index</h3>
+            <table class="table table-sm table-bordered index-table">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Properties</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                        <a href="#bodyLimit" 
+>
+                                            bodyLimit
+                                        </a>
+                                </li>
+                                <li>
+                                        <a href="#disableRequestLogging" 
+>
+                                            disableRequestLogging
+                                        </a>
+                                </li>
+                                <li>
+                                        <a href="#genReqId" 
+>
+                                            genReqId
+                                        </a>
+                                </li>
+                                <li>
+                                        <a href="#https" 
+>
+                                            https
+                                        </a>
+                                </li>
+                                <li>
+                                        <a href="#ignoreTrailingSlash" 
+>
+                                            ignoreTrailingSlash
+                                        </a>
+                                </li>
+                                <li>
+                                        <a href="#logger" 
+>
+                                            logger
+                                        </a>
+                                </li>
+                                <li>
+                                        <a href="#onConstructorPoisoning" 
+>
+                                            onConstructorPoisoning
+                                        </a>
+                                </li>
+                                <li>
+                                        <a href="#onProtoPoisoning" 
+>
+                                            onProtoPoisoning
+                                        </a>
+                                </li>
+                                <li>
+                                        <a href="#rewriteUrl" 
+>
+                                            rewriteUrl
+                                        </a>
+                                </li>
+                                <li>
+                                        <a href="#serverFactory" 
+>
+                                            serverFactory
+                                        </a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+
+            <section>
+                <h3 id="inputs">Properties</h3>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <a name="bodyLimit"></a>
+                                        <span class="name "><b>bodyLimit</b>
+                                            <a href="#bodyLimit">
+                                                <span class="icon ion-ios-link"></span>
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>bodyLimit:         <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+</code>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                                        </td>
+                                    </tr>
+
+
+
+
+
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-description"><p>The body size limitation.</p>
+<p>See <a href="https://www.fastify.io/docs/latest/Server/#bodylimit">https://www.fastify.io/docs/latest/Server/#bodylimit</a>
+See <a href="https://resistjs.dev/doc/settings#bodyLimit">https://resistjs.dev/doc/settings#bodyLimit</a></p>
+</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <a name="disableRequestLogging"></a>
+                                        <span class="name "><b>disableRequestLogging</b>
+                                            <a href="#disableRequestLogging">
+                                                <span class="icon ion-ios-link"></span>
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>disableRequestLogging:         <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+</code>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                                        </td>
+                                    </tr>
+
+
+
+
+
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-description"><p>Whether to disable logging of requests.</p>
+<p>See <a href="https://resistjs.dev/doc/settings#logRequests">https://resistjs.dev/doc/settings#logRequests</a></p>
+</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <a name="genReqId"></a>
+                                        <span class="name "><b>genReqId</b>
+                                            <a href="#genReqId">
+                                                <span class="icon ion-ios-link"></span>
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>genReqId:         <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank" >Function</a></code>
+</code>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank" >Function</a></code>
+
+                                        </td>
+                                    </tr>
+
+
+
+
+
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <a name="https"></a>
+                                        <span class="name "><b>https</b>
+                                            <a href="#https">
+                                                <span class="icon ion-ios-link"></span>
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>https:         <code><a href="../interfaces/IServerSettingsHTTP.html" target="_self" >IServerSettingsHTTP</a></code>
+</code>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>        <code><a href="../interfaces/IServerSettingsHTTP.html" target="_self" >IServerSettingsHTTP</a></code>
+
+                                        </td>
+                                    </tr>
+
+
+
+
+
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-description"><p>Implementaion of Server HTTP settings.</p>
+</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <a name="ignoreTrailingSlash"></a>
+                                        <span class="name "><b>ignoreTrailingSlash</b>
+                                            <a href="#ignoreTrailingSlash">
+                                                <span class="icon ion-ios-link"></span>
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>ignoreTrailingSlash:         <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+</code>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                                        </td>
+                                    </tr>
+
+
+
+
+
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-description"><p>Whether to ignore trailing slashes in routes.</p>
+</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <a name="logger"></a>
+                                        <span class="name "><b>logger</b>
+                                            <a href="#logger">
+                                                <span class="icon ion-ios-link"></span>
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>logger:         <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+</code>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                                        </td>
+                                    </tr>
+
+
+
+
+
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-description"><p>Logger instnace.</p>
+</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <a name="onConstructorPoisoning"></a>
+                                        <span class="name "><b>onConstructorPoisoning</b>
+                                            <a href="#onConstructorPoisoning">
+                                                <span class="icon ion-ios-link"></span>
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>onConstructorPoisoning:         <code><a href="../miscellaneous/typealiases.html#PoisonTypes" target="_self" >PoisonTypes</a></code>
+</code>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>        <code><a href="../miscellaneous/typealiases.html#PoisonTypes" target="_self" >PoisonTypes</a></code>
+
+                                        </td>
+                                    </tr>
+
+
+
+
+
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-description"><p>How to handle constructor poisoning.</p>
+<p>See <a href="https://www.fastify.io/docs/latest/Server/#onconstructorpoisoning">https://www.fastify.io/docs/latest/Server/#onconstructorpoisoning</a></p>
+</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <a name="onProtoPoisoning"></a>
+                                        <span class="name "><b>onProtoPoisoning</b>
+                                            <a href="#onProtoPoisoning">
+                                                <span class="icon ion-ios-link"></span>
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>onProtoPoisoning:         <code><a href="../miscellaneous/typealiases.html#PoisonTypes" target="_self" >PoisonTypes</a></code>
+</code>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>        <code><a href="../miscellaneous/typealiases.html#PoisonTypes" target="_self" >PoisonTypes</a></code>
+
+                                        </td>
+                                    </tr>
+
+
+
+
+
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-description"><p>How to handle prototype poisoning.</p>
+<p>See <a href="https://www.fastify.io/docs/latest/Server/#onprotopoisoning">https://www.fastify.io/docs/latest/Server/#onprotopoisoning</a></p>
+</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <a name="rewriteUrl"></a>
+                                        <span class="name "><b>rewriteUrl</b>
+                                            <a href="#rewriteUrl">
+                                                <span class="icon ion-ios-link"></span>
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>rewriteUrl:         <code><a href="../interfaces/IRewriteHandler.html" target="_self" >IRewriteHandler</a></code>
+</code>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>        <code><a href="../interfaces/IRewriteHandler.html" target="_self" >IRewriteHandler</a></code>
+
+                                        </td>
+                                    </tr>
+
+
+
+
+
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <a name="serverFactory"></a>
+                                        <span class="name "><b>serverFactory</b>
+                                            <a href="#serverFactory">
+                                                <span class="icon ion-ios-link"></span>
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>serverFactory:         <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/function" target="_blank" >function</a></code>
+</code>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/function" target="_blank" >function</a></code>
+
+                                        </td>
+                                    </tr>
+
+
+
+
+
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-description"><p>Server factory.</p>
+</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </section>
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import type * as net from &#x27;net&#x27;
+
+import type { PoisonTypes } from &#x27;$types/PoisonTypes&#x27;
+import type IServerSettingsHTTP from &#x27;$interfaces/IServerSettingsHTTP&#x27;
+import type IRewriteHandler from &#x27;$interfaces/IRewriteHandler&#x27;
+
+/**
+ * IServerSettings interface.
+ *
+ * @interface IServerSettings
+ * @exports
+ * @see https://resistjs.dev/doc/settings
+ */
+export default interface IServerSettings {
+  /**
+   * Logger instnace.
+   *
+   * @type {any}
+   * @memberof IServerSettings
+   */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  readonly logger: any
+
+  /**
+   * Server factory.
+   *
+   * @type {Function}
+   * @memberof IServerSettings
+   */
+  readonly serverFactory: (fastifyHandler: unknown, opts: unknown) &#x3D;&gt; net.Server
+
+  /** @private */
+  readonly rewriteUrl: IRewriteHandler
+
+  /** @private */
+  // eslint-disable-next-line @typescript-eslint/ban-types
+  readonly genReqId: Function
+
+  /**
+   * Implementaion of Server HTTP settings.
+   *
+   * @type {IServerSettingsHTTP}
+   * @memberof IServerSettings
+   */
+  readonly https: IServerSettingsHTTP
+
+  /**
+   * Whether to ignore trailing slashes in routes.
+   *
+   * @type {boolean}
+   * @memberof IServerSettings
+   */
+  readonly ignoreTrailingSlash: boolean
+
+  /**
+   * How to handle prototype poisoning.
+   *
+   * @type {PoisonTypes}
+   * @memberof IServerSettings
+   * @see https://www.fastify.io/docs/latest/Server/#onprotopoisoning
+   */
+  readonly onProtoPoisoning: PoisonTypes
+
+  /**
+   * How to handle constructor poisoning.
+   *
+   * @type {PoisonTypes}
+   * @memberof IServerSettings
+   * @see https://www.fastify.io/docs/latest/Server/#onconstructorpoisoning
+   */
+  readonly onConstructorPoisoning: PoisonTypes
+
+  /**
+   * The body size limitation.
+   *
+   * @type {number}
+   * @memberof IServerSettings
+   * @see https://www.fastify.io/docs/latest/Server/#bodylimit
+   * @see https://resistjs.dev/doc/settings#bodyLimit
+   */
+  readonly bodyLimit: number
+
+  /**
+   * Whether to disable logging of requests.
+   *
+   * @type {boolean}
+   * @memberof IServerSettings
+   * @see https://resistjs.dev/doc/settings#logRequests
+   */
+  readonly disableRequestLogging: boolean
+}
+</code></pre>
+    </div>
+</div>
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'interface';
+            var COMPODOC_CURRENT_PAGE_URL = 'IServerSettings.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
