@@ -1,0 +1,34 @@
+{
+  "name": "@resistjs/conformances",
+  "description": "TODO",
+  "version": "1.0.0-next.1",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/resist-js/resist.git",
+    "directory": "packages/@resist.js/conformances"
+	},
+	"author": "",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/resist-js/resist/issues"
+	},
+	"homepage": "https://resistjs.dev",
+  "funding": "https://opencollective.com/resist.js",
+  "scripts": {
+    "preinstall": "pnpm i -g prettier eslint husky pino-pretty np commitizen",
+    "conform": "./bin/resist-conform.js",
+    "check": ""
+  },
+  "bin": {
+    "resist-conform": "./bin/resist-conform.js"
+  },
+  "preferGlobal": true,
+  "files": [
+    "bin",
+    "templates"
+  ],
+  "dependencies": {},
+  "engines": {
+    "node": ">= 16.11.1"
+  }
+}

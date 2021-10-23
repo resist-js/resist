@@ -1,0 +1,3 @@
+{
+  "include": ["packages/project/**/*.ts", "packages/project/**/*.js", "packages/project/**/*.svelte"]
+}

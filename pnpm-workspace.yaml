@@ -1,0 +1,4 @@
+packages:
+  - 'packages/@resist.js/*'
+  - 'examples/*'
+  - '.github/actions/*'

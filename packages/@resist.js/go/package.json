@@ -1,0 +1,41 @@
+{
+  "name": "@resistjs/go",
+  "description": "TODO",
+  "version": "1.0.0-next.1",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/resist-js/resist.git",
+    "directory": "packages/@resist.js/go"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/resist-js/resist/issues"
+  },
+  "homepage": "https://resistjs.dev",
+  "funding": "https://opencollective.com/resist.js",
+  "type": "module",
+  "scripts": {
+    "check": "resist-conform default check"
+  },
+  "bin": "./bin/helper.js",
+  "files": [
+    "bin",
+    "templates"
+  ],
+  "dependencies": {
+    "@resistjs/utils": "^1.0.0-next.1",
+    "kleur": "^4.1.4",
+    "prompts": "^2.4.2"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-jsdoc": "^36.1.1",
+    "eslint-plugin-sonarjs": "^0.10.0",
+    "eslint-plugin-tsdoc": "^0.2.14"
+  },
+  "engines": {
+    "node": ">= 16.11.1"
+  }
+}

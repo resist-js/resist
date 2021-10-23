@@ -1,0 +1,6 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+pnpm list @resistjs/conformances -g || pnpm i -g @resistjs/conformances@latest --reporter=silent
+
+resist-conform && lint-staged && svelte-check --tsconfig ./tsconfig.json --fail-on-warnings

@@ -1,0 +1,9 @@
+.git
+.husky
+node_modules
+.editorconfig
+.es*
+.git*
+.lint*
+.prettier*
+docker*

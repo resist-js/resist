@@ -1,0 +1,23 @@
+version: '3.9'
+
+services:
+  app:
+    image: app
+    container_name: '${APP_NAME}'
+    restart: on-failure
+    build:
+      context: $CWD
+      dockerfile: ./config/Dockerfile
+    ports:
+      - '${PORT_SERVER_DEV}:3000'
+      - '${PORT_DEV_DEBUG}:3001'
+      - '${PORT_SERVER_PROD}:4000'
+      - '${PORT_PROD_DEBUG}:4001'
+      - '${PORT_HMR}:24678'
+      - '${PORT_STORYBOOK}:6006'
+    volumes:
+      - $CWD:/usr/local/app
+      - exclude:/usr/local/app/node_modules
+
+volumes:
+  exclude:

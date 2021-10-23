@@ -1,0 +1,21 @@
+{
+	"compilerOptions": {
+		"allowJs": true,
+		"checkJs": true,
+		"noEmit": true,
+		"strict": true,
+		"target": "es2020",
+		"module": "es2020",
+		"moduleResolution": "node",
+		"allowSyntheticDefaultImports": true,
+		"paths": {
+			"@resistjs/svelte-kit": ["./types/index"],
+			// paths after this are for internal use only
+			"@resistjs/svelte-kit/types/*": ["./types/*"],
+			"test": ["./test/types"],
+			"types/*": ["./types/*"]
+		}
+	},
+	"include": ["src/**/*", "test/**/*", "types/**/*"],
+	"exclude": ["src/packaging/test/fixtures/**/*"]
+}

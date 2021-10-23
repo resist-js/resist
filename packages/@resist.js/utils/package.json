@@ -1,0 +1,35 @@
+{
+  "name": "@resistjs/utils",
+  "description": "TODO",
+  "version": "1.0.0-next.1",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/resist-js/resist.git",
+    "directory": "packages/@resist.js/utils"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/resist-js/resist/issues"
+  },
+  "homepage": "https://resistjs.dev",
+  "funding": "https://opencollective.com/resist.js",
+  "type": "module",
+  "main": "node.js",
+  "scripts": {
+    "check": "resist-conform default check"
+  },
+  "files": [
+    "node.js"
+  ],
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-jsdoc": "^36.1.1",
+    "eslint-plugin-sonarjs": "^0.10.0",
+    "eslint-plugin-tsdoc": "^0.2.14"
+  },
+  "engines": {
+    "node": ">= 16.11.1"
+  }
+}

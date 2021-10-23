@@ -1,0 +1,51 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+env:
+  CI: true
+  PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: '1'
+
+jobs:
+  Check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '14.x'
+      - name: Cache ~/.pnpm-store
+        uses: actions/cache@main
+        with:
+          path: ~/.pnpm-store
+          key: ${{ runner.os }}-${{ matrix.node-version }}-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-${{ matrix.node-version }}
+      - run: npm install -g pnpm
+      - run: pnpm i -g @resistjs/conformances
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm build --filter ./packages
+      - run: pnpm check
+  Docs:
+    runs-on: ubuntu-latest
+    env:
+      CI: true # this is needed to ignore husky hooks
+    steps:
+    - uses: actions/checkout@master
+    - uses: actions/setup-node@master
+      with:
+        node-version: 13.5
+    - name: Install dependencies
+    - run: npm install -g pnpm
+    - run: pnpm install --frozen-lockfile
+    - name: Generate docs
+    - run: pnpm run docs
+    - name: Version docs
+      uses: bobrown101/version-docs@v2.1.2
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        doc-location: documentation
+        doc-branch: documentation

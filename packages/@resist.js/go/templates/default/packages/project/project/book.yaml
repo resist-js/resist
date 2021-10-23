@@ -1,0 +1,31 @@
+## @see https://resistjs.dev/docs/book
+
+app_version: '1.0.0-next'
+
+environment: 'development'
+
+elastic.url: 'http://localhost:9200'
+elastic.username: 'elastic'
+elastic.password: 'eSDwPkrGlc5qu2gkMb3c'
+
+log.notfound: true
+log.requests: true
+
+server.body_limit: 999999
+server.port: 4000
+
+metrics.enabled: true
+metrics.url: '/resist/metrics'
+metrics.users: []
+
+flags.enabled: false
+flags.url: ''
+
+storybook.enabled: false
+storybook.url: ''
+
+session.secret: 'resist_secret_12l3j1l2k31klj2l'
+
+headers: []
+redirects: []
+rewrites: []
