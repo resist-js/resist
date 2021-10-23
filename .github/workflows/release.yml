@@ -24,9 +24,10 @@ jobs:
           node-version: 14.x
 
       - run: npm install -g pnpm
-      - run: pnpm i -g @resistjs/conformances
-      - run: pnpm install --frozen-lockfile=false
-      - run: pnpm run build
+      - run: pnpm i -g @resistjs/conformances --reporter=silent
+      - run: pnpm install --frozen-lockfile=false --reporter=silent
+      - run: pnpm run check
+      - run: pnpm run build --filter ./packages
 
       - name: Create Release Pull Request or Publish to npm
         id: changesets

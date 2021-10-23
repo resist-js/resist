@@ -1,53 +1,10 @@
 {
-	"compilerOptions": {
-		"allowSyntheticDefaultImports": true,
-		"moduleResolution": "nodenext",
-		"module": "commonjs",
-		"lib": ["es2021"],
-		"target": "es2021",
-		"importsNotUsedAsValues": "error",
-		"isolatedModules": true,
-		"resolveJsonModule": true,
-		"experimentalDecorators": true,
-		"emitDecoratorMetadata": true,
-		"sourceMap": true,
-		"esModuleInterop": true,
-    "noEmit": true,
-		"skipLibCheck": false,
-		"forceConsistentCasingInFileNames": true,
-		"baseUrl": ".",
-		"allowJs": true,
-		"checkJs": false,
-		"types": ["node", "ts-node"],
-		"paths": {
-			"$burn/*": ["src/*"],
-      "$interfaces/*": ["src/interfaces/*"],
-      "$types/*": ["src/types/*"],
-      "$constants/*": ["src/constants/*"],
-      "$handlers/*": ["src/handlers/*"],
-      "$book": ["src/Book.ts"],
-			"$utils": ["src/Utils.ts"],
-			"$logger": ["src/logger/Logger.ts"],
-			"$certificates": ["certificates/*"]
-		},
-		"typeRoots" : ["./node_modules/@types"]
-	},
-	"include": [
-    "*.d.ts",
-    "*.ts",
-		"src/*.d.ts",
-    "src/*.ts",
-		"src/**/*.d.ts",
-    "src/**/*.ts"
-	],
-	"exclude": [
-    ".bin/*",
-		"node_modules/*",
-		"dist/*",
-		"build/*",
-		"coverage/*"
-	],
-  "ts-node": {
-    "require": ["./bin/tsconfig-paths/register"]
-  }
+  "include": [
+    "packages/@resist.js/**/*.{js,ts,svelte}",
+    "packages/@resist.js/**/**/*.{js,ts,svelte}"
+  ],
+  "exclude": [
+    "packages/@resist.js/go/templates/**",
+    "packages/@resist.js/svelte-kit/**"
+  ]
 }

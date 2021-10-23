@@ -31,10 +31,10 @@ RUN dpkg -i dumb-init_*.deb && rm dumb-init_*.deb
 COPY --chown=node:node ["package.json", "./"]
 
 ## Install dependencies, logging only on errors
-RUN pnpm i
+RUN pnpm i --reporter=silent
 
 ## Install Server Globally
-RUN pnpm i -g @resistjs/server@latest pino-pretty
+RUN pnpm i -g @resistjs/server@latest pino-pretty --reporter=silent
 
 ## Add node_modules from parent directory to Environment $PATH
 ENV PATH=/usr/local/node_modules/.bin:$PATH

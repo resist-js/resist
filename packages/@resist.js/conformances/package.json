@@ -15,7 +15,7 @@
   "homepage": "https://resistjs.dev",
   "funding": "https://opencollective.com/resist.js",
   "scripts": {
-    "preinstall": "pnpm i -g prettier eslint husky pino-pretty np commitizen",
+    "preinstall": "pnpm i -g prettier eslint husky pino-pretty np commitizen --reporter=silent",
     "conform": "./bin/resist-conform.js",
     "check": ""
   },

@@ -2,6 +2,6 @@
 
 set -e
 
-pnpm i -g @resistjs/conformances
-pnpm i
+pnpm i -g @resistjs/conformances --reporter=silent
+pnpm i --reporter=silent
 pnpm check
