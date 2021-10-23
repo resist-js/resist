@@ -126,7 +126,7 @@ prog
 		const config = await get_config();
 
 		try {
-			const { build } = await import('./core/build/index.js');
+			const { build } = await import('./core/_build/index.js');
 			const build_data = await build(config);
 
 			console.log(

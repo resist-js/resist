@@ -5,6 +5,6 @@
   ],
   "exclude": [
     "packages/@resist.js/go/templates/**",
-    "packages/@resist.js/svelte-kit/**"
+    "packages/@resist.js/svelte-kit/**",
   ]
 }

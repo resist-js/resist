@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@v2.4.1
         with:
           node-version: '14.x'
       - name: Cache ~/.pnpm-store
@@ -25,22 +25,21 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-${{ matrix.node-version }}
       - run: npm install -g pnpm
-      - run: pnpm i -g @resistjs/conformances
-      - run: pnpm install --frozen-lockfile
-      - run: pnpm build --filter ./packages
-      - run: pnpm check
+      - run: npm i -g @resistjs/conformances
+      - run: pnpm install --frozen-lockfile=false
+      - run: pnpm run build --filter ./packages
+      - run: pnpm run check
   Docs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      - uses: actions/setup-node@master
+      - uses: actions/setup-node@v2.4.1
         with:
           node-version: '14.x'
       - name: Install dependencies
-      - run: npm install -g pnpm
-      - run: pnpm install --frozen-lockfile
+        run: npm install -g pnpm && pnpm install --frozen-lockfile=false
       - name: Generate docs
-      - run: pnpm run docs
+        run: pnpm run docs
       - name: Version docs
         uses: bobrown101/version-docs@v2.1.2
         with:

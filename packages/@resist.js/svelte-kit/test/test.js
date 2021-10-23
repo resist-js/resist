@@ -4,7 +4,7 @@ import { find } from 'port-authority';
 import fetch from 'node-fetch';
 import { chromium } from 'playwright-chromium';
 import { dev } from '../src/core/dev/index.js';
-import { build } from '../src/core/build/index.js';
+import { build } from '../src/core/_build/index.js';
 import { preview } from '../src/core/preview/index.js';
 import { load_config } from '../src/core/config/index.js';
 import { fileURLToPath, pathToFileURL } from 'url';
