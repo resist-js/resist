@@ -42,7 +42,7 @@ jobs:
       - name: Generate docs
       - run: pnpm run docs
       - name: Version docs
-        uses: bobrown101/version-docs@v2.1.2
+      - uses: bobrown101/version-docs@v2.1.2
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           doc-location: documentation
