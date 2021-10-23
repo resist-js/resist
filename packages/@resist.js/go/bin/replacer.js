@@ -33,6 +33,7 @@ function main(CWD) {
     )
   }
 
+  Replacer('package.json')
   Replacer('README.md')
   Replacer('CONTRIBUTING.md')
   Replacer('CODE_OF_CONDUCT.md')

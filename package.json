@@ -8,7 +8,7 @@
 		"test": "pnpm -r test --workspace-concurrency=1 --stream",
 		"check": "pnpm -r check --filter=!./packages/@resist.js/svelte-kit --stream",
 		"release": "pnpm publish --tag=next --filter=\"@resistjs/*\" --stream",
-		"docs": "npx compodoc -p tsconfig.json --hideGenerator",
+		"docs": "npx compodoc -p tsconfig.doc.json --hideGenerator",
 		"changeset:version": "changeset version && pnpm i --lockfile-only"
 	},
 	"repository": {
