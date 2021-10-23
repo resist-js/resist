@@ -4,7 +4,7 @@
     "packages/@resist.js/**/**/*.{js,ts,svelte}"
   ],
   "exclude": [
-    "**go/templates/**",
+    "packages/@resist.js/go/templates/**/**",
     "packages/@resist.js/svelte-kit/**"
   ]
 }
