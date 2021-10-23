@@ -26,9 +26,9 @@ jobs:
             ${{ runner.os }}-${{ matrix.node-version }}
       - run: npm install -g pnpm
       - run: npm i -g @resistjs/conformances
-      - run: pnpm install --frozen-lockfile
+      - run: pnpm install
       - run: pnpm build --filter ./packages
-      - run: pnpm check
+      - run: pnpm run check
   Docs:
     runs-on: ubuntu-latest
     steps:
