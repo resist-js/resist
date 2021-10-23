@@ -1,3 +1,7 @@
+## @final
+##
+## NOTE: Do not make changes here without approval from @resist-js/core.
+
 * text=auto
 * text eol=lf
 # Required to stop YN0018 - CACHE_CHECKSUM_MISMATCH

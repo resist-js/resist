@@ -1,6 +1,6 @@
 // @final
 //
-// NOTE: Do not make changes here without approval.
+// NOTE: Do not make changes here without approval from @resist-js/core.
 
 import Book from '$book'
 import { Info } from '$logger'

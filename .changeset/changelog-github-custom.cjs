@@ -1,3 +1,7 @@
+// @final
+//
+// NOTE: Do not make changes here without approval from @resist-js/core.
+
 // taken from https://raw.githubusercontent.com/sveltejs/vite-plugin-svelte/master/scripts/changelog-github-custom.js
 // based on https://github.com/atlassian/changesets/blob/main/packages/changelog-github/src/index.ts
 // modifications to improve readability:

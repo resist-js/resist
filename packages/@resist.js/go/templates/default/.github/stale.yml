@@ -1,3 +1,7 @@
+## @final
+##
+## NOTE: Do not make changes here without approval from @resist-js/core.
+
 # Configuration for probot-stale - https://github.com/probot/stale
 
 # Only issues or pull requests with all of these labels are checked if stale. Defaults to `[]` (disabled)

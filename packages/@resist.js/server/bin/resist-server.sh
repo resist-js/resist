@@ -2,7 +2,7 @@
 
 ## @final
 ##
-## NOTE: Do not make changes here without approval.
+## NOTE: Do not make changes here without approval from @resist-js/core.
 
 ## Change to the current working directory
 cd "$(dirname "$0")"

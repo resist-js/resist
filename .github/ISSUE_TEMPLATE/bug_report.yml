@@ -1,3 +1,7 @@
+## @final
+##
+## NOTE: Do not make changes here without approval from @resist-js/core.
+
 name: "\U0001F41E Bug report"
 description: Report an issue with resist.js
 body:

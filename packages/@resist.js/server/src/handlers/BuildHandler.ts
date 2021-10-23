@@ -1,6 +1,6 @@
 // @final
 //
-// NOTE: Do not make changes here without approval.
+// NOTE: Do not make changes here without approval from @resist-js/core.
 
 import { URL, URLSearchParams } from 'url'
 import { get_body as getBody } from '@sveltejs/app-utils/http'
