@@ -15,7 +15,7 @@
 ## Lead Maintainers
 
 Lead Maintainers are the founder of the project and the organization owners.
-They are the only members of the `@resistjs/leads` team.
+They are the only members of the `@resist-js/leads` team.
 The Lead Maintainers are the curator of the resist.js project and their key responsibility is to issue releases of resist.js and its dependencies.
 
 ## Collaborators
@@ -26,13 +26,13 @@ They are split into the following teams:
 
 | Team                   | Responsibility        | Repository                                                    |
 | ---------------------- | --------------------- | ------------------------------------------------------------- |
-| `@resistjs/leads`     | Lead Maintainers      | GitHub organization owners                                    |
-| `@resistjs/core`      | Core development      | `go`, `server`, `conformances`, `utils`, `bins`, `svelte-kit` |
-| `@resistjs/component` | Component development | `components`                                                  |
-| `@resistjs/api`       | API development       | `api`                                                         |
-| `@resistjs/storage`   | Storage development   | `storage`                                                     |
+| `@resist-js/leads`     | Lead Maintainers      | GitHub organization owners                                    |
+| `@resist-js/core`      | Core development      | `go`, `server`, `conformances`, `utils`, `bins`, `svelte-kit` |
+| `@resist-js/component` | Component development | `components`                                                  |
+| `@resist-js/api`       | API development       | `api`                                                         |
+| `@resist-js/storage`   | Storage development   | `storage`                                                     |
 
-Every member of the org is also part of `@resistjs/team`.
+Every member of the org is also part of `@resist-js/core`.
 
 Collaborators have:
 

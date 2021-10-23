@@ -245,7 +245,7 @@ async function main() {
   console.log(messages.pleaseWait)
 
   Launch(
-    `cd ${CWD}/packages/project && pnpm install -g @resistjs/conformances @resistjs/bins && resist-conform svelte && git init && node ./config/start ${CWDName}`,
+    `cd ${CWD}/packages/project && pnpm install -g @resistjs/conformances @resistjs/bins && resist-conform svelte && git init && git config core.hooksPath .githooks && git checkout --orphan documentation && git rm -rf . && git commit --allow-empty -m "🌻" && git checkout master && node ./config/start ${CWDName}`,
   )
 }
 
