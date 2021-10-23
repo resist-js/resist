@@ -43,5 +43,6 @@ jobs:
       - name: Version docs
         uses: bobrown101/version-docs@v2.1.20
         with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           doc-location: documentation
           doc-branch: documentation
