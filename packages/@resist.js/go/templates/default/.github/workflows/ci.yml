@@ -47,7 +47,7 @@ jobs:
           node-version: '16.11.1'
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install -g pnpm && pnpm install --frozen-lockfile=false --reporter=silent
 
       - name: Lintomatic
         uses: wearerequired/lint-action@v1
