@@ -1,7 +1,7 @@
 {
 	"name": "resist",
 	"version": "0.0.1",
-	"description": "monorepo for @resistjs/go and friends",
+	"description": "monorepo for @resistjs/go and all it's friends 💕",
 	"private": true,
 	"scripts": {
 		"build": "pnpm build --filter=\"@resistjs/*\" --stream",
