@@ -49,7 +49,7 @@ jobs:
           eslint: false
           prettier: false
           xo: true
-          stylelint: true
+          stylelint: false
           git_name: resist.js Sweeper
           git_email: linter@resistjs.dev
           commit_message: Fix code style issues 🧹
