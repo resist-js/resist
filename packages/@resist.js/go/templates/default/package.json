@@ -7,7 +7,7 @@
     "build": "pnpm build --filter=\"project/*\" --stream",
     "test": "pnpm -r test --workspace-concurrency=1 --stream",
     "check": "pnpm -r check --filter=!./packages/project/svelte-kit --stream",
-    "release": "pnpm publish --tag=next --filter=\"project/*\" --stream --access public",
+    "release": "pnpm publish --filter=\"project/*\" --stream --access public",
     "docs": "npx compodoc -p tsconfig.doc.json --hideGenerator",
     "changeset:version": "changeset version && pnpm i --lockfile-only"
   },
