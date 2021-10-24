@@ -14,27 +14,31 @@ import { readFileSync, writeFileSync } from 'node:fs'
  */
 function main(CWD) {
   // eslint-disable-next-line @typescript-eslint/no-var-requires
-  const package = require(`${CWD}/package.json`)
+  const packageData = require(`${CWD}/package.json`)
 
   const replacer = s => {
     const data = readFileSync(`${CWD}/${s}`, 'utf-8')
     writeFileSync(
       `${CWD}/${s}`,
       data
-        .replace(/~APP_NAME~/g, package.name)
-        .replace(/~AUTHOR~/g, package.author)
+        .replace(/~APP_NAME~/g, packageData.name)
+        .replace(/~AUTHOR~/g, packageData.author)
         .replace(/~TAGLINE~/g, '')
-        .replace(/~DESCRIPTION~/g, package.description)
-        .replace(/~VERSION~/g, package.version)
-        .replace(/~HOMEPAGE~/g, package.homepage)
-        .replace(/~CODACY~/g, package.codacy)
+        .replace(/~DESCRIPTION~/g, packageData.description)
+        .replace(/~VERSION~/g, packageData.version)
+        .replace(/~HOMEPAGE~/g, packageData.homepage)
+        .replace(/~CODACY~/g, packageData.codacy)
         .replace(
           /~REPO~/g,
-          package.repository ? package.repository.url.replace('git+https://github.com/', '').replace('.git', '') : '',
+          packageData.repository
+            ? packageData.repository.url.replace('git+https://github.com/', '').replace('.git', '')
+            : '',
         )
         .replace(
           /~GITHUB_URL~/g,
-          package.repository ? package.repository.url.replace('git+', '').replace('.git', '') : package.homepage,
+          packageData.repository
+            ? packageData.repository.url.replace('git+', '').replace('.git', '')
+            : packageData.homepage,
         ),
     )
   }

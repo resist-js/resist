@@ -1,7 +1,7 @@
 {
   "name": "@resistjs/go",
   "description": "The kitchen sink you've been waiting for.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/resist-js/resist.git",
