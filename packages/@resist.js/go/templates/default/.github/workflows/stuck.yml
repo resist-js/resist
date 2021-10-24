@@ -1,0 +1,13 @@
+name: Stuck PRs
+on:
+  schedule:
+    - cron: '0 * * * *' # Run once per hour
+jobs:
+  stuck-prs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: jrylan/github-action-stuck-pr-notifier@main
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          message: 'Hey, this PR appears to be stuck.'
+          search-query: 'author:app/dependabot-preview author:app/dependabot'

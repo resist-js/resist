@@ -1,0 +1,17 @@
+name: Auto Merge
+
+on:
+  workflow_run:
+    types:
+      - completed
+    workflows:
+      - 'CI'
+
+jobs:
+  merge-me:
+    steps:
+      - name: Auto Merge
+        uses: ridedott/merge-me-action@v2
+        with:
+          GITHUB_LOGIN: dependabot-preview
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
