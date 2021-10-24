@@ -14,6 +14,11 @@
       src="https://img.shields.io/github/workflow/status/~REPO~/CI/master?label=CI&style=flat-square"
       alt="GitHub Actions CI workflow status"
   /></a>
+  <a href="https://github.com/resist-js/resist/actions"
+    ><img
+      src="https://img.shields.io/github/workflow/status/resist-js/resist/Release/master?label=Release&style=flat-square"
+      alt="GitHub Actions Release workflow status"
+  /></a>
   <img alt="Codacy coverage" src="https://img.shields.io/codacy/coverage/~CODACY~?style=flat-square">
   <a href="https://www.codacy.com/gh/~REPO~/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=~REPO~&amp;utm_campaign=Badge_Grade"><img src="https://app.codacy.com/project/badge/Grade/~CODACY~"/></a>
   <img alt="Snyk Vulnerabilities for GitHub Repo" src="https://img.shields.io/snyk/vulnerabilities/github/~REPO~?style=flat-square">
