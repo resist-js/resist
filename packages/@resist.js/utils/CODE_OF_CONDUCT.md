@@ -135,5 +135,5 @@ Community Impact Guidelines were inspired by
 [cc-20-doc]: https://www.contributor-covenant.org/version/2/0/code_of_conduct/
 
 For answers to common questions about this code of conduct, see the FAQ at
-https://www.contributor-covenant.org/faq. Translations are available at
-https://www.contributor-covenant.org/translations.
+[https://www.contributor-covenant.org/faq](https://www.contributor-covenant.org/faq). Translations are available at
+[https://www.contributor-covenant.org/faq](https://www.contributor-covenant.org/translations).

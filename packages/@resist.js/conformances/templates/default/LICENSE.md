@@ -1,4 +1,3 @@
-
 # License
 
 Copyright (c) 2021 [these people](~GITHUB_URL~graphs/contributors)

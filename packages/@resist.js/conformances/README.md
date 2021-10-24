@@ -150,6 +150,8 @@
 
 ## 🚀 Installation
 
+~LONG_DESCRIPTION~
+
 ### Prerequisites
 
 - [How To Install Node & npm](https://nodejs.org/en/download/current/)
