@@ -9,6 +9,8 @@ on:
     branches:
       - master
   pull_request:
+    branches:
+      - master
   schedule:
     - cron: '0 0 * * 0'
 
@@ -27,6 +29,16 @@ jobs:
         languages: ['javascript', 'typescript']
 
     steps:
+      - name: Talk To Slack
+        if: success()
+        id: slack
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_NOTIFICATIONS_BOT_TOKEN }}
+        uses: voxmedia/github-action-slack-notify-build@v1
+        with:
+          channel: ~APP_NAME~
+          status: STARTING
+          color: warning
       - name: Checkout repository
         uses: actions/checkout@v2
 
@@ -41,3 +53,22 @@ jobs:
 
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v1
+      - name: Workflow Success
+        if: success()
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_NOTIFICATIONS_BOT_TOKEN }}
+        uses: voxmedia/github-action-slack-notify-build@v1
+        with:
+          channel: app-alerts
+          status: SUCCESS
+          color: good
+
+      - name: Workflow Failure
+        if: failure()
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_NOTIFICATIONS_BOT_TOKEN }}
+        uses: voxmedia/github-action-slack-notify-build@v1
+        with:
+          channel: app-alerts
+          status: FAILED
+          color: danger

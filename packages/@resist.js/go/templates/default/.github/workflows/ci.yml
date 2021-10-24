@@ -14,9 +14,19 @@ env:
   PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: '1'
 
 jobs:
-  Check:
+  CI:
     runs-on: ubuntu-latest
     steps:
+      - name: Talk To Slack
+        if: success()
+        id: slack
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_NOTIFICATIONS_BOT_TOKEN }}
+        uses: voxmedia/github-action-slack-notify-build@v1
+        with:
+          channel: ~APP_NAME~
+          status: STARTING
+          color: warning
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2.4.1
         with:
@@ -33,53 +43,42 @@ jobs:
       - run: pnpm install --frozen-lockfile=false --reporter=silent
       - run: pnpm run build --filter ./packages
       - run: pnpm run check
-  Lintomatic:
-    name: Lintomatic
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Check out Git repository
-        uses: actions/checkout@v2
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v1
-        with:
-          node-version: '16.11.1'
-
-      - name: Install dependencies
-        run: npm install -g pnpm && pnpm install --frozen-lockfile=false --reporter=silent
-
       - name: Lintomatic
         uses: wearerequired/lint-action@v1
         with:
           eslint: true
           prettier: true
           xo: true
-  Spellcheck:
-      name: Spellcheck
-      runs-on: ubuntu-latest
-      steps:
-        - uses: actions/checkout@v1
-        - name: Shellcheck
-          uses: reviewdog/action-shellcheck@v1
-          with:
-            github_token: ${{ secrets.github_token }}
-            reporter: github-pr-review
-  Docs:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@master
-      - uses: actions/setup-node@v2.4.1
-        with:
-          node-version: '16.11.1'
-      - name: Install dependencies
-        run: npm install -g pnpm && pnpm install --frozen-lockfile=false --reporter=silent
-      - name: Generate docs
+      - name: Generate Documentation
         run: pnpm run docs
-      - name: Version docs
+      - name: Version Documentation
         uses: bobrown101/version-docs@v2.1.20
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           doc-location: documentation
           doc-branch: documentation
           commit-msg: 🌻
+      - name: Shellcheck
+        uses: reviewdog/action-shellcheck@v1
+        with:
+          github_token: ${{ secrets.github_token }}
+          reporter: github-pr-review
+      - name: Workflow Success
+        if: success()
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_NOTIFICATIONS_BOT_TOKEN }}
+        uses: voxmedia/github-action-slack-notify-build@v1
+        with:
+          channel: app-alerts
+          status: SUCCESS
+          color: good
+
+      - name: Workflow Failure
+        if: failure()
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_NOTIFICATIONS_BOT_TOKEN }}
+        uses: voxmedia/github-action-slack-notify-build@v1
+        with:
+          channel: app-alerts
+          status: FAILED
+          color: danger

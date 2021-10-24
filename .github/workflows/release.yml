@@ -16,6 +16,16 @@ jobs:
     name: Release
     runs-on: ubuntu-latest
     steps:
+      - name: Talk To Slack
+        if: success()
+        id: slack
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_NOTIFICATIONS_BOT_TOKEN }}
+        uses: voxmedia/github-action-slack-notify-build@v1
+        with:
+          channel: resistjs
+          status: STARTING
+          color: warning
       - name: Checkout Repo
         uses: actions/checkout@master
         with:
@@ -42,3 +52,22 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Workflow Success
+        if: success()
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_NOTIFICATIONS_BOT_TOKEN }}
+        uses: voxmedia/github-action-slack-notify-build@v1
+        with:
+          channel: app-alerts
+          status: SUCCESS
+          color: good
+
+      - name: Workflow Failure
+        if: failure()
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_NOTIFICATIONS_BOT_TOKEN }}
+        uses: voxmedia/github-action-slack-notify-build@v1
+        with:
+          channel: app-alerts
+          status: FAILED
+          color: danger
