@@ -149,7 +149,7 @@ The [Changesets GitHub action](https://github.com/changesets/action#with-publish
 
 New packages will need to be published manually the first time if they are scoped to the `@resistjs` organisation, by running this from the package directory:
 
-```
+```bash
 npm publish --access=public
 ```
 

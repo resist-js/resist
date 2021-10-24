@@ -42,5 +42,6 @@
   "engines": {
     "node": ">= 16.11.1"
   },
-  "codacy": "9d670d8cdbe243a5b722b5f9d644e406"
+  "codacy": "9d670d8cdbe243a5b722b5f9d644e406",
+  "long_description": "There's a lot to be said about @resistjs/go. We suggest heading on over to our [Getting Started](https://resistjs.dev/start) page."
 }

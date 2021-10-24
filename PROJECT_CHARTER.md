@@ -37,7 +37,7 @@ resist.js is a web framework highly focused on providing the best developer expe
 - Support serverless architecture
 - Contributions that violates the [Code of Conduct](CODE_OF_CONDUCT.md)
 
-## Section 2: Relationship with OpenJS Foundation CPC.
+## Section 2: Relationship with OpenJS Foundation CPC
 
 Technical leadership for the projects within the [OpenJS Foundation][openjs foundation] is delegated to the projects through their project charters by the [OpenJS Foundation Cross-Project Council](https://openjsf.org/about/governance/) (CPC). In the case of the resist.js project, it is delegated to the [Collaborators](README.md#team). The OpenJS Foundation's business leadership is the Board of Directors (the "Board").
 
@@ -69,7 +69,7 @@ collaborators.
 
 Whenever there is not consensus, Lead Maintainers will have final say on the topic.
 
-**Voting, and/or Elections**
+# Voting, and/or Elections**
 
 These processes are described in the [GOVERNANCE](GOVERNANCE.md) document.
 

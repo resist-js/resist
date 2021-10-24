@@ -102,7 +102,8 @@ function main() {
         `${CWD}/${s}`,
         data
           .replace(/~APP_NAME~/g, packageData.name)
-          .replace(/~TAGLINE~/g, '')
+          .replace(/~AUTHOR~/g, packageData.author)
+          .replace(/~LONG_DESCRIPTION~/g, packageData.long_description)
           .replace(/~DESCRIPTION~/g, packageData.description)
           .replace(/~VERSION~/g, packageData.version)
           .replace(/~HOMEPAGE~/g, packageData.homepage)

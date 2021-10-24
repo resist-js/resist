@@ -23,7 +23,7 @@ function main(CWD) {
       data
         .replace(/~APP_NAME~/g, packageData.name)
         .replace(/~AUTHOR~/g, packageData.author)
-        .replace(/~TAGLINE~/g, '')
+        .replace(/~LONG_DESCRIPTION~/g, packageData.long_description)
         .replace(/~DESCRIPTION~/g, packageData.description)
         .replace(/~VERSION~/g, packageData.version)
         .replace(/~HOMEPAGE~/g, packageData.homepage)

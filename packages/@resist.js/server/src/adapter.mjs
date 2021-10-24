@@ -42,7 +42,9 @@ export default function ({ out = 'build', assets = 'assets' } = {}) {
 
       try {
         mkdirSync(`${out}/prerendered`, { recursive: true })
-      } catch (e) {}
+      } catch (error) {
+        // Not important
+      }
 
       try {
         utils.log.minor('Prerendering static pages')
@@ -52,13 +54,17 @@ export default function ({ out = 'build', assets = 'assets' } = {}) {
 
         utils.log.minor('Compressing prerendered pages')
         await compress(`${out}/prerendered`)
-      } catch (e) {}
+      } catch (error) {
+        // Not important
+      }
 
       utils.copy(`${out}/app.js`, `${out}/app.mjs`)
 
       try {
         rmSync(`${out}/app.js`)
-      } catch (e) {}
+      } catch (error) {
+        // Not important
+      }
     },
   }
 }

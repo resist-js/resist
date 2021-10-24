@@ -30,6 +30,9 @@
   "engines": {
     "node": ">= 16.11.1"
   },
+  "dependencies": {
+    "glob": "^7.2.0"
+  },
   "devDependencies": {
     "cz-conventional-changelog": "^3.3.0",
     "eslint-config-prettier": "^8.3.0",
@@ -42,7 +45,5 @@
     "xo": "^0.45.0"
   },
   "codacy": "9d670d8cdbe243a5b722b5f9d644e406",
-  "dependencies": {
-    "glob": "^7.2.0"
-  }
+  "long_description": "Utility Package to conform monorepo packages to a base template and/or run prettier and linting on packages. Powered by: eslint, prettier, xo & stylelint."
 }
