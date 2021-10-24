@@ -59,4 +59,4 @@ function main(CWD) {
   replacer('.github/ISSUE_TEMPLATE/feature_request.yml')
 }
 
-module.exports = main
+export default main
