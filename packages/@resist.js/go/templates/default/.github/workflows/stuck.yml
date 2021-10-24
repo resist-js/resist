@@ -1,4 +1,9 @@
+## @final
+##
+## NOTE: Do not make changes here without approval from @resist-js/core.
+
 name: Stuck PRs
+
 on:
   schedule:
     - cron: '0 * * * *' # Run once per hour
