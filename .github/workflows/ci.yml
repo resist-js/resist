@@ -52,7 +52,6 @@ jobs:
           stylelint: true
           git_name: resist.js Sweeper
           git_email: linter@resistjs.dev
-          git_no_verify: true
           commit_message: Fix code style issues 🧹
       - name: Generate Documentation
         run: pnpm run docs

@@ -38,10 +38,10 @@ jobs:
           node-version: '16.11.1'
 
       - run: npm install -g pnpm
-      - run: pnpm i -g @resistjs/conformances --reporter=silent
+      - run: npm i -g @resistjs/conformances --reporter=silent
       - run: pnpm install --frozen-lockfile=false --reporter=silent
-      - run: pnpm run check
       - run: pnpm run build --filter ./packages
+      - run: pnpm run check
 
       - name: Create Release Pull Request or Publish to npm
         id: changesets
