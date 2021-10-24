@@ -7,7 +7,7 @@ import type IRewrites from '$interfaces/IRewrites'
 /**
  * Server Rewrites.
  *
- * @see https://resistjs.dev/doc/rewrites
+ * @see https://resistjs.dev/docs/rewrites
  * @exports
  * @type {IRewrites}
  */

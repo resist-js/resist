@@ -8,7 +8,7 @@ import type { PoisonTypes } from '$types/PoisonTypes'
  * Remove Poison Type.
  *
  * @exports
- * @see https://resistjs.dev/doc/poisontypes
+ * @see https://resistjs.dev/docs/poisontypes
  * @type {PoisonTypes}
  */
 const REMOVE: PoisonTypes = 'remove'

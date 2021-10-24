@@ -13,7 +13,7 @@ import type IRewriteHandler from '$interfaces/IRewriteHandler'
  *
  * @interface IServerSettings
  * @exports
- * @see https://resistjs.dev/doc/settings
+ * @see https://resistjs.dev/docs/settings
  */
 export default interface IServerSettings {
   /**
@@ -80,7 +80,7 @@ export default interface IServerSettings {
    * @type {number}
    * @memberof IServerSettings
    * @see https://www.fastify.io/docs/latest/Server/#bodylimit
-   * @see https://resistjs.dev/doc/settings#bodyLimit
+   * @see https://resistjs.dev/docs/settings#bodyLimit
    */
   readonly bodyLimit: number
 
@@ -89,7 +89,7 @@ export default interface IServerSettings {
    *
    * @type {boolean}
    * @memberof IServerSettings
-   * @see https://resistjs.dev/doc/settings#logRequests
+   * @see https://resistjs.dev/docs/settings#logRequests
    */
   readonly disableRequestLogging: boolean
 }

@@ -14,7 +14,7 @@ export default interface IBookMetricsUser {
    *
    * @type {string}
    * @memberof IBookMetricsUser
-   * @see https://resistjs.dev/doc/settings#metricsUsername
+   * @see https://resistjs.dev/docs/settings#metricsUsername
    */
   readonly username: string
 
@@ -23,7 +23,7 @@ export default interface IBookMetricsUser {
    *
    * @type {string}
    * @memberof IBookMetricsUser
-   * @see https://resistjs.dev/doc/settings#metricsPassword
+   * @see https://resistjs.dev/docs/settings#metricsPassword
    */
   readonly password: string
 }

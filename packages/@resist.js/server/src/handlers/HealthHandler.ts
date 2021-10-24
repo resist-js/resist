@@ -18,7 +18,7 @@ import { IsUp, MemoryUsage } from '$burn/Utils'
  *
  * @param {FastifyInstance} server Server instance reference.
  * @param {any} startupState Startup error codes.
- * @see https://resistjs.dev/doc/server#health
+ * @see https://resistjs.dev/docs/server#health
  */
 const HealthHandler: any = (server: FastifyInstance | any, startupState: any): void => {
   if (startupState.length > 0) {

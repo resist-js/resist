@@ -16,7 +16,7 @@ export default interface IRewrites {
    *
    * @type {string}
    * @memberof IRewrites
-   * @see https://resistjs.dev/doc/rewrites#source
+   * @see https://resistjs.dev/docs/rewrites#source
    */
   readonly source: string
 
@@ -25,7 +25,7 @@ export default interface IRewrites {
    *
    * @type {string}
    * @memberof IRewrites
-   * @see https://resistjs.dev/doc/rewrites#destination
+   * @see https://resistjs.dev/docs/rewrites#destination
    */
   readonly destination: string
 
@@ -34,7 +34,7 @@ export default interface IRewrites {
    *
    * @type {Array<EnvironmentTypes>}
    * @memberof IRewrites
-   * @see https://resistjs.dev/doc/rewrites#environments
+   * @see https://resistjs.dev/docs/rewrites#environments
    */
   readonly environments: Array<EnvironmentTypes>
 }

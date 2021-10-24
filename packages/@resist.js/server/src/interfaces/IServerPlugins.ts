@@ -9,7 +9,7 @@ import type IServerPlugin from '$interfaces/IServerPlugin'
  *
  * @interface IServerPlugins
  * @exports
- * @see https://resistjs.dev/doc/server-plugin
+ * @see https://resistjs.dev/docs/server-plugin
  */
 export default interface IServerPlugins {
   /**
@@ -17,7 +17,7 @@ export default interface IServerPlugins {
    *
    * @type {IServerPlugin[]}
    * @memberof IServerPlugins
-   * @see https://resistjs.dev/doc/server-plugin#plugins
+   * @see https://resistjs.dev/docs/server-plugin#plugins
    */
   readonly plugins: IServerPlugin[]
 }

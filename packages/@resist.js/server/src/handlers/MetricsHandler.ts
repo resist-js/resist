@@ -14,7 +14,7 @@ import type { FastifyInstance } from 'fastify'
  * Metrics Handling.
  *
  * @param {FastifyInstance} server Server instance reference.
- * @see https://resistjs.dev/doc/server#metrics
+ * @see https://resistjs.dev/docs/server#metrics
  */
 const MetricsHandler: any = (server: FastifyInstance): void => {
   if (Book.metrics.enabled) {

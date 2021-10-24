@@ -8,7 +8,7 @@ import type { EnvironmentTypes } from '$types/EnvironmentTypes'
  * Production Environment.
  *
  * @exports
- * @see https://resistjs.dev/doc/environments
+ * @see https://resistjs.dev/docs/environments
  * @type {EnvironmentTypes}
  */
 const PRODUCTION: EnvironmentTypes = 'production'
@@ -17,7 +17,7 @@ const PRODUCTION: EnvironmentTypes = 'production'
  * Development Environment.
  *
  * @exports
- * @see https://resistjs.dev/doc/environments
+ * @see https://resistjs.dev/docs/environments
  * @type {EnvironmentTypes}
  */
 const DEVELOPMENT: EnvironmentTypes = 'development'
@@ -26,7 +26,7 @@ const DEVELOPMENT: EnvironmentTypes = 'development'
  * QA Environment.
  *
  * @exports
- * @see https://resistjs.dev/doc/environments
+ * @see https://resistjs.dev/docs/environments
  * @type {EnvironmentTypes}
  */
 const QA: EnvironmentTypes = 'qa'

@@ -35,7 +35,7 @@ import BuildHandler from './handlers/BuildHandler'
  * @exports
  * @class Server
  * @implements {IServer}
- * @see https://resistjs.dev/doc/server
+ * @see https://resistjs.dev/docs/server
  */
 export default class Server implements IServer {
   // eslint-disable-next-line @typescript-eslint/ban-types
@@ -123,7 +123,7 @@ export default class Server implements IServer {
    * @type {boolean}
    * @memberof Server
    * @returns {boolean} Returns true if server is running, otherwise false.
-   * @see https://resistjs.dev/doc/server#isRunning
+   * @see https://resistjs.dev/docs/server#isRunning
    */
   get isRunning(): boolean {
     return this.started
@@ -133,7 +133,7 @@ export default class Server implements IServer {
    * Start the Server.
    *
    * @memberof Server
-   * @see https://resistjs.dev/doc/server#start
+   * @see https://resistjs.dev/docs/server#start
    */
   public start(): void {
     if (this.started) {
@@ -157,7 +157,7 @@ export default class Server implements IServer {
    * Stop the server.
    *
    * @memberof Server
-   * @see https://resistjs.dev/doc/server#stop
+   * @see https://resistjs.dev/docs/server#stop
    */
   public stop(): void {
     if (!this.started) {

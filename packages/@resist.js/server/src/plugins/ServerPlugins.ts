@@ -15,7 +15,7 @@ import ServerPlugin from '$burn/plugins/ServerPlugin'
  * @exports
  * @class ServerPlugins
  * @implements {IServerPlugins}
- * @see https://resistjs.dev/doc/server-plugin
+ * @see https://resistjs.dev/docs/server-plugin
  */
 export default class ServerPlugins implements IServerPlugins {
   readonly plugins: IServerPlugin[]

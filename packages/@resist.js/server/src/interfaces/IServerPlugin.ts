@@ -11,7 +11,7 @@ import type { EnvironmentTypes } from '$types/EnvironmentTypes'
  *
  * @interface IServerPlugin
  * @exports
- * @see https://resistjs.dev/doc/server-plugin
+ * @see https://resistjs.dev/docs/server-plugin
  */
 export default interface IServerPlugin {
   /**
@@ -19,7 +19,7 @@ export default interface IServerPlugin {
    *
    * @type {boolean}
    * @memberof IServerPlugin
-   * @see https://resistjs.dev/doc/server-plugin#enabled
+   * @see https://resistjs.dev/docs/server-plugin#enabled
    */
   readonly enabled: boolean
 
@@ -28,7 +28,7 @@ export default interface IServerPlugin {
    *
    * @type {string}
    * @memberof IServerPlugin
-   * @see https://resistjs.dev/doc/server-plugin#description
+   * @see https://resistjs.dev/docs/server-plugin#description
    */
   readonly description: string
 
@@ -37,7 +37,7 @@ export default interface IServerPlugin {
    *
    * @type {any}
    * @memberof IServerPlugin
-   * @see https://resistjs.dev/doc/server-plugin#instance
+   * @see https://resistjs.dev/docs/server-plugin#instance
    */
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   readonly instance: any
@@ -47,7 +47,7 @@ export default interface IServerPlugin {
    *
    * @type {Record<string, unknown>}
    * @memberof IServerPlugin
-   * @see https://resistjs.dev/doc/server-plugin#options
+   * @see https://resistjs.dev/docs/server-plugin#options
    */
   readonly options: Record<string, unknown>
 
@@ -56,7 +56,7 @@ export default interface IServerPlugin {
    *
    * @type {Array<string>}
    * @memberof IServerPlugin
-   * @see https://resistjs.dev/doc/server-plugin#environments
+   * @see https://resistjs.dev/docs/server-plugin#environments
    */
   readonly environments: Array<EnvironmentTypes>
 
@@ -66,7 +66,7 @@ export default interface IServerPlugin {
    *
    * @type {boolean}
    * @memberof IServerPlugin
-   * @see https://resistjs.dev/doc/server-plugin#dontRegister
+   * @see https://resistjs.dev/docs/server-plugin#dontRegister
    */
   readonly dontRegister?: boolean
 }

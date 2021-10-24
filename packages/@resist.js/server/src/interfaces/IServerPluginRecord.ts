@@ -18,7 +18,7 @@ export default interface IServerPluginRecord {
    *
    * @type {boolean}
    * @memberof IServerPluginRecord
-   * @see https://resistjs.dev/doc/server-plugin#enabled
+   * @see https://resistjs.dev/docs/server-plugin#enabled
    */
   readonly enabled: boolean
 
@@ -27,7 +27,7 @@ export default interface IServerPluginRecord {
    *
    * @type {string}
    * @memberof IServerPluginRecord
-   * @see https://resistjs.dev/doc/server-plugin#description
+   * @see https://resistjs.dev/docs/server-plugin#description
    */
   readonly description: string
 
@@ -36,7 +36,7 @@ export default interface IServerPluginRecord {
    *
    * @type {Record<string, unknown>}
    * @memberof IServerPluginRecord
-   * @see https://resistjs.dev/doc/server-plugin#options
+   * @see https://resistjs.dev/docs/server-plugin#options
    */
   readonly options: Record<string, unknown>
 
@@ -46,7 +46,7 @@ export default interface IServerPluginRecord {
    *
    * @type {string}
    * @memberof IServerPluginRecord
-   * @see https://resistjs.dev/doc/server-plugin#fromPackage
+   * @see https://resistjs.dev/docs/server-plugin#fromPackage
    */
   readonly fromPackage: string
 
@@ -55,7 +55,7 @@ export default interface IServerPluginRecord {
    *
    * @type {Array<EnvironmentTypes>}
    * @memberof IServerPluginRecord
-   * @see https://resistjs.dev/doc/server-plugin#environments
+   * @see https://resistjs.dev/docs/server-plugin#environments
    */
   readonly environments: Array<EnvironmentTypes>
 
@@ -65,7 +65,7 @@ export default interface IServerPluginRecord {
    *
    * @type {boolean}
    * @memberof IServerPluginRecord
-   * @see https://resistjs.dev/doc/server-plugin#dontRegister
+   * @see https://resistjs.dev/docs/server-plugin#dontRegister
    */
   readonly dontRegister?: boolean
 }

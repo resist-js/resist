@@ -27,7 +27,7 @@ import ServerFactory from 'fastify-http2https'
  * @exports
  * @class ServerSettings
  * @implements {IServerSettings}
- * @see https://resistjs.dev/doc/settings
+ * @see https://resistjs.dev/docs/settings
  */
 export default class ServerSettings implements IServerSettings {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any

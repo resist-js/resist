@@ -14,7 +14,7 @@ import type { FastifyRequest } from 'fastify'
  *
  * @param {FastifyRequest} request The request.
  * @exports
- * @see https://resistjs.dev/doc/handlers/rewrites
+ * @see https://resistjs.dev/docs/handlers/rewrites
  * @type {IRewriteHandler}
  */
 const Handler: IRewriteHandler = (request: FastifyRequest): string => {

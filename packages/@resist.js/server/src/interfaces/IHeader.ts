@@ -16,7 +16,7 @@ export default interface IHeader {
    *
    * @type {string}
    * @memberof IHeader
-   * @see https://resistjs.dev/doc/headers#key
+   * @see https://resistjs.dev/docs/headers#key
    */
   readonly key: string
 
@@ -25,7 +25,7 @@ export default interface IHeader {
    *
    * @type {string}
    * @memberof IHeader
-   * @see https://resistjs.dev/doc/headers#value
+   * @see https://resistjs.dev/docs/headers#value
    */
   readonly value: string
 
@@ -34,7 +34,7 @@ export default interface IHeader {
    *
    * @type {Array<EnvironmentTypes>}
    * @memberof IHeader
-   * @see https://resistjs.dev/doc/headers#environments
+   * @see https://resistjs.dev/docs/headers#environments
    */
   readonly environments: Array<EnvironmentTypes>
 
@@ -43,7 +43,7 @@ export default interface IHeader {
    *
    * @type {Array<string>}
    * @memberof IHeader
-   * @see https://resistjs.dev/doc/headers#routes
+   * @see https://resistjs.dev/docs/headers#routes
    */
   readonly routes?: Array<string>
 }

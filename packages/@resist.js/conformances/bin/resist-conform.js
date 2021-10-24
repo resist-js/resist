@@ -26,7 +26,7 @@ const destination = process.cwd()
  * @type {!string}
  * @see https://resistjs.dev/docs/conformances
  */
-const LIB_DIR = `${process.argv[1].replace('/bin/process.js', '')}/templates/`
+const LIB_DIR = `${process.argv[1].replace('/bin/resist-conform.js', '')}/templates/`
 
 /**
  * The path where the template conformances are.
@@ -101,6 +101,11 @@ function main() {
           .replace(/~DESCRIPTION~/g, package.description)
           .replace(/~VERSION~/g, package.version)
           .replace(/~HOMEPAGE~/g, package.homepage)
+          .replace(/~CODACY~/g, package.codacy)
+          .replace(
+            /~REPO~/g,
+            package.repository ? package.repository.url.replace('git+https://github.com/', '').replace('.git', '') : '',
+          )
           .replace(
             /~GITHUB_URL~/g,
             package.repository ? package.repository.url.replace('git+', '').replace('.git', '') : package.homepage,
@@ -117,4 +122,4 @@ function main() {
 
 // Copy default conformances onto @destination, overwriting what's already there.
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-require('./copydir')(source, destination, {}, main)
+lintThings ? main() : require('./copydir')(source, destination, {}, main)

@@ -14,7 +14,7 @@ export default interface IBookFeatureFlags {
    *
    * @type {boolean}
    * @memberof IBookFeatureFlags
-   * @see https://resistjs.dev/doc/settings#flags
+   * @see https://resistjs.dev/docs/settings#flags
    */
   readonly enabled: boolean
 
@@ -23,7 +23,7 @@ export default interface IBookFeatureFlags {
    *
    * @type {string}
    * @memberof IBookFeatureFlags
-   * @see https://resistjs.dev/doc/settings#flagsUrl
+   * @see https://resistjs.dev/docs/settings#flagsUrl
    */
   readonly url: string
 }

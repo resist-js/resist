@@ -20,7 +20,7 @@ import RequestLogger from '$burn/handlers/RequestLogger'
  *
  * @param {(FastifyRequest | any)} request Fastify Request Object.
  * @param {FastifyReply} response Fastify Response Object.
- * @see https://resistjs.dev/doc/server#build
+ * @see https://resistjs.dev/docs/server#build
  * @returns {Promise<void>}
  */
 const BuildHandler: IHandler = async (request: FastifyRequest | any, response: FastifyReply): Promise<void> => {

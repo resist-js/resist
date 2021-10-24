@@ -1,6 +1,6 @@
 {
   "name": "@resistjs/bins",
-  "description": "Global package for resist.js that supports Starting, Stopping, Uninstalling resist.js projects and uninstalling reist.js itself.",
+  "description": "Global package for resist.js that supports Starting, Stopping, Uninstalling resist.js projects and uninstalling resist.js itself.",
   "version": "1.0.0",
   "repository": {
     "type": "git",
@@ -12,8 +12,8 @@
   "bugs": {
     "url": "https://github.com/resist-js/resist/issues"
   },
-  "homepage": "https://resistjs.dev",
-  "funding": "https://opencollective.com/resist.js",
+  "homepage": "https://resistjs.dev/",
+  "funding": "https://opencollective.com/resistjs",
   "type": "module",
   "scripts": {
     "check": "resist-conform default && resist-conform default check"
@@ -39,5 +39,6 @@
     "eslint-plugin-jsdoc": "^36.1.1",
     "eslint-plugin-sonarjs": "^0.10.0",
     "eslint-plugin-tsdoc": "^0.2.14"
-  }
+  },
+  "codacy": "9d670d8cdbe243a5b722b5f9d644e406"
 }

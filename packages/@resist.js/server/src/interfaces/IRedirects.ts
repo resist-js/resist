@@ -17,7 +17,7 @@ export default interface IRedirects {
    *
    * @type {string}
    * @memberof IRedirects
-   * @see https://resistjs.dev/doc/redirects#source
+   * @see https://resistjs.dev/docs/redirects#source
    */
   readonly source: string
 
@@ -26,7 +26,7 @@ export default interface IRedirects {
    *
    * @type {string}
    * @memberof IRedirects
-   * @see https://resistjs.dev/doc/redirects#destination
+   * @see https://resistjs.dev/docs/redirects#destination
    */
   readonly destination: string
 
@@ -35,7 +35,7 @@ export default interface IRedirects {
    *
    * @type {RedirectStatusCodes}
    * @memberof IRedirects
-   * @see https://resistjs.dev/doc/redirects#statusCode
+   * @see https://resistjs.dev/docs/redirects#statusCode
    */
   readonly statusCode: RedirectStatusCodes
 
@@ -44,7 +44,7 @@ export default interface IRedirects {
    *
    * @type {Array<EnvironmentTypes>}
    * @memberof IRedirects
-   * @see https://resistjs.dev/doc/redirects#environments
+   * @see https://resistjs.dev/docs/redirects#environments
    */
   readonly environments: Array<EnvironmentTypes>
 }

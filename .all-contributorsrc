@@ -1,0 +1,27 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "nyrion",
+      "name": "nyrion",
+      "avatar_url": "https://avatars.githubusercontent.com/u/41795364?v=4",
+      "profile": "https://github.com/nyrion",
+      "contributions": [
+        "design",
+        "maintenance",
+        "code",
+        "ideas"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "resist",
+  "projectOwner": "resist-js",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}

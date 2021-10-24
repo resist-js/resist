@@ -10,6 +10,6 @@ contact_links:
   - name: Want to start a discussion?
     about: 'Want to start a thread to discuss an idea? Use the discussions feature provided by GitHub.'
     url: ~GITHUB_URL~discussions
-  - name: Discord Chat
+  - name: Slack Chat
     url: ~HOMEPAGE~chat
     about: Ask questions and discuss with other ~APP_NAME~ users in real time.

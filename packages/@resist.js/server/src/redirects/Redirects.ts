@@ -7,7 +7,7 @@ import type IRedirects from '$interfaces/IRedirects'
 /**
  * Server Redirects.
  *
- * @see https://resistjs.dev/doc/redirects
+ * @see https://resistjs.dev/docs/redirects
  * @exports
  * @type {IRedirects}
  */

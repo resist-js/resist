@@ -12,7 +12,7 @@ import type IServerPluginRecord from '$interfaces/IServerPluginRecord'
  * @exports
  * @class ServerPlugin
  * @implements {IServerPlugin}
- * @see https://resistjs.dev/doc/server-plugin
+ * @see https://resistjs.dev/docs/server-plugin
  */
 export default class ServerPlugin implements IServerPlugin {
   readonly enabled: boolean

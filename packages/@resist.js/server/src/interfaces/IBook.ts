@@ -20,7 +20,7 @@ export default interface IBook {
    *
    * @type {string}
    * @memberof IBook
-   * @see https://resistjs.dev/doc/settings#framework
+   * @see https://resistjs.dev/docs/settings#framework
    */
   readonly FRAMEWORK: string
 
@@ -29,7 +29,7 @@ export default interface IBook {
    *
    * @type {IBookServer}
    * @memberof IBook
-   * @see https://resistjs.dev/doc/settings#server
+   * @see https://resistjs.dev/docs/settings#server
    */
   readonly server: IBookServer
 
@@ -38,7 +38,7 @@ export default interface IBook {
    *
    * @type {IBookMetrics}
    * @memberof IBook
-   * @see https://resistjs.dev/doc/settings#serverMetrics
+   * @see https://resistjs.dev/docs/settings#serverMetrics
    */
   readonly metrics: IBookMetrics
 
@@ -47,7 +47,7 @@ export default interface IBook {
    *
    * @type {IBookStorybook}
    * @memberof IBook
-   * @see https://resistjs.dev/doc/settings#storybook
+   * @see https://resistjs.dev/docs/settings#storybook
    */
   readonly storybook: IBookStorybook
 
@@ -56,7 +56,7 @@ export default interface IBook {
    *
    * @type {IBookFeatureFlags}
    * @memberof IBook
-   * @see https://resistjs.dev/doc/settings#flags
+   * @see https://resistjs.dev/docs/settings#flags
    */
   readonly flags: IBookFeatureFlags
 
@@ -65,7 +65,7 @@ export default interface IBook {
    *
    * @type {EnvironmentTypes}
    * @memberof IBook
-   * @see https://resistjs.dev/doc/settings#environment
+   * @see https://resistjs.dev/docs/settings#environment
    */
   readonly environment: EnvironmentTypes
 
@@ -74,7 +74,7 @@ export default interface IBook {
    *
    * @type {boolean}
    * @memberof IBook
-   * @see https://resistjs.dev/doc/settings#isBuilt
+   * @see https://resistjs.dev/docs/settings#isBuilt
    */
   readonly isBuilt: boolean
 
@@ -83,7 +83,7 @@ export default interface IBook {
    *
    * @type {boolean}
    * @memberof IBook
-   * @see https://resistjs.dev/doc/settings#nodeVersion
+   * @see https://resistjs.dev/docs/settings#nodeVersion
    */
   readonly nodeVersion: string
 
@@ -92,7 +92,7 @@ export default interface IBook {
    *
    * @type {boolean}
    * @memberof IBook
-   * @see https://resistjs.dev/doc/settings#processId
+   * @see https://resistjs.dev/docs/settings#processId
    */
   readonly processId: number
 
@@ -101,7 +101,7 @@ export default interface IBook {
    *
    * @type {boolean}
    * @memberof IBook
-   * @see https://resistjs.dev/doc/settings#platform
+   * @see https://resistjs.dev/docs/settings#platform
    */
   readonly platform: string
 
@@ -110,7 +110,7 @@ export default interface IBook {
    *
    * @type {boolean}
    * @memberof IBook
-   * @see https://resistjs.dev/doc/settings#workingPath
+   * @see https://resistjs.dev/docs/settings#workingPath
    */
   readonly workingPath: string
 }

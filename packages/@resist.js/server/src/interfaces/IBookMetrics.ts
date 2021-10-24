@@ -17,7 +17,7 @@ export default interface IBookMetrics {
    *
    * @type {boolean}
    * @memberof IBookMetrics
-   * @see https://resistjs.dev/doc/settings#metrics
+   * @see https://resistjs.dev/docs/settings#metrics
    */
   readonly enabled: boolean
 
@@ -26,7 +26,7 @@ export default interface IBookMetrics {
    *
    * @type {string}
    * @memberof IBookMetrics
-   * @see https://resistjs.dev/doc/settings#metricsUrl
+   * @see https://resistjs.dev/docs/settings#metricsUrl
    */
   readonly url: string
 
@@ -35,7 +35,7 @@ export default interface IBookMetrics {
    *
    * @type {IBookMetricsUser[]}
    * @memberof IBookMetrics
-   * @see https://resistjs.dev/doc/settings#metricsUsers
+   * @see https://resistjs.dev/docs/settings#metricsUsers
    */
   readonly users: IBookMetricsUser[]
 
@@ -44,7 +44,7 @@ export default interface IBookMetrics {
    *
    * @type {string}
    * @memberof IBookMetrics
-   * @see https://resistjs.dev/doc/settings#elastic
+   * @see https://resistjs.dev/docs/settings#elastic
    */
   readonly elasticSearch: IBookMetricsElastic
 }

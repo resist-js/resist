@@ -14,7 +14,7 @@ export default interface IBookStorybook {
    *
    * @type {boolean}
    * @memberof IBookStorybook
-   * @see https://resistjs.dev/doc/settings#storybook
+   * @see https://resistjs.dev/docs/settings#storybook
    */
   readonly enabled: boolean
 
@@ -23,7 +23,7 @@ export default interface IBookStorybook {
    *
    * @type {string}
    * @memberof IBookStorybook
-   * @see https://resistjs.dev/doc/settings#storybookUrl
+   * @see https://resistjs.dev/docs/settings#storybookUrl
    */
   readonly url: string
 }

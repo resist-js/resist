@@ -28,7 +28,7 @@ export default interface IBookServer {
    *
    * @type {IHeader[]}
    * @memberof IBookServer
-   * @see https://resistjs.dev/doc/headers
+   * @see https://resistjs.dev/docs/headers
    */
   readonly headers: IHeader[]
 
@@ -37,7 +37,7 @@ export default interface IBookServer {
    *
    * @type {IRedirects[]}
    * @memberof IBookServer
-   * @see https://resistjs.dev/doc/redirects
+   * @see https://resistjs.dev/docs/redirects
    */
   readonly redirects: IRedirects[]
 
@@ -46,7 +46,7 @@ export default interface IBookServer {
    *
    * @type {IRewrites[]}
    * @memberof IBookServer
-   * @see https://resistjs.dev/doc/rewrites
+   * @see https://resistjs.dev/docs/rewrites
    */
   readonly rewrites: IRewrites[]
 
@@ -71,7 +71,7 @@ export default interface IBookServer {
    *
    * @type {IBookServerSettings}
    * @memberof IBook
-   * @see https://resistjs.dev/doc/settings#cookieSecret
+   * @see https://resistjs.dev/docs/settings#cookieSecret
    */
   readonly cookieSecret: string
 }

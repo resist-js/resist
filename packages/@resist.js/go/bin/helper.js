@@ -125,6 +125,13 @@ async function main() {
     message: 'Keywords for project? (optional)',
   })
 
+  const APP_CODACY = await prompts({
+    type: 'text',
+    name: 'value',
+    initial: '',
+    message: 'Codacy Id? (optional) (https://www.codacy.com/signup)',
+  })
+
   const packageJSON = {
     name: CWDName,
     description: APP_DESCRIPTION.value,
@@ -229,6 +236,7 @@ async function main() {
     engines: {
       node: '>= 16.11.1',
     },
+    codacy: APP_CODACY.value,
   }
 
   CopyTemplate(CWD, packageJSON, import.meta.url)

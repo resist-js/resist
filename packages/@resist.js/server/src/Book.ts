@@ -22,7 +22,7 @@ import Rewrites from '$burn/rewrites/Rewrites'
  *
  * @type {IBook}
  * @exports
- * @see https://resistjs.dev/doc/book#server
+ * @see https://resistjs.dev/docs/book#server
  */
 const Book: IBook = {
   FRAMEWORK: 'resist.js',

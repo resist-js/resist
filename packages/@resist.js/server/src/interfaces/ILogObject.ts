@@ -9,7 +9,7 @@ import type { IncomingHttpHeaders } from 'http'
  *
  * @interface IBook
  * @exports
- * @see https://resistjs.dev/doc/server#logobject
+ * @see https://resistjs.dev/docs/server#logobject
  */
 export default interface IBook {
   readonly statusCode: number

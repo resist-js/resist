@@ -14,7 +14,7 @@ export default interface IBookServerSettings {
    *
    * @type {number}
    * @memberof IBookServerSettings
-   * @see https://resistjs.dev/doc/settings#port
+   * @see https://resistjs.dev/docs/settings#port
    */
   readonly port: number
 
@@ -23,7 +23,7 @@ export default interface IBookServerSettings {
    *
    * @type {boolean}
    * @memberof IBookServerSettings
-   * @see https://resistjs.dev/doc/settings#logRequests
+   * @see https://resistjs.dev/docs/settings#logRequests
    */
   readonly logRequests: boolean
 
@@ -32,7 +32,7 @@ export default interface IBookServerSettings {
    *
    * @type {boolean}
    * @memberof IBookServerSettings
-   * @see https://resistjs.dev/doc/settings#logNotFound
+   * @see https://resistjs.dev/docs/settings#logNotFound
    */
   readonly logNotFound: boolean
 
@@ -42,7 +42,7 @@ export default interface IBookServerSettings {
    * @type {number}
    * @memberof IBookServerSettings
    * @see https://www.fastify.io/docs/latest/Server/#bodylimit
-   * @see https://resistjs.dev/doc/settings#bodyLimit
+   * @see https://resistjs.dev/docs/settings#bodyLimit
    */
   readonly bodyLimit: number
 }

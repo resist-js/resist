@@ -16,7 +16,7 @@ import { DOC_ERROR_URL } from '$constants/Constants'
  * @param {(number | string)} code Error Code or Message.
  * @param {Function} callback Callback function.
  * @exports
- * @see https://resistjs.dev/doc/logger#report
+ * @see https://resistjs.dev/docs/logger#report
  */
 // eslint-disable-next-line @typescript-eslint/ban-types, @typescript-eslint/no-empty-function
 export function Report(code: number | string, callback: Function = () => {}): void {
@@ -28,7 +28,7 @@ export function Report(code: number | string, callback: Function = () => {}): vo
 /**
  * Handler for cleanly exiting the process.
  *
- * @see https://resistjs.dev/doc/logger#killed
+ * @see https://resistjs.dev/docs/logger#killed
  */
 function Killed(): void {
   Info('Leaving so soon? 🥺')
@@ -41,7 +41,7 @@ function Killed(): void {
  *
  * @exports
  * @param {!string} message The message.
- * @see https://resistjs.dev/doc/logger#info
+ * @see https://resistjs.dev/docs/logger#info
  */
 export function Info(message: string): void {
   Logger.info(message)
@@ -52,7 +52,7 @@ export function Info(message: string): void {
  *
  * @exports
  * @param {!string} message The message.
- * @see https://resistjs.dev/doc/logger#warn
+ * @see https://resistjs.dev/docs/logger#warn
  */
 export function Warn(message: string): void {
   Logger.warn(message)
@@ -63,7 +63,7 @@ export function Warn(message: string): void {
  *
  * @exports
  * @param {!string} message The message.
- * @see https://resistjs.dev/doc/logger#debug
+ * @see https://resistjs.dev/docs/logger#debug
  */
 export function Debug(message: string): void {
   Logger.info(message)
@@ -74,7 +74,7 @@ export function Debug(message: string): void {
  *
  * @exports
  * @param {number} code Error Code.
- * @see https://resistjs.dev/doc/logger#error
+ * @see https://resistjs.dev/docs/logger#error
  */
 export function Error(code: number): void {
   const msg = `Something went horribly wrong 🥺.\n\tE${code}, See: ${DOC_ERROR_URL}/${code}`
@@ -87,7 +87,7 @@ export function Error(code: number): void {
  *
  * @exports
  * @param {!string} message The message.
- * @see https://resistjs.dev/doc/logger#handleErrors
+ * @see https://resistjs.dev/docs/logger#handleErrors
  */
 export function HandleErrors(message: string): void {
   Logger.fatal(message)
@@ -102,7 +102,7 @@ export function HandleErrors(message: string): void {
  *
  * @exports
  * @param {!string} message The message.
- * @see https://resistjs.dev/doc/logger#handleNormalErrors
+ * @see https://resistjs.dev/docs/logger#handleNormalErrors
  */
 export function HandleNormalErrors(message: string): void {
   Logger.error(message)
@@ -115,7 +115,7 @@ export function HandleNormalErrors(message: string): void {
  *
  * @exports
  * @param {!string} message The message.
- * @see https://resistjs.dev/doc/logger#handleInfo
+ * @see https://resistjs.dev/docs/logger#handleInfo
  */
 export function HandleInfo(message: string): void {
   Logger.info(message)
@@ -127,7 +127,7 @@ export function HandleInfo(message: string): void {
  * Attach listeners to the server process for when it exits.
  *
  * @exports
- * @see https://resistjs.dev/doc/logger#handleProcess
+ * @see https://resistjs.dev/docs/logger#handleProcess
  */
 export function HandleProcess(): void {
   process.on('uncaughtException', HandleErrors)

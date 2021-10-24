@@ -1,0 +1,31 @@
+## @final
+##
+## NOTE: Do not make changes here without approval from @resist-js/core.
+
+# Configuration for sentiment-bot - https://github.com/googleapis/repo-automation-bots/tree/main/packages/generated-files-bot
+
+generatedFiles:
+  [
+    'CHANGELOG.md',
+    'README.md',
+    'CODE_OF_CONDUCT.md',
+    'CONTRIBUTING.md',
+    'SECURITY.md',
+    'GOVERNANCE.md',
+    'GITHUB_SETUP.md',
+    '.editorconfig',
+    '.prettierignore',
+    '.prettierrc',
+    '.eslintignore',
+    '.eslintrc.json',
+    '.czrc',
+    '.npmrc',
+    '.nvrmc',
+    'LICENSE.md',
+    'PROJECT_CHARTER.md',
+    '.github/*',
+    '.githooks/*',
+    '.husky/*',
+  ]
+
+ignoreAuthors: ['nyrion']

@@ -16,7 +16,7 @@ import RequestLogger from '$handlers/RequestLogger'
  * @param {FastifyRequest} request The request.
  * @param {FastifyReply} reply The reply.
  * @exports
- * @see https://resistjs.dev/doc/handlers/errors
+ * @see https://resistjs.dev/docs/handlers/errors
  * @type {IErrorHandler}
  */
 const Handler: IErrorHandler = async (

@@ -15,7 +15,7 @@ import type { FastifyReply, FastifyRequest } from 'fastify'
  * @param {FastifyRequest} request The request.
  * @param {FastifyReply} reply The reply.
  * @exports
- * @see https://resistjs.dev/doc/handlers/headers
+ * @see https://resistjs.dev/docs/handlers/headers
  * @type {IHandler}
  */
 const Handler: IHandler = async (request: FastifyRequest, reply: FastifyReply): Promise<void> => {

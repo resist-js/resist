@@ -14,7 +14,7 @@ import Headers from '$handlers/Headers'
  * Assets Handling.
  *
  * @param {FastifyInstance} server Server instance reference.
- * @see https://resistjs.dev/doc/server#assets
+ * @see https://resistjs.dev/docs/server#assets
  */
 const AssetsHandler: any = (server: FastifyInstance | any): void => {
   // eslint-disable-next-line @typescript-eslint/no-var-requires

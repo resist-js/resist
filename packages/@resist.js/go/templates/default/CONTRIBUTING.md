@@ -15,7 +15,7 @@ There are many ways to contribute to ~APP_NAME~, and many of them do not involve
 - Read through our [tutorials](~HOMEPAGE~start). If you find anything that is confusing or can be improved, you can make make a Pull Request.
 - Take a look at the [features requested](~GITHUB_URL~labels/enhancement) by others in the community and consider opening a pull request if you see something you want to work on.
 
-Contributions are very welcome. If you think you need help planning your contribution, please ping us on Discord at [~HOMEPAGE~chat](~HOMEPAGE~chat) and let us know you are looking for a bit of help.
+Contributions are very welcome. If you think you need help planning your contribution, please ping us on Slack at [~HOMEPAGE~chat](~HOMEPAGE~chat) and let us know you are looking for a bit of help.
 
 ### Triaging issues and pull requests
 
@@ -30,7 +30,7 @@ One great way you can contribute to the project without writing any code is to h
 
 We use [GitHub issues](~GITHUB_URL~issues) for our public bugs. If you would like to report a problem, take a look around and see if someone already opened an issue about it. If you are certain this is a new unreported bug, you can submit a [bug report](#reporting-new-issues).
 
-If you have questions about using ~APP_NAME~, contact us on Discord at [~HOMEPAGE~chat]((~HOMEPAGE~chat), and we will do our best to answer your questions.
+If you have questions about using ~APP_NAME~, contact us on Slack at [~HOMEPAGE~chat]((~HOMEPAGE~chat), and we will do our best to answer your questions.
 
 If you see anything you'd like to be implemented, create a [feature request issue](~GITHUB_URL~issues/new?template=feature_request.md)
 
@@ -155,4 +155,4 @@ npm publish --access=public
 
 ## License
 
-By contributing to Svelte, you agree that your contributions will be licensed under its [MIT license](~GITHUB_URL~blob/master/LICENSE).
+By contributing to resist.js, you agree that your contributions will be licensed under its [MIT license](~GITHUB_URL~blob/master/LICENSE).

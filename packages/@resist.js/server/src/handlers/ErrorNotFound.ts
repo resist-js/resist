@@ -15,7 +15,7 @@ import RequestLogger from '$handlers/RequestLogger'
  * @param {FastifyRequest} request The request.
  * @param {FastifyReply} reply The reply.
  * @exports
- * @see https://resistjs.dev/doc/handlers/404
+ * @see https://resistjs.dev/docs/handlers/404
  * @type {IHandler}
  */
 const Handler: IHandler = async (request: FastifyRequest, reply: FastifyReply): Promise<void> => {

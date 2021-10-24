@@ -7,7 +7,7 @@
  *
  * @interface IBookMetricsElastic
  * @exports
- * @see https://resistjs.dev/doc/settings#elastic
+ * @see https://resistjs.dev/docs/settings#elastic
  */
 export default interface IBookMetricsElastic {
   /**
@@ -15,7 +15,7 @@ export default interface IBookMetricsElastic {
    *
    * @type {string}
    * @memberof IBookMetricsElastic
-   * @see https://resistjs.dev/doc/settings#elasticUrl
+   * @see https://resistjs.dev/docs/settings#elasticUrl
    */
   readonly url: string
 
@@ -24,7 +24,7 @@ export default interface IBookMetricsElastic {
    *
    * @type {string}
    * @memberof IBookMetricsElastic
-   * @see https://resistjs.dev/doc/settings#elasticUrl
+   * @see https://resistjs.dev/docs/settings#elasticUrl
    */
   readonly username: string
 
@@ -33,7 +33,7 @@ export default interface IBookMetricsElastic {
    *
    * @type {string}
    * @memberof IBookMetricsElastic
-   * @see https://resistjs.dev/doc/settings#elasticUrl
+   * @see https://resistjs.dev/docs/settings#elasticUrl
    */
   readonly password: string
 }

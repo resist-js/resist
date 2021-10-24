@@ -12,8 +12,8 @@
   "bugs": {
     "url": "https://github.com/resist-js/resist/issues"
   },
-  "homepage": "https://resistjs.dev",
-  "funding": "https://opencollective.com/resist.js",
+  "homepage": "https://resistjs.dev/",
+  "funding": "https://opencollective.com/resistjs",
   "type": "module",
   "scripts": {
     "check": "resist-conform default && resist-conform default check"
@@ -37,5 +37,6 @@
   },
   "engines": {
     "node": ">= 16.11.1"
-  }
+  },
+  "codacy": "9d670d8cdbe243a5b722b5f9d644e406"
 }

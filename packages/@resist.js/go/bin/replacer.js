@@ -22,10 +22,16 @@ function main(CWD) {
       `${CWD}/${s}`,
       data
         .replace(/~APP_NAME~/g, package.name)
+        .replace(/~AUTHOR~/g, package.author)
         .replace(/~TAGLINE~/g, '')
         .replace(/~DESCRIPTION~/g, package.description)
         .replace(/~VERSION~/g, package.version)
         .replace(/~HOMEPAGE~/g, package.homepage)
+        .replace(/~CODACY~/g, package.codacy)
+        .replace(
+          /~REPO~/g,
+          package.repository ? package.repository.url.replace('git+https://github.com/', '').replace('.git', '') : '',
+        )
         .replace(
           /~GITHUB_URL~/g,
           package.repository ? package.repository.url.replace('git+', '').replace('.git', '') : package.homepage,
@@ -33,6 +39,7 @@ function main(CWD) {
     )
   }
 
+  Replacer('.all-contributorsrc')
   Replacer('package.json')
   Replacer('README.md')
   Replacer('CONTRIBUTING.md')

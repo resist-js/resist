@@ -10,7 +10,7 @@ import Package from '../../package.json'
  * @exports
  * @type {string}
  */
-export const DOC_URL = 'https://resistjs.dev/doc'
+export const DOC_URL = 'https://resistjs.dev/docs'
 
 /**
  * Documentation Error URL.

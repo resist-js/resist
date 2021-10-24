@@ -8,7 +8,7 @@ import type IHeader from '$interfaces/IHeader'
  * Server Headers.
  *
  * @exports
- * @see https://resistjs.dev/doc/headers
+ * @see https://resistjs.dev/docs/headers
  * @type {IHeader}
  */
 const Headers: IHeader[] = [
