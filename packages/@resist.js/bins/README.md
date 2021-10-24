@@ -1,6 +1,6 @@
 <p align="center">
   <img
-    width="400"
+    width="128"
     src="https://raw.githubusercontent.com/resist-js/resist/master/resources/logo.png"
     alt="@resistjs/bins - Global package for resist.js that supports Starting, Stopping, Uninstalling resist.js projects and uninstalling resist.js itself."
   />

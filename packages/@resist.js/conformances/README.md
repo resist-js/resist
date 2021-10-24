@@ -1,6 +1,6 @@
 <p align="center">
   <img
-    width="400"
+    width="128"
     src="https://raw.githubusercontent.com/resist-js/resist/master/resources/logo.png"
     alt="@resistjs/conformances - Utility Package to conform monorepo packages to a base template and/or run prettier and linting on packages."
   />

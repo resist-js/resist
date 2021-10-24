@@ -1,6 +1,6 @@
 <p align="center">
   <img
-    width="400"
+    width="128"
     src="https://raw.githubusercontent.com/resist-js/resist/master/resources/logo.png"
     alt="@resistjs/server - resist.js swiss-army knife server for serving your project."
   />

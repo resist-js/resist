@@ -1,6 +1,6 @@
 <p align="center">
   <img
-    width="400"
+    width="128"
     src="https://raw.githubusercontent.com/~REPO~/master/resources/logo.png"
     alt="~APP_NAME~ - ~DESCRIPTION~"
   />
