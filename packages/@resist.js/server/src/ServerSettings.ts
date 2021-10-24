@@ -2,7 +2,7 @@
 //
 // NOTE: Do not make changes here without approval from @resist-js/core.
 
-import type * as net from 'net'
+import type * as net from 'node:net'
 
 import Book from '$book'
 

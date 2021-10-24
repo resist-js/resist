@@ -1,5 +1,6 @@
-/* eslint-disable no-console */
-import fs from 'fs'
+/* eslint-disable no-console, @typescript-eslint/no-unsafe-call, @typescript-eslint/no-implicit-any-catch, @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-return */
+
+import fs from 'node:fs'
 
 const cwd = process.cwd()
 

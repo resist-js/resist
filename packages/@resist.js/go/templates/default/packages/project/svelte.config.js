@@ -13,16 +13,6 @@ import { minifyHtml } from 'vite-plugin-html'
 import strip from '@rollup/plugin-strip'
 import json from '@rollup/plugin-json'
 
-/*const myServer = {
-	name: 'my-server',
-	configureServer(server) {
-		server.middlewares.use((req, res, next) => {
-			console.log(`Got request ${req.url}`);
-			next();
-		});
-	},
-};*/
-
 /** @type {import('@resistjs/svelte-kit').Config} */
 const config = {
   preprocess: [
@@ -67,13 +57,7 @@ const config = {
         alias: {},
       },
       envPrefix: ['VITE_', 'SNOWBURN_'],
-      plugins: [
-        strip(),
-        minifyHtml(),
-        json({ compact: true, preferConst: true }),
-        imagetools({ force: true }),
-        //myServer,
-      ],
+      plugins: [strip(), minifyHtml(), json({ compact: true, preferConst: true }), imagetools({ force: true })],
     }),
   },
 }

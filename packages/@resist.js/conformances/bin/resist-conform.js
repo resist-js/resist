@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 
-/* eslint-disable no-console */
-
 // @final
 //
 // NOTE: Do not make changes here without approval from @resist-js/core.
+
+/* eslint-disable no-console */
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const fs = require('fs')
@@ -57,7 +57,7 @@ const lintThings = process.argv[3] === 'check'
  */
 // eslint-disable-next-line sonarjs/cognitive-complexity
 function main() {
-  const Launch = (command, ignoreErrors = false) => {
+  const launch = (command, ignoreErrors = false) => {
     try {
       const _ = exec(command, (error, stdout, stderr) => {
         if (ignoreErrors) return true
@@ -71,55 +71,64 @@ function main() {
       })
       _.stdout.pipe(process.stdout)
       return true
-    } catch (e) {
+    } catch (error) {
       if (ignoreErrors) return true
-      console.error('Error', e)
+      console.error('Error', error)
       return false
     }
   }
 
-  Launch(
-    'pnpm i cz-conventional-changelog eslint-config-prettier eslint-plugin-jsdoc eslint-plugin-sonarjs eslint-plugin-tsdoc --save-dev --reporter=silent',
+  launch(
+    'pnpm i cz-conventional-changelog eslint-config-prettier eslint-plugin-jsdoc eslint-plugin-sonarjs eslint-plugin-tsdoc xo stylelint stylelint-config-standard stylelint-config-standard-scss --save-dev --reporter=silent',
     true,
   )
 
   if (lintThings) {
-    Launch(
-      'prettier --write . --ignore-path .gitignore --plugin-search-dir=. --loglevel=warn && eslint . --ignore-path .gitignore .',
+    const ifCSS =
+      // eslint-disable-next-line @typescript-eslint/no-var-requires
+      require('glob').sync('**/*.{css,scss}', { cwd: CWD }).length > 0 ? ' && npx stylelint **/*.{css,scss}' : ''
+
+    launch(
+      `prettier --write . --ignore-path .gitignore --plugin-search-dir=. --loglevel=warn && eslint . --ignore-path .gitignore . ${ifCSS}`,
     )
+    // TODO: && npx xo **/*.{js,ts} <== Add When xo fixed
   } else {
     // eslint-disable-next-line @typescript-eslint/no-var-requires
-    const package = require(`${CWD}/package.json`)
+    const packageData = require(`${CWD}/package.json`)
 
-    const Replacer = s => {
+    const replacer = s => {
       const data = fs.readFileSync(`${CWD}/${s}`, 'utf-8')
       fs.writeFileSync(
         `${CWD}/${s}`,
         data
-          .replace(/~APP_NAME~/g, package.name)
+          .replace(/~APP_NAME~/g, packageData.name)
           .replace(/~TAGLINE~/g, '')
-          .replace(/~DESCRIPTION~/g, package.description)
-          .replace(/~VERSION~/g, package.version)
-          .replace(/~HOMEPAGE~/g, package.homepage)
-          .replace(/~CODACY~/g, package.codacy)
+          .replace(/~DESCRIPTION~/g, packageData.description)
+          .replace(/~VERSION~/g, packageData.version)
+          .replace(/~HOMEPAGE~/g, packageData.homepage)
+          .replace(/~CODACY~/g, packageData.codacy)
           .replace(
             /~REPO~/g,
-            package.repository ? package.repository.url.replace('git+https://github.com/', '').replace('.git', '') : '',
+            packageData.repository
+              ? packageData.repository.url.replace('git+https://github.com/', '').replace('.git', '')
+              : '',
           )
           .replace(
             /~GITHUB_URL~/g,
-            package.repository ? package.repository.url.replace('git+', '').replace('.git', '') : package.homepage,
+            packageData.repository
+              ? packageData.repository.url.replace('git+', '').replace('.git', '')
+              : packageData.homepage,
           ),
       )
     }
 
-    Replacer('README.md')
-    Replacer('CONTRIBUTING.md')
-    Replacer('CODE_OF_CONDUCT.md')
-    Replacer('SECURITY.md')
+    replacer('README.md')
+    replacer('CONTRIBUTING.md')
+    replacer('CODE_OF_CONDUCT.md')
+    replacer('SECURITY.md')
   }
 }
 
 // Copy default conformances onto @destination, overwriting what's already there.
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-lintThings ? main() : require('./copydir')(source, destination, {}, main)
+lintThings ? main() : require('./copydir.js')(source, destination, {}, main)

@@ -5,7 +5,7 @@
 /* jshint esversion: 9 */
 
 const $fix =
-  'prettier --write . --ignore-path .gitignore --plugin-search-dir=. --loglevel=warn && eslint . --ignore-path .gitignore .'
+  'prettier --write . --ignore-path .gitignore --plugin-search-dir=. --loglevel=warn && eslint . --ignore-path .gitignore . --no-error-on-unmatched-pattern && npx xo "**/*.{js,ts}" --quiet --no-error-on-unmatched-pattern && npx stylelint "./**/*.{css,scss}" --quiet'
 
 module.exports = {
   '*.{js,ts,json,svelte}': [$fix, 'git add'],

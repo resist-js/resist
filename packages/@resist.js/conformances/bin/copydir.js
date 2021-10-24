@@ -1,4 +1,5 @@
 /* eslint-disable */
+/* eslint-disable unicorn/no-abusive-eslint-disable */
 var fs = require('fs')
 var path = require('path')
 /*

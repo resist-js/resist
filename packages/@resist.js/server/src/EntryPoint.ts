@@ -16,10 +16,10 @@ import Server from '$burn/Server'
  * Entry point for starting Server.
  *
  * @exports
- * @param {(Array<number> | any)} States Error States.
+ * @param {(number[] | any)} States Error States.
  */
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-export default function index(States: Array<number> | any): void {
+export default function index(States: number[] | any): void {
   // eslint-disable-next-line no-console
   console.clear()
 

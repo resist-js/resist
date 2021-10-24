@@ -4,10 +4,10 @@
 
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 
-import fs from 'fs'
-import path from 'path'
-import { fileURLToPath, URL } from 'url'
-import { exec, execSync } from 'child_process'
+import fs from 'node:fs'
+import path from 'node:path'
+import { fileURLToPath, URL } from 'node:url'
+import { exec, execSync } from 'node:child_process'
 
 /**
  * The absolute path of the current working directory.
@@ -39,7 +39,7 @@ export async function IsCWDEmpty(cb) {
       const response = await cb()
 
       if (!response.value) {
-        process.exit(1)
+        throw new Error('Failed.')
       }
     }
   } else {
@@ -56,8 +56,8 @@ export async function IsCWDEmpty(cb) {
 export function mkdirp(dir) {
   try {
     fs.mkdirSync(dir, { recursive: true })
-  } catch (e) {
-    if (e.code !== 'EEXIST') throw e
+  } catch (error) {
+    if (error.code !== 'EEXIST') throw error
   }
 }
 
@@ -109,7 +109,7 @@ export function IsURL(s, protocols = ['https']) {
         ? protocols.map(x => `${x.toLowerCase()}:`).includes(url.protocol) && s.includes('.')
         : false
       : true
-  } catch (err) {
+  } catch (error) {
     return false
   }
 }
@@ -163,9 +163,10 @@ export function CopyTemplate(cwd, data, metaURL) {
 export function IsDockerRunning() {
   try {
     execSync('docker info')
-  } catch (e) {
+  } catch (error) {
     return false
   }
+
   return true
 }
 

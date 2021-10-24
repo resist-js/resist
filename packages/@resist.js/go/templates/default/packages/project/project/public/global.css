@@ -1,15 +1,20 @@
+/* stylelint-disable declaration-colon-newline-after, value-list-comma-newline-after, string-quotes */
+
 :root {
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue,
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
 }
+
 .paragraph-text {
   color: aqua;
 }
+
 .paragraph-text:hover {
   color: #b33106;
   cursor: pointer;
   font-style: italic;
 }
+
 .users-list {
   align-items: center;
   display: flex;
@@ -17,9 +22,11 @@
   gap: 10px;
   justify-content: center;
 }
+
 .user-card {
   flex: 0 1 30%;
 }
+
 .user-card:hover {
   cursor: pointer;
 }

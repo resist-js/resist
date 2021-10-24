@@ -1,6 +1,8 @@
+/* stylelint-disable */
 @import './variables/index.scss';
 @import './_app.scss';
 @import './_cards.scss';
+/* stylelint-enable */
 
 .paragraph-text {
   color: $primary-color;

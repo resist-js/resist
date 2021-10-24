@@ -2,15 +2,15 @@
 //
 // NOTE: Do not make changes here without approval from @resist-js/core.
 
-/* eslint-disable @typescript-eslint/no-var-requires */
+/* eslint-disable @typescript-eslint/no-var-requires, @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-require-imports */
+
+import { randomUUID } from 'node:crypto'
+import { existsSync, readFileSync } from 'node:fs'
+
+import path from 'node:path'
 
 const util = require('util')
 const urlExists = util.promisify(require('url-exists'))
-
-import { randomUUID } from 'crypto'
-import { existsSync, readFileSync } from 'fs'
-
-import path from 'path'
 
 /**
  * Return whether @array is a valid Array type.

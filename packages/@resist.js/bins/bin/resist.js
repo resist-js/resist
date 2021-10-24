@@ -6,11 +6,11 @@
 //
 // NOTE: Do not make changes here without approval from @resist-js/core.
 
-import fs from 'fs'
+import { homedir } from 'node:os'
 
-import { homedir } from 'os'
+import fs from 'node:fs'
 
-import { execSync } from 'child_process'
+import { execSync } from 'node:child_process'
 
 import { IsDockerRunning } from '@resistjs/utils'
 
@@ -84,11 +84,11 @@ async function main() {
 async function run(choice) {
   const container = process.argv[3]
 
-  const Launch = command => {
+  const launch = command => {
     try {
       execSync(command)
       return true
-    } catch (e) {
+    } catch (error) {
       return false
     }
   }
@@ -97,7 +97,7 @@ async function run(choice) {
     let data
     try {
       data = JSON.parse(fs.readFileSync(CONFIG, 'utf-8'))
-    } catch (e) {
+    } catch (error) {
       // Not important
     }
 
@@ -112,7 +112,7 @@ async function run(choice) {
     let data
     try {
       data = JSON.parse(fs.readFileSync(CONFIG, 'utf-8'))
-    } catch (e) {
+    } catch (error) {
       // Not important
     }
 
@@ -120,7 +120,7 @@ async function run(choice) {
       console.log(bold(red(`✗ There were no containers to stop.`)))
     } else {
       Object.keys(data).forEach(container => {
-        if (Launch(`docker stop ${container}`)) {
+        if (launch(`docker stop ${container}`)) {
           console.log(bold(green(`✔ ${container} has been stopped and is no longer running.`)))
         } else {
           console.log(bold(red(`✗ ${container} was not be stopped as it is not running.`)))
@@ -129,7 +129,7 @@ async function run(choice) {
         const path = data[container]
 
         if (
-          !Launch(
+          !launch(
             `APP_NAME=${container} CWD=$(builtin pwd) PORT_STORYBOOK=6006 PORT_SERVER_DEV=3000 PORT_DEV_DEBUG=3001 PORT_SERVER_PROD=4000 PORT_PROD_DEBUG=4001 PORT_HMR=24678 docker-compose --log-level WARNING -f ${path}/config/docker-compose.yml down --rmi all -v --remove-orphans`,
           )
         ) {
@@ -138,24 +138,26 @@ async function run(choice) {
 
         try {
           fs.rmdirSync(`${path}/config`, { recursive: true, force: true })
-        } catch (e) {
+        } catch (error) {
           // Not important
         }
       })
 
       try {
         fs.rmSync(`${HOME}/.resist-containers.json`)
-      } catch (e) {
+      } catch (error) {
         // Not important
       }
 
-      if (Launch('pnpm uninstall -g @resistjs/bins')) {
+      if (launch('pnpm uninstall -g @resistjs/bins')) {
         console.log(bold(green(`✔ @resistjs/bins was uninstalled.`)))
       }
-      if (Launch('pnpm uninstall -g @resistjs/server')) {
+
+      if (launch('pnpm uninstall -g @resistjs/server')) {
         console.log(bold(green(`✔ @resistjs/server was uninstalled.`)))
       }
-      if (Launch('pnpm uninstall -g @resistjs/conformances')) {
+
+      if (launch('pnpm uninstall -g @resistjs/conformances')) {
         console.log(bold(green(`✔ @resistjs/conformances was uninstalled.`)))
       }
 
@@ -172,13 +174,14 @@ async function run(choice) {
         validate: value => (value?.length !== 0 ? true : `You must provide a project name.`),
       })
     }
+
     if (!PROJECT_NAME.value) return
 
     if (choice === 'start') {
       let data
       try {
         data = JSON.parse(fs.readFileSync(CONFIG, 'utf-8'))
-      } catch (e) {
+      } catch (error) {
         // Not important
       }
 
@@ -187,14 +190,14 @@ async function run(choice) {
       } else {
         const container = data[PROJECT_NAME.value]
 
-        if (Launch(`cd ${container}/config && ./start.sh ${container}`)) {
+        if (launch(`cd ${container}/config && ./start.sh ${container}`)) {
           console.log(bold(green(`✔ ${PROJECT_NAME.value} is starting...`)))
         } else {
           console.log(bold(red(`✗ ${PROJECT_NAME.value} could not be started.`)))
         }
       }
     } else if (choice === 'stop') {
-      if (Launch(`docker stop ${PROJECT_NAME.value}`)) {
+      if (launch(`docker stop ${PROJECT_NAME.value}`)) {
         console.log(bold(green(`✔ ${PROJECT_NAME.value} is stopped and is no longer running.`)))
       } else {
         console.log(bold(red(`✗ ${PROJECT_NAME.value} could not be stopped as it is not running.`)))
@@ -210,7 +213,7 @@ async function run(choice) {
         let data
         try {
           data = JSON.parse(fs.readFileSync(CONFIG, 'utf-8'))
-        } catch (e) {
+        } catch (error) {
           // Not important
         }
 
@@ -219,14 +222,14 @@ async function run(choice) {
         } else {
           const container = data[PROJECT_NAME.value]
           if (container) {
-            if (Launch(`docker stop ${container}`)) {
+            if (launch(`docker stop ${container}`)) {
               console.log(bold(green(`✔ ${container} has been stopped and is no longer running.`)))
             } else {
               console.log(bold(red(`✗ ${container} was not stopped as it is not running.`)))
             }
 
             if (
-              !Launch(
+              !launch(
                 `APP_NAME=${PROJECT_NAME.value} CWD=$(builtin pwd) PORT_STORYBOOK=6006 PORT_SERVER_DEV=3000 PORT_DEV_DEBUG=3001 PORT_SERVER_PROD=4000 PORT_PROD_DEBUG=4001 PORT_HMR=24678 docker-compose --log-level WARNING -f ${container}/config/docker-compose.yml down --rmi all -v --remove-orphans`,
               )
             ) {
@@ -235,7 +238,7 @@ async function run(choice) {
 
             try {
               fs.rmdirSync(`${container}/config`, { recursive: true, force: true })
-            } catch (e) {
+            } catch (error) {
               // Not important
             }
           }

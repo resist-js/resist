@@ -43,16 +43,6 @@ jobs:
       - run: pnpm install --frozen-lockfile=false --reporter=silent
       - run: pnpm run build --filter ./packages
       - run: pnpm run check
-      - name: Lintomatic
-        uses: wearerequired/lint-action@v1
-        with:
-          eslint: false
-          prettier: false
-          xo: true
-          stylelint: false
-          git_name: ~APP_NAME~ Sweeper
-          git_email: linter@~HOMEPAGE~
-          commit_message: Fix code style issues 🧹
       - name: Generate Documentation
         run: pnpm run docs
       - name: Version Documentation

@@ -11,7 +11,7 @@ import { bold, cyan, green, red } from 'kleur/colors'
 
 import { IsRepo, IsURL, CopyTemplate, CWD, CWDName, IsCWDEmpty, Launch, IsDockerRunning } from '@resistjs/utils'
 
-import Replacer from './replacer'
+import Replacer from './replacer.js'
 
 /** @type {!string} */
 const URL = 'https://resistjs.dev/'
@@ -49,14 +49,14 @@ async function main() {
     return
   }
 
-  await IsCWDEmpty(async () => {
-    return await prompts({
+  await IsCWDEmpty(async () =>
+    prompts({
       type: 'confirm',
       name: 'value',
       message: 'Directory not empty. Continue?',
       initial: false,
-    })
-  })
+    }),
+  )
 
   const APP_AUTHOR = await prompts({
     type: 'text',

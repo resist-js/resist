@@ -1,7 +1,7 @@
 {
   "name": "@resistjs/conformances",
   "description": "Utility Package to conform monorepo packages to a base template and/or run prettier and linting on packages.",
-  "version": "1.0.7",
+  "version": "1.0.11",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/resist-js/resist.git",
@@ -15,7 +15,7 @@
   "homepage": "https://resistjs.dev/",
   "funding": "https://opencollective.com/resistjs",
   "scripts": {
-    "preinstall": "pnpm i -g prettier eslint husky pino-pretty commitizen --reporter=silent",
+    "preinstall": "pnpm i -g prettier eslint husky pino-pretty commitizen xo stylelint --reporter=silent",
     "conform": "./bin/resist-conform.js",
     "check": "resist-conform default && resist-conform default check"
   },
@@ -35,7 +35,14 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-jsdoc": "^36.1.1",
     "eslint-plugin-sonarjs": "^0.10.0",
-    "eslint-plugin-tsdoc": "^0.2.14"
+    "eslint-plugin-tsdoc": "^0.2.14",
+    "stylelint": "^14.0.0",
+    "stylelint-config-standard": "^23.0.0",
+    "stylelint-config-standard-scss": "^2.0.0",
+    "xo": "^0.45.0"
   },
-  "codacy": "9d670d8cdbe243a5b722b5f9d644e406"
+  "codacy": "9d670d8cdbe243a5b722b5f9d644e406",
+  "dependencies": {
+    "glob": "^7.2.0"
+  }
 }

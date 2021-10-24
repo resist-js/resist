@@ -6,7 +6,7 @@
 
 /* eslint-disable no-console */
 
-import { execSync } from 'child_process'
+import { execSync } from 'node:child_process'
 
 /**
  * Entry Point.
@@ -19,7 +19,7 @@ async function main() {
     try {
       execSync(command)
       return true
-    } catch (e) {
+    } catch (error) {
       return false
     }
   }

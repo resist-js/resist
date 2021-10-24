@@ -1,4 +1,0 @@
-{
-  "include": ["packages/@resist.js/**/*.{js,ts,svelte}", "packages/@resist.js/**/**/*.{js,ts,svelte}"],
-  "exclude": ["packages/@resist.js/go/templates/**", "packages/@resist.js/svelte-kit/**"]
-}
