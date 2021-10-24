@@ -58,7 +58,7 @@ jobs:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_NOTIFICATIONS_BOT_TOKEN }}
         uses: voxmedia/github-action-slack-notify-build@v1
         with:
-          channel: app-alerts
+          channel: resistjs
           status: SUCCESS
           color: good
 
@@ -68,6 +68,6 @@ jobs:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_NOTIFICATIONS_BOT_TOKEN }}
         uses: voxmedia/github-action-slack-notify-build@v1
         with:
-          channel: app-alerts
+          channel: resistjs
           status: FAILED
           color: danger
