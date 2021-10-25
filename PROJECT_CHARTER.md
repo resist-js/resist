@@ -69,7 +69,7 @@ collaborators.
 
 Whenever there is not consensus, Lead Maintainers will have final say on the topic.
 
-# Voting, and/or Elections**
+**Voting, and/or Elections**
 
 These processes are described in the [GOVERNANCE](GOVERNANCE.md) document.
 
