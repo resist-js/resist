@@ -1,0 +1,864 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>resist documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css" media="(prefers-color-scheme: dark)">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">resist documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content class">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Classes</li>
+  <li >Server</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>packages/@resist.js/server/src/Server.ts</code>
+        </p>
+
+
+            <p class="comment">
+                <h3>Description</h3>
+            </p>
+            <p class="comment">
+                <p>Server.</p>
+<p>See <a href="https://resistjs.dev/docs/server">https://resistjs.dev/docs/server</a></p>
+
+            </p>
+
+
+            <p class="comment">
+                <h3>Implements</h3>
+            </p>
+            <p class="comment">
+                            <code><a href="../interfaces/IServer.html" target="_self" >IServer</a></code>
+            </p>
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#framework" >framework</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#plugins" >plugins</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#server" >server</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#settings" >settings</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#started" >started</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#startupState" >startupState</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#_onStart" >_onStart</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#_registerPlugins" >_registerPlugins</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#start" >start</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#stop" >stop</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Accessors</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#isRunning" >isRunning</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(state: Array<number>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="51" class="link-to-prism">packages/@resist.js/server/src/Server.ts:51</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>state</td>
+                                                  
+                                                        <td>
+                                                                    <code>Array&lt;number&gt;</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="framework"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>framework</b></span>
+                        <a href="#framework"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank" >Function</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">packages/@resist.js/server/src/Server.ts:42</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="plugins"></a>
+                    <span class="name">
+                            <span class="modifier">Readonly</span>
+                        <span ><b>plugins</b></span>
+                        <a href="#plugins"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/IServerPlugins.html" target="_self" >IServerPlugins</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">packages/@resist.js/server/src/Server.ts:47</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="server"></a>
+                    <span class="name">
+                            <span class="modifier">Readonly</span>
+                        <span ><b>server</b></span>
+                        <a href="#server"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">packages/@resist.js/server/src/Server.ts:44</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="settings"></a>
+                    <span class="name">
+                            <span class="modifier">Readonly</span>
+                        <span ><b>settings</b></span>
+                        <a href="#settings"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/IServerSettings.html" target="_self" >IServerSettings</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">packages/@resist.js/server/src/Server.ts:46</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="started"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>started</b></span>
+                        <a href="#started"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="51" class="link-to-prism">packages/@resist.js/server/src/Server.ts:51</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="startupState"></a>
+                    <span class="name">
+                            <span class="modifier">Readonly</span>
+                        <span ><b>startupState</b></span>
+                        <a href="#startupState"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Array&lt;number&gt;</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">packages/@resist.js/server/src/Server.ts:49</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_onStart"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>_onStart</b></span>
+                        <a href="#_onStart"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>_onStart()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="102"
+                            class="link-to-prism">packages/@resist.js/server/src/Server.ts:102</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Handler for when the Server is ready.</p>
+<ul>
+<li>Add Hooks</li>
+<li>Add Middleware</li>
+</ul>
+</div>
+
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_registerPlugins"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>_registerPlugins</b></span>
+                        <a href="#_registerPlugins"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>_registerPlugins()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="78"
+                            class="link-to-prism">packages/@resist.js/server/src/Server.ts:78</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Register all plugins for the server based on whether:</p>
+<ul>
+<li>Enabled</li>
+<li>Matches environment</li>
+</ul>
+</div>
+
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="start"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>start</b></span>
+                        <a href="#start"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>start()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="138"
+                            class="link-to-prism">packages/@resist.js/server/src/Server.ts:138</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Start the Server.</p>
+<p>See <a href="https://resistjs.dev/docs/server#start">https://resistjs.dev/docs/server#start</a></p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="stop"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>stop</b></span>
+                        <a href="#stop"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>stop()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="162"
+                            class="link-to-prism">packages/@resist.js/server/src/Server.ts:162</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Stop the server.</p>
+<p>See <a href="https://resistjs.dev/docs/server#stop">https://resistjs.dev/docs/server#stop</a></p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+
+
+
+
+            <section>
+    <h3 id="accessors">
+        Accessors
+    </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isRunning"></a>
+                        <span class="name"><b>isRunning</b><a href="#isRunning"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>isRunning()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="128" class="link-to-prism">packages/@resist.js/server/src/Server.ts:128</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Returns whether the Server is currently running.</p>
+</div>
+
+                                <div>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                                </div>
+                        </td>
+                    </tr>
+
+            </tbody>
+        </table>
+</section>
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import fastify from &#x27;fastify&#x27;
+
+import Book from &#x27;$book&#x27;
+
+import type IServer from &#x27;$interfaces/IServer&#x27;
+import type IServerSettings from &#x27;$interfaces/IServerSettings&#x27;
+import type IServerPlugins from &#x27;$interfaces/IServerPlugins&#x27;
+import type IServerPlugin from &#x27;$interfaces/IServerPlugin&#x27;
+
+import { Info, Warn } from &#x27;$logger&#x27;
+
+import ServerSettings from &#x27;$burn/ServerSettings&#x27;
+import ServerPlugins from &#x27;$burn/plugins/ServerPlugins&#x27;
+
+import Headers from &#x27;$handlers/Headers&#x27;
+import Redirects from &#x27;$handlers/Redirects&#x27;
+import Errors from &#x27;$handlers/Errors&#x27;
+import ErrorNotFound from &#x27;$handlers/ErrorNotFound&#x27;
+import RequestResponse from &#x27;$handlers/RequestResponse&#x27;
+import MetricsHandler from &#x27;$handlers/MetricsHandler&#x27;
+import AssetsHandler from &#x27;./handlers/AssetsHandler&#x27;
+import HealthHandler from &#x27;./handlers/HealthHandler&#x27;
+import TestHandler from &#x27;./handlers/TestHandler&#x27;
+import BuildHandler from &#x27;./handlers/BuildHandler&#x27;
+
+/**
+ * Server.
+ *
+ * @exports
+ * @class Server
+ * @implements {IServer}
+ * @see https://resistjs.dev/docs/server
+ */
+export default class Server implements IServer {
+  // eslint-disable-next-line @typescript-eslint/ban-types
+  private framework: Function
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  readonly server: any
+
+  readonly settings: IServerSettings
+  readonly plugins: IServerPlugins
+
+  readonly startupState: Array&lt;number&gt;
+
+  private started &#x3D; false
+
+  constructor(state: Array&lt;number&gt;) {
+    this.framework &#x3D; fastify
+    this.settings &#x3D; new ServerSettings()
+    this.plugins &#x3D; new ServerPlugins()
+
+    this.startupState &#x3D; state
+
+    this.server &#x3D; this.framework(this.settings)
+    this.server.setErrorHandler(Errors)
+    this.server.setNotFoundHandler(ErrorNotFound)
+
+    this._registerPlugins().then(async (): Promise&lt;void&gt; &#x3D;&gt; {
+      await this._onStart()
+      this.start()
+    })
+  }
+
+  /**
+   * Register all plugins for the server based on whether:
+   * - Enabled
+   * - Matches environment
+   *
+   * @private
+   * @memberof Server
+   */
+  private async _registerPlugins(): Promise&lt;void&gt; {
+    console.log(&#x27;\n&#x27;)
+
+    for (const plugin of &lt;IServerPlugin[]&gt;(
+      this.plugins.plugins.filter(
+        plugin &#x3D;&gt; plugin.enabled &amp;&amp; plugin.dontRegister !&#x3D;&#x3D; true &amp;&amp; plugin.environments.includes(Book.environment),
+      )
+    )) {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const instance: any &#x3D; await plugin.instance
+      Info(&#x60;Registering ${Book.FRAMEWORK} Plugin: ${plugin.description}&#x60;)
+
+      await this.server.register(instance.default, plugin.options)
+    }
+  }
+
+  /**
+   * Handler for when the Server is ready.
+   * - Add Hooks
+   * - Add Middleware
+   *
+   * @private
+   * @memberof Server
+   */
+  private async _onStart(): Promise&lt;void&gt; {
+    HealthHandler(this.server, this.startupState)
+
+    this.server.addHook(&#x27;onRequest&#x27;, Headers)
+    this.server.addHook(&#x27;onRequest&#x27;, RequestResponse)
+    this.server.addHook(&#x27;onRequest&#x27;, Redirects)
+
+    TestHandler(this.server)
+    MetricsHandler(this.server)
+
+    if (this.startupState.length &gt; 0) return
+
+    AssetsHandler(this.server)
+
+    this.server.addHook(&#x27;preHandler&#x27;, BuildHandler)
+  }
+
+  /**
+   * Returns whether the Server is currently running.
+   *
+   * @readonly
+   * @type {boolean}
+   * @memberof Server
+   * @returns {boolean} Returns true if server is running, otherwise false.
+   * @see https://resistjs.dev/docs/server#isRunning
+   */
+  get isRunning(): boolean {
+    return this.started
+  }
+
+  /**
+   * Start the Server.
+   *
+   * @memberof Server
+   * @see https://resistjs.dev/docs/server#start
+   */
+  public start(): void {
+    if (this.started) {
+      Warn(&#x60;The server can&#x27;t be started, it&#x27;s already started.&#x60;)
+    } else {
+      this.server
+        .listen({
+          port: Book.server.settings.port,
+          host: &#x27;0.0.0.0&#x27;,
+        })
+        .then((): void &#x3D;&gt; {
+          this.started &#x3D; true
+        })
+        .catch(err &#x3D;&gt; {
+          Error(&#x60;Sorry, the server failed 🥺:\n\n ${err}&#x60;)
+        })
+    }
+  }
+
+  /**
+   * Stop the server.
+   *
+   * @memberof Server
+   * @see https://resistjs.dev/docs/server#stop
+   */
+  public stop(): void {
+    if (!this.started) {
+      Warn(&#x60;The server can&#x27;t be stopped, it&#x27;s not running o_O.&#x60;)
+    } else {
+      this.server.close((): void &#x3D;&gt; {
+        this.started &#x3D; false
+
+        Info(&#x27;The server has been stopped. See you again soon! 👋&#x27;)
+        process.exit(1)
+      })
+    }
+  }
+}
+</code></pre>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'class';
+            var COMPODOC_CURRENT_PAGE_URL = 'Server.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
