@@ -17,7 +17,7 @@ try {
     const layout = fs.readFileSync(pathToRootLayout, {
       encoding: 'utf8',
     })
-    const writeToFile = (filePath: string, data): void => fs.writeFileSync(filePath, data)
+    const writeToFile = (filePath: string, data: string): void => fs.writeFileSync(filePath, data)
     const updatedLayout = layout.replace("import '../styles/tailwind.postcss';", '')
     writeToFile(pathToRootLayout, updatedLayout)
   }

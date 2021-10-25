@@ -15,7 +15,7 @@ import { exec, execSync } from 'node:child_process'
  * @type {!string}
  * @exports
  */
-export const CWD = process.argv[2] || '.'
+export const CWD = process.argv[2] || process.cwd() || '.'
 
 /**
  * The name of the current working directory.
@@ -151,7 +151,7 @@ export function CopyTemplate(cwd, data, metaURL) {
 
   copy(dir, cwd)
 
-  fs.writeFileSync(`${cwd}/package.json`, JSON.stringify(data))
+  fs.writeFileSync(`${cwd}/packages/project/package.json`, JSON.stringify(data))
 }
 
 /**

@@ -1,7 +1,7 @@
 {
   "name": "@resistjs/utils",
   "description": "Utility functions for resist.js.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/resist-js/resist.git",

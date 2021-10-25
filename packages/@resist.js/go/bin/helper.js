@@ -9,7 +9,7 @@
 import prompts from 'prompts'
 import { bold, cyan, green, red } from 'kleur/colors'
 
-import { IsRepo, IsURL, CopyTemplate, CWD, CWDName, IsCWDEmpty, Launch, IsDockerRunning } from '@resistjs/utils'
+import { IsURL, CopyTemplate, CWD, CWDName, IsCWDEmpty, Launch, IsDockerRunning } from '@resistjs/utils'
 
 import Replacer from './replacer.js'
 
@@ -68,8 +68,15 @@ async function main() {
   const APP_DESCRIPTION = await prompts({
     type: 'text',
     name: 'value',
-    message: 'Description of your project?',
-    validate: value => (value?.length > 0 ? true : `A project description is required.`),
+    message: 'Short description of your project.',
+    validate: value => (value?.length > 0 ? true : `A short project description is required.`),
+  })
+
+  const APP_LONG_DESCRIPTION = await prompts({
+    type: 'text',
+    name: 'value',
+    message: 'Detailed description of project.',
+    validate: value => (value?.length > 0 ? true : `A detailed project description is required.`),
   })
 
   const APP_VERSION = await prompts({
@@ -95,27 +102,15 @@ async function main() {
   const APP_HOMEPAGE = await prompts({
     type: 'text',
     name: 'value',
-    message: 'Project homepage? (optional)',
-    validate: value =>
-      value?.length === 0 || IsURL(value) ? true : `Project homepage must be a valid url (i.e. ${URL}).`,
+    message: 'Project homepage?',
+    validate: value => (IsURL(value) ? true : `Project homepage must be a valid url (i.e. ${URL}).`),
   })
 
   const APP_REPO = await prompts({
     type: 'text',
     name: 'value',
-    message: 'Project repository? (optional)',
-    validate: value =>
-      value?.length === 0 || IsRepo(value)
-        ? true
-        : `Project repository must be a valid url (i.e. github:nyrion/resist-js).`,
-  })
-
-  const APP_BUGS_URL = await prompts({
-    type: 'text',
-    name: 'value',
-    message: 'Project bugs url? (optional)',
-    validate: value =>
-      value?.length === 0 || IsURL(value) ? true : `Project bugs url must be a valid url (i.e. ${URL}).`,
+    message: 'Project repository?',
+    validate: value => (value.includes('/') ? true : `Project repository must be provided (i.e. resist-js/resist).`),
   })
 
   const APP_KEYWORDS = await prompts({
@@ -137,14 +132,21 @@ async function main() {
     description: APP_DESCRIPTION.value,
     version: APP_VERSION.value,
     homepage: APP_HOMEPAGE.value,
-    bugs: APP_BUGS_URL.value,
-    repository: APP_REPO.value,
+    bugs: {
+      url: `${APP_REPO.value}`,
+    },
+    repository: {
+      type: 'git',
+      url: `git+https://github.com/${APP_REPO.value}.git`,
+    },
+    long_description: APP_LONG_DESCRIPTION.value,
     license: APP_LICENSE.value,
     author: APP_AUTHOR.value,
-    keywords: APP_KEYWORDS.value.split(','),
+    keywords: (APP_KEYWORDS.value ?? '').split(','),
     browser: 'window',
     type: 'module',
     scripts: {
+      check: 'resist-conform default && resist-conform default check',
       prepare: 'husky install',
       prebuild: 'rimraf .svelte-kit && rimraf build',
       'remove-css': 'node --loader ts-node/esm ./config/svelte/scripts/js/remove-css-imports.ts',
@@ -253,7 +255,7 @@ async function main() {
   console.log(messages.pleaseWait)
 
   Launch(
-    `cd ${CWD}/packages/project && pnpm install -g @resistjs/conformances @resistjs/bins && resist-conform svelte && git init && git config core.hooksPath .githooks && git checkout --orphan documentation && git rm -rf . && git commit --allow-empty -m "🌻" && git checkout master && node ./config/start ${CWDName}`,
+    `cd ${CWD} && mv resist-ignore .gitignore && pnpm install -g @resistjs/conformances @resistjs/bins && pnpm i && resist-conform svelte && git init && mv ./.githooks/prepare-commit-msg ./.githooks/temp_prepare-commit-msg && git add . && git commit -m "🌻" && git config core.hooksPath .githooks && git checkout --orphan documentation && git commit --allow-empty -m "🌻" && git checkout master && mv ./.githooks/temp_prepare-commit-msg ./.githooks/prepare-commit-msg && git add . && cd ${CWD}/packages/project && node ./config/start ${CWDName}`,
   )
 }
 

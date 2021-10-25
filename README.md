@@ -137,8 +137,8 @@
 
 **Simply click one of these links**
 
-[I want to contribute](https://github1s.com/resist-js/resist)
-[I want to build a website](https://github1s.com/resist-js/resist)
+- [I want to contribute](https://github1s.com/resist-js/resist)
+- [I want to build a website](https://github1s.com/resist-js/resist)
 
 ### The Local Way
 

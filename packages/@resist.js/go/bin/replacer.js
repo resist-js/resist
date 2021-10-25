@@ -14,7 +14,7 @@ import { readFileSync, writeFileSync } from 'node:fs'
  */
 function main(CWD) {
   // eslint-disable-next-line @typescript-eslint/no-var-requires
-  const packageData = require(`${CWD}/package.json`)
+  const packageData = JSON.parse(readFileSync(`${CWD}/package.json`, 'utf-8'))
 
   const replacer = s => {
     const data = readFileSync(`${CWD}/${s}`, 'utf-8')
@@ -23,7 +23,7 @@ function main(CWD) {
       data
         .replace(/~APP_NAME~/g, packageData.name)
         .replace(/~AUTHOR~/g, packageData.author)
-        .replace(/~LONG_DESCRIPTION~/g, packageData.long_description)
+        .replace(/~TAGLINE~/g, '')
         .replace(/~DESCRIPTION~/g, packageData.description)
         .replace(/~VERSION~/g, packageData.version)
         .replace(/~HOMEPAGE~/g, packageData.homepage)
@@ -57,6 +57,7 @@ function main(CWD) {
   replacer('.github/ISSUE_TEMPLATE/bug_report.yml')
   replacer('.github/ISSUE_TEMPLATE/config.yml')
   replacer('.github/ISSUE_TEMPLATE/feature_request.yml')
+  replacer('packages/project/package.json')
 }
 
 export default main
