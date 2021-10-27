@@ -121,11 +121,11 @@
 **🌻 整个多元宇宙当中最全面的高可扩展性网站及SaaS框架。**
 
 - **速度快:** 很快 – _非常 非常_ 快! 🚀
-- **可定制:** 全方位配置你的SaaS项目.
-- **通用:** 能在任何时间地点，任何操作系统上运行.
-- **智能:** 可帮你处理繁杂的工作.
-- **功能众多:** 支持所有你最爱用的工具.
-- **简单可用:** 安装快速 – 立马就能开始使用.
+- **可定制:** 全方位配置你的SaaS项目
+- **通用:** 能在任何时间地点，任何操作系统上运行
+- **智能:** 可帮你处理繁杂的工作
+- **功能众多:** 支持所有你最爱用的工具
+- **简单可用:** 安装快速 – 立马就能开始使用
 
 <p align="center">
 <a href="https://resistjs.dev/docs" target="_blank"><strong>浏览resists.js文档&nbsp;&nbsp;▶</strong></a>
@@ -142,42 +142,42 @@
 **试试下面任一链接**
 
 - [贡献代码](https://github1s.com/resist-js/resist)
-- [建站]](https://github1s.com/resist-js/resist)
+- [建站](https://github1s.com/resist-js/resist)
 
 ### 本地安装
 
-### Prerequisites
+### 准备工作
 
-- [How To Install Node & npm](https://nodejs.org/en/download/current/)
-- [How To Install Docker](https://docs.docker.com/get-docker/)
-- [How To Install VSCode](https://vscodium.com/#install)
+- [如何安装Node和npm](https://nodejs.org/en/download/current/)
+- [如何安装Docker](https://docs.docker.com/get-docker/)
+- [如何安装VSCode](https://vscodium.com/#install)
 
-### Getting Started
+### 一切就绪之后
 
-- #### How Do I Do It?
+- #### 怎样开始开发?
 
-  ##### Open your favorite terminal and type
+  ##### 在终端里输入
 
   ```sh
   npm i -g pnpm && pnpx @resistjs/go
   ```
 
-  To **update** your project, rerun the above script. It will replace the current version without touching your project.
-  <br/>After installation you will be guided through what to do next!
+  若需要 **更新框架** , 请重新运行上面的命令. 这将在不影响到已有项目的前提下更新到当前版本。
+  <br/>安装结束后您可依照提示进行下一步操作。
 
-## 🤝 Contributing
+## 🤝 开源贡献
 
-We are always looking for contributors of **all skill levels**! If you're looking to ease your way into the project, try out a [good first issue](https://github.com/resist-js/resist/labels/🌱%20good%20first%20issue).
+我们长期欢迎**各种经验和水平**的开发者为本项目做出贡献！如果您正在思索如何迈出第一步, 来试试 [提一条你所发现的问题](https://github.com/resist-js/resist/labels/🌱%20good%20first%20issue)。
 
-If you are fluent in a non-English language, we greatly appreciate any help keeping our docs translated and up-to-date in other languages. If you would like to help, translations can be contributed through PRs.
+若您能熟练使用英语之外的语言, 您的语言能力将能够很好的帮助我们翻译与更新不同语言的文档。若想要进行这方面的工作，您可通过提交和并请求来进行贡献。
 
-If you are interested in helping contribute to resist.js, please take a look at our [Contributing Guide](https://github.com/resist-js/resist/blob/master/CONTRIBUTING.md). Also, feel free to drop into [Slack](https://resistjs.slack.com) and say hi. 👋
+若您决定为本项目贡献，请阅览我们的[贡献指南](https://github.com/resist-js/resist/blob/master/CONTRIBUTING.md)。 同时也欢迎加入我们的[Slack](https://resistjs.slack.com)群组来和大家打个招呼。👋
 
-## ✨ Contributors
+## ✨ 贡献者
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key))
+谢谢你们，你们是最棒的 ([emoji key](https://allcontributors.org/docs/en/emoji-key))
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+本项目遵守 [all-contributors](https://github.com/all-contributors/all-contributors) 规范。 欢迎任何形式的贡献！
