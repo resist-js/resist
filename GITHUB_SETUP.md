@@ -28,17 +28,17 @@ Watch the video below for a detailed walkthrough on exactly how your GitHub Acco
 
 These wonderful little helpers will take a lot of the manual work that is required out of managing your mono-repository. Make sure you are logged in to your GitHub Account and then press each of the links below to add these Bots to your account.
 
-[Install Welcome Bot](https://probot.github.io/apps/welcome/)
-[Install Stale Bot](https://probot.github.io/apps/stale/)
-[Install Slack Bot](https://slack.github.com/)
-[Install Sentiment Bot](https://probot.github.io/apps/sentiment-bot/)
-[Install Request Info Bot](https://probot.github.io/apps/request-info/)
-[Install Generated Files Bot](https://github.com/apps/generated-files-bot)
-[Install Merge On Green Bot](https://github.com/apps/gcf-merge-on-green)
-[Install Create Issue Branch Bot](https://github.com/apps/create-issue-branch)
-[Install Background Check Bot](https://github.com/apps/background-check)
-[Install Auto Comment Bot](https://github.com/apps/auto-comment)
-[Install All Contributors Bot](https://github.com/apps/allcontributors/installations/new)
+- [Install Welcome Bot](https://probot.github.io/apps/welcome/)
+- [Install Stale Bot](https://probot.github.io/apps/stale/)
+- [Install Slack Bot](https://slack.github.com/)
+- [Install Sentiment Bot](https://probot.github.io/apps/sentiment-bot/)
+- [Install Request Info Bot](https://probot.github.io/apps/request-info/)
+- [Install Generated Files Bot](https://github.com/apps/generated-files-bot)
+- [Install Merge On Green Bot](https://github.com/apps/gcf-merge-on-green)
+- [Install Create Issue Branch Bot](https://github.com/apps/create-issue-branch)
+- [Install Background Check Bot](https://github.com/apps/background-check)
+- [Install Auto Comment Bot](https://github.com/apps/auto-comment)
+- [Install All Contributors Bot](https://github.com/apps/allcontributors/installations/new)
 
 ## 3. Setting Up An npm Account
 

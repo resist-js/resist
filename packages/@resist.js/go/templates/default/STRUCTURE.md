@@ -23,7 +23,7 @@ The top-level of the mono-repository.
 
 > EditorConfig helps maintain consistent coding styles for multiple developers working on the same project across various editors and IDEs.
 
-- [.eslintignore](./eslintignore)
+- [.eslintignore](./.eslintignore)
   [What is this?](https://eslint.org/docs/user-guide/configuring/ignoring-code)
 
 > When using ESLint, this file is used to exclude files, directories or patterns from being included in this linting process.
@@ -32,7 +32,7 @@ The top-level of the mono-repository.
 > - Sub-packages may define their own `.eslintignore` which will supercede this one.
 > - This file will be referenced for example when running `pnpm run check`, as well as: Pull Requests, Commit/Push, Github Actions CI.
 
-- [.eslintrc.json[(./.eslintrc.json)]
+- [.eslintrc.json](./.eslintrc.json)]
   [What is this?](https://eslint.org/)
 
 > When using ESLint, this file provides settings that will be used.
@@ -41,7 +41,7 @@ The top-level of the mono-repository.
 > - Sub-packages may define their own `.eslintrc` which will supercede this one.
 > - This file will be referenced for example when running `pnpm run check`, as well as: Pull Requests, Push, Github Actions CI.
 
-- [.gitattributes](./gitattributes)
+- [.gitattributes](./.gitattributes)
   [What is this?](https://git-scm.com/docs/gitattributes)
 
 > This file is used by git in relation to the top-level of the project when performing git operations.
@@ -211,7 +211,7 @@ The purpose of a `Code of Conduct` is to establish a healthy, respectable enviro
 
 > The purpose of `CODE_OWNERS` is to define who owns specific files or directories in a repository.
 
-- config.yml
+- [config.yml](./.github/config.yml)
 
 > The purpose of this file is to provide settings for varying Github Bots.
 > Currently in use are:
@@ -237,7 +237,7 @@ The purpose of a `Code of Conduct` is to establish a healthy, respectable enviro
 
 > The purpose of this file is to define the URL that will be displayed in "Sponsor this project" section on a github repository.
 
-- [generated-files-bot.yml](./.github/generated-filed-bot.yml)
+- [generated-files-bot.yml](./.github/generated-files-bot.yml)
   [What is this?](https://github.com/googleapis/repo-automation-bots/tree/main/packages/generated-files-bot)
 
 > This file defines the settings for the bot. The template bot automatically comments on pull requests if you are modifying templated files.
@@ -260,9 +260,7 @@ The purpose of a `Code of Conduct` is to establish a healthy, respectable enviro
 - [stale.yml](./.github/stale.yml)
   [What is this?](https://github.com/probot/stale)
 
-```
-The purpose of this file is to define the settings that are used for the Github stale Bot. This bot closes abandoned Issues and Pull Requests after a period of inactivity.
-```
+> The purpose of this file is to define the settings that are used for the Github stale Bot. This bot closes abandoned Issues and Pull Requests after a period of inactivity.
 
 ### ISSUE_TEMPLATE
 
