@@ -1,7 +1,7 @@
 {
   "name": "@resistjs/bins",
   "description": "Global package for resist.js that supports Starting, Stopping, Uninstalling resist.js projects and uninstalling resist.js itself.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/resist-js/resist.git",

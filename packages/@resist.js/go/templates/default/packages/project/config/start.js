@@ -28,7 +28,7 @@ async function main() {
 
   if (
     Launch(
-      `APP_NAME=${APP_NAME} CWD=${CWD} PORT_STORYBOOK=6006 PORT_SERVER_DEV=3000 PORT_DEV_DEBUG=3001 PORT_SERVER_PROD=4000 PORT_PROD_DEBUG=4001 PORT_HMR=24678 docker-compose --log-level WARNING -f ./config/docker-compose.yml up -d --build`,
+      `APP_NAME=${APP_NAME} CWD=${CWD} PORT_FlAGS=4003 PORT_UPTIME=4002 PORT_STORYBOOK=6006 PORT_SERVER_DEV=3000 PORT_DEV_DEBUG=3001 PORT_SERVER_PROD=4000 PORT_PROD_DEBUG=4001 PORT_HMR=24678 docker-compose --log-level WARNING -f ./config/docker-compose.yml up -d --build`,
     )
   ) {
     console.log('✔ Ready!')

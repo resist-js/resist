@@ -1,7 +1,7 @@
 {
   "name": "@resistjs/server",
   "description": "resist.js swiss-army knife server for serving your project.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/resist-js/resist.git",

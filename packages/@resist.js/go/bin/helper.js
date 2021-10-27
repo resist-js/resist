@@ -133,7 +133,7 @@ async function main() {
     version: APP_VERSION.value,
     homepage: APP_HOMEPAGE.value,
     bugs: {
-      url: `${APP_REPO.value}`,
+      url: `https://github.com/${APP_REPO.value}/issues`,
     },
     repository: {
       type: 'git',
@@ -255,7 +255,7 @@ async function main() {
   console.log(messages.pleaseWait)
 
   Launch(
-    `cd ${CWD} && mv resist-ignore .gitignore && pnpm install -g @resistjs/conformances @resistjs/bins && pnpm i && resist-conform svelte && git init && mv ./.githooks/prepare-commit-msg ./.githooks/temp_prepare-commit-msg && git add . && git commit -m "🌻" && git config core.hooksPath .githooks && git checkout --orphan documentation && git commit --allow-empty -m "🌻" && git checkout master && mv ./.githooks/temp_prepare-commit-msg ./.githooks/prepare-commit-msg && git add . && cd ${CWD}/packages/project && node ./config/start ${CWDName}`,
+    `cd ${CWD} && mv resist-ignore .gitignore && pnpm install -g @resistjs/conformances @resistjs/bins && pnpm i && git init && mv ./.githooks/prepare-commit-msg ./.githooks/temp_prepare-commit-msg && git add . && git commit -m "🌻" && git config core.hooksPath .githooks && git checkout --orphan documentation && git commit --allow-empty -m "🌻" && git checkout master && mv ./.githooks/temp_prepare-commit-msg ./.githooks/prepare-commit-msg && git add . && cd ${CWD}/packages/project && resist-conform svelte && node ./config/start ${CWDName}`,
   )
 }
 

@@ -54,7 +54,7 @@ RUN pnpm run build
 
 ## Expose ports
 
-# Server (Dev)
+# Server (Development)
 EXPOSE ${PORT_SERVER_DEV}
 
 # HMR
@@ -63,7 +63,7 @@ EXPOSE ${PORT_HMR}
 # Node Debugger
 EXPOSE ${PORT_DEBUG}
 
-# Server (Dev)
+# Server (Production)
 EXPOSE ${PORT_SERVER_PROD}
 
 ## Start the production & dev server

@@ -24,7 +24,7 @@ flags.url: ''
 storybook.enabled: false
 storybook.url: ''
 
-session.secret: 'resist_secret_12l3j1l2k31klj2l'
+session.secret: 'resist_secret_x1hjkasd12l3j1l2k31klj2l'
 
 headers: []
 redirects: []
