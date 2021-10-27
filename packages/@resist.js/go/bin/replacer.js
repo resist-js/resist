@@ -49,6 +49,7 @@ function main(CWD) {
   replacer('CONTRIBUTING.md')
   replacer('CODE_OF_CONDUCT.md')
   replacer('SECURITY.md')
+  replacer('LICENSE.md')
   replacer('.github/SAVED_REPLIES.md')
   replacer('.github/PULL_REQUEST_TEMPLATE.md')
   replacer('.github/workflows/release.yml')
@@ -58,6 +59,20 @@ function main(CWD) {
   replacer('.github/ISSUE_TEMPLATE/config.yml')
   replacer('.github/ISSUE_TEMPLATE/feature_request.yml')
   replacer('packages/project/package.json')
+
+  replacer('docs/en-US/CONTRIBUTING.md')
+  replacer('docs/en-US/CODE_OF_CONDUCT.md')
+  replacer('docs/en-US/SECURITY.md')
+  replacer('docs/en-US/LICENSE.md')
+  replacer('docs/en-US/STRUCTURE.md')
+  replacer('docs/en-US/GITHUB_ACTIONS.md')
+  replacer('docs/en-US/GITHUB_CHECKS.md')
+  replacer('docs/en-US/GITHUB_COMMIT.md')
+  replacer('docs/en-US/GITHUB_DOCS.md')
+  replacer('docs/en-US/GITHUB_ISSUES.md')
+  replacer('docs/en-US/GITHUB_PR.md')
+  replacer('docs/en-US/GITHUB_RELEASE.md')
+  replacer('docs/en-US/GITHUB_SETUP.md')
 }
 
 export default main

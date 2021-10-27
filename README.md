@@ -63,52 +63,16 @@
 <p align="center">
   <a href="https://github.com/resist-js/resist/blob/master/README.md"
     >English</a>
-  &nbsp;
-  <!--<a
-    href="https://github.com/resist-js/resist/blob/master/docs/de-DE/guide/README.md"
-    >Deutsch</a>
   ·
   <a
-    href="https://github.com/resist-js/resist/blob/master/docs/es-ES/guide/README.md"
-    >Español</a>
-  ·
-  <a
-    href="https://github.com/resist-js/resist/blob/master/docs/fr-FR/guide/README.md"
-    >Français</a>
-  ·
-  <a
-    href="https://github.com/resist-js/resist/blob/master/docs/ja-JP/guide/README.md"
-    >日本語</a>
-  ·
-  <a
-    href="https://github.com/resist-js/resist/blob/master/docs/ko-KO/guide/README.md"
-    >한국어</a>
-  ·
-  <a
-    href="https://github.com/resist-js/resist/blob/master/docs/pt-BR/guide/README.md"
-    >Português do Brasi</a>
-  ·
-  <a
-    href="https://github.com/resist-js/resist/blob/master/docs/ru-RU/guide/README.md"
-    >Русский</a>
-  ·
-  <a
-    href="https://github.com/resist-js/resist/blob/master/docs/vi-VN/guide/README.md"
-    >Tiếng Việt</a>
-  ·
-  <a
-    href="https://github.com/resist-js/resist/blob/master/docs/zh-CN/guide/README.md"
+    href="https://github.com/resist-js/resist/blob/master/docs/zh-CN/README.md"
     >简体中文</a>
-  ·
-  <a
-    href="https://github.com/resist-js/resist/blob/master/docs/zh-TW/guide/README.md"
-    >繁體中文</a>-->
 </p>
 
 <h1></h1>
 
 <img
-  src="https://raw.githubusercontent.com/resist-js/resist/master/resources/demo.gif"
+  src="https://raw.githubusercontent.com/resist-js/resist/master/docs/en-US/demo.gif"
   alt="Getting Started with resist.js"
   width="50%"
   align="right"

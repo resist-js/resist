@@ -26,7 +26,7 @@ const destination = process.cwd()
  * @type {!string}
  * @see https://resistjs.dev/docs/conformances
  */
-const LIB_DIR = `${process.argv[1].replace('/bin/resist-conform.js', '')}/templates/`
+const LIB_DIR = `${process.argv[1].replace('/bin/resist-conform.js', '').replace('/bin/resist-conform', '')}/templates/`
 
 /**
  * The path where the template conformances are.
@@ -127,6 +127,12 @@ function main() {
     replacer('CONTRIBUTING.md')
     replacer('CODE_OF_CONDUCT.md')
     replacer('SECURITY.md')
+    replacer('LICENSE.md')
+
+    replacer('docs/en-US/CONTRIBUTING.md')
+    replacer('docs/en-US/CODE_OF_CONDUCT.md')
+    replacer('docs/en-US/SECURITY.md')
+    replacer('docs/en-US/LICENSE.md')
   }
 }
 

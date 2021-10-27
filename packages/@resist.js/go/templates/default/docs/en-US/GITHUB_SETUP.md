@@ -22,7 +22,7 @@ How Do I Create & Setup An Account?
 
 Watch the video below for a detailed walkthrough on exactly how your GitHub Account should be setup.
 
-[Watch this Video](https://raw.githubusercontent.com/resist-js/resist/master/resources/Setup_GitHub.mp4)
+[Watch this Video](https://raw.githubusercontent.com/~REPO~/master/docs/en-US/Setup_GitHub.mp4)
 
 ## 2. Setting Up GitHub Bots
 
@@ -51,7 +51,7 @@ These wonderful little helpers will take a lot of the manual work that is requir
 > How Do I Do It?
 > Watch the video below for a detailed walkthrough on exactly how your npm Account should be setup.
 
-[Watch this Video](https://raw.githubusercontent.com/resist-js/resist/master/resources/Setup_npm.mp4)
+[Watch this Video](https://raw.githubusercontent.com/~REPO~/master/docs/en-US/Setup_npm.mp4)
 
 ## 3.5. Setting Up A Private npm Registry
 
@@ -61,7 +61,7 @@ These wonderful little helpers will take a lot of the manual work that is requir
 > How Do I Do It?
 > Watch the video below for a detailed walkthrough on exactly how your private npm registry should be setup.
 
-[Watch this Video](https://raw.githubusercontent.com/resist-js/resist/master/resources/Setup_npm_private.mp4)
+[Watch this Video](https://raw.githubusercontent.com/~REPO~/master/docs/en-US/Setup_npm_private.mp4)
 
 ## 4. Setting Up A Codacy Account
 
@@ -71,7 +71,7 @@ These wonderful little helpers will take a lot of the manual work that is requir
 > How Do I Do It?
 > Watch the video below for a detailed walkthrough on exactly how your Codacy Account should be setup.
 
-[Watch this Video](https://raw.githubusercontent.com/resist-js/resist/master/resources/Setup_Codacy.mp4)
+[Watch this Video](https://raw.githubusercontent.com/~REPO~/master/docs/en-US/Setup_Codacy.mp4)
 
 ## 5. Setting Up A Slack Workspace
 
@@ -81,36 +81,36 @@ These wonderful little helpers will take a lot of the manual work that is requir
 > How Do I Do It?
 > Watch the video below for a detailed walkthrough on exactly how your Slack Account should be setup.
 
-[Watch this Video](https://raw.githubusercontent.com/resist-js/resist/master/resources/Setup_Slack.mp4)
+[Watch this Video](https://raw.githubusercontent.com/~REPO~/master/docs/en-US/Setup_Slack.mp4)
 
 ## 6. Explanations
 
 > What are GitHub Actions? How Do They Work?
-> [See here](./resources/GITHUB_ACTIONS.md)
+> [See here](./docs/en-US/GITHUB_ACTIONS.md)
 
 > How does the automatic Documentation work?
-> [See here](./resources/GITHUB_DOCS.md)
+> [See here](./docs/en-US/GITHUB_DOCS.md)
 
 > How does the commit process work?
-> [See here](./resources/GITHUB_COMMIT.md)
+> [See here](./docs/en-US/GITHUB_COMMIT.md)
 
 > How does the checking/linting process work?
-> [See here](./resources/GITHUB_CHECKS.md)
+> [See here](./docs/en-US/GITHUB_CHECKS.md)
 
 > How do new issues work?
-> [See here](./resources/GITHUB_ISSUES.md)
+> [See here](./docs/en-US/GITHUB_ISSUES.md)
 
 > How do pull requests work?
-> [See here](./resources/GITHUB_PR.md)
+> [See here](./docs/en-US/GITHUB_PR.md)
 
 > How does the release process work?
-> [See here](./resources/GITHUB_RELEASE.md)
+> [See here](./docs/en-US/GITHUB_RELEASE.md)
 
 > **What are all these files?**
 > You may notice, there are quite a few files as part of your mono-repo. Each of these server a purpose, most of them never need to be modified. They just work!
 > However, for clarity and transparency you can press the link below to find detailed explanations about each file and what the purpose of it is.
 
-[What are these files?](./STRUCTURE.md)
+[What are these files?](./docs/en-US/STRUCTURE.md)
 
 ## 7. Do I Need To Do Anything Else?
 
