@@ -1,0 +1,199 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>resist documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+	   <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="./styles/dark.css" media="(prefers-color-scheme: dark)">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="./" class="navbar-brand">resist documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content getting-started">
+                   <div class="content-data">
+
+<h1 id="contributing-to-resistjs">Contributing to resist.js</h1>
+<p>The <a href="https://opensource.guide/">Open Source Guides</a> website has a collection of resources for individuals, communities, and companies. These resources help people who want to learn how to run and contribute to projects in an effective way. Contributors and people new to will find the following guides especially useful:</p>
+<ul>
+<li><a href="https://opensource.guide/how-to-contribute/">How to Contribute to Open Source</a></li>
+<li><a href="https://opensource.guide/building-community/">Building Welcoming Communities</a></li>
+</ul>
+<h2 id="get-involved">Get involved</h2>
+<p>There are many ways to contribute to resist.js, and many of them do not involve writing any code. Here&#39;s a few ideas to get started:</p>
+<ul>
+<li>Simply start using resist.js. Go through the <a href="https://resistjs.dev/start">Getting Started</a> guide. Does everything work as expected? If not, we&#39;re always looking for improvements. Let us know by <a href="#reporting-new-issues">opening an issue</a>.</li>
+<li>Look through the <a href="https://github.com/resist-js/resist/issues">open issues</a>. A good starting point would be issues tagged <a href="https://github.com/resist-js/resist/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22">good first issue</a>. Provide workarounds, ask for clarification, or suggest labels. Help <a href="#triaging-issues-and-pull-requests">triage issues</a>.</li>
+<li>If you find an issue you would like to fix, <a href="#your-first-pull-request">open a pull request</a>.</li>
+<li>Read through our <a href="https://resistjs.dev/start">tutorials</a>. If you find anything that is confusing or can be improved, you can make make a Pull Request.</li>
+<li>Take a look at the <a href="https://github.com/resist-js/resist/labels/enhancement">features requested</a> by others in the community and consider opening a pull request if you see something you want to work on.</li>
+</ul>
+<p>Contributions are very welcome. If you think you need help planning your contribution, please ping us on Slack at <a href="https://resistjs.dev/chat">https://resistjs.dev/chat</a> and let us know you are looking for a bit of help.</p>
+<h3 id="triaging-issues-and-pull-requests">Triaging issues and pull requests</h3>
+<p>One great way you can contribute to the project without writing any code is to help triage issues and pull requests as they come in.</p>
+<ul>
+<li>Ask for more information if you believe the issue does not provide all the details required to solve it.</li>
+<li>Suggest <a href="https://github.com/resist-js/resist/labels">labels</a> that can help categorize issues.</li>
+<li>Flag issues that are stale or that should be closed.</li>
+<li>Ask for test plans and review code.</li>
+</ul>
+<h2 id="bugs">Bugs</h2>
+<p>We use <a href="https://github.com/resist-js/resist/issues">GitHub issues</a> for our public bugs. If you would like to report a problem, take a look around and see if someone already opened an issue about it. If you are certain this is a new unreported bug, you can submit a <a href="#reporting-new-issues">bug report</a>.</p>
+<p>If you have questions about using resist.js, contact us on Slack at <a href="(https://resistjs.dev/chat">https://resistjs.dev/chat</a>, and we will do our best to answer your questions.</p>
+<p>If you see anything you&#39;d like to be implemented, create a <a href="https://github.com/resist-js/resist/issues/new?template=feature_request.md">feature request issue</a></p>
+<h2 id="reporting-new-issues">Reporting new issues</h2>
+<p>When <a href="https://github.com/resist-js/resist/issues/new/choose">opening a new issue</a>, always make sure to fill out the issue template. <strong>This step is very important!</strong> Not doing so may result in your issue not being managed in a timely fashion. Don&#39;t take this personally if this happens, and feel free to open a new issue once you&#39;ve gathered all the information required by the template.</p>
+<ul>
+<li><strong>One issue, one bug:</strong> Please report a single bug per issue.</li>
+<li><strong>Provide reproduction steps:</strong> List all the steps necessary to reproduce the issue. The person reading your bug report should be able to follow these steps to reproduce your issue with minimal effort.</li>
+</ul>
+<h2 id="rfcs">RFCs</h2>
+<p>If you&#39;d like to propose an implementation for a large new feature or change then please <a href="https://github.com/resist-js/rfcs">create an RFC</a> to discuss it up front.</p>
+<h2 id="developing">Developing</h2>
+<p>This is a monorepo meaning the repo holds multiple packages. It requires the use of <a href="https://pnpm.js.org/en/">pnpm</a>. You can <a href="https://pnpm.io/installation">install pnpm</a> with:</p>
+<div><pre class="line-numbers"><code class="language-bash">npm i -g pnpm</code></pre></div><p><code>pnpm</code> commands run in the project&#39;s root directory will run on all sub-projects. You can checkout the code and build all sub-projects with:</p>
+<div><pre class="line-numbers"><code class="language-bash">git clone git&#64;github.com:resist-js/resist.git
+cd resist
+pnpm i
+pnpm build</code></pre></div><h2 id="pull-requests">Pull requests</h2>
+<h3 id="your-first-pull-request">Your first pull request</h3>
+<p>So you have decided to contribute code back to upstream by opening a pull request. You&#39;ve invested a good chunk of time, and we appreciate it. We will do our best to work with you and get the PR looked at.</p>
+<p>Working on your first Pull Request? You can learn how from this free video series:</p>
+<p><a href="https://egghead.io/courses/how-to-contribute-to-an-open-source-project-on-github"><strong>How to Contribute to an Open Source Project on GitHub</strong></a></p>
+<h3 id="proposing-a-change">Proposing a change</h3>
+<p>If you would like to request a new feature or enhancement but are not yet thinking about opening a pull request, you can also file an issue with <a href="https://github.com/resist-js/resist/issues/new?template=feature_request.md">feature template</a>.</p>
+<p>If you&#39;re only fixing a bug, it&#39;s fine to submit a pull request right away but we still recommend that you file an issue detailing what you&#39;re fixing. This is helpful in case we don&#39;t accept that specific fix but want to keep track of the issue.</p>
+<h3 id="sending-a-pull-request">Sending a pull request</h3>
+<p>Small pull requests are much easier to review and more likely to get merged. Make sure the PR does only one thing, otherwise please split it.</p>
+<p>Please make sure the following is done when submitting a pull request:</p>
+<ol>
+<li>Fork <a href="https://github.com/resist-js/resist/">the repository</a> and create your branch from <code>master</code>.</li>
+<li>Describe your <strong>test plan</strong> in your pull request description. Make sure to test your changes.</li>
+<li>Make sure your code lints (<code>pnpm check</code>).</li>
+<li>Make sure your tests pass (<code>pnpm test</code>).</li>
+</ol>
+<p>All pull requests should be opened against the <code>master</code> branch.</p>
+<h4 id="test-plan">Test plan</h4>
+<p>A good test plan has the exact commands you ran and their output, provides screenshots or videos if the pull request changes UI.</p>
+<ul>
+<li>If you&#39;ve changed APIs, updated the documentation.</li>
+</ul>
+<h4 id="testing">Testing</h4>
+<p>Run <code>pnpm test</code> to run the tests for all subpackages.</p>
+<p>You can run the tests for a single package by first moving to that directory. E.g. <code>cd packages/go</code>.</p>
+<p>You must rebuild each time before running the tests if you&#39;ve made code changes.</p>
+<p>To run a single integration test, provide the <code>FILTER</code> env var with the test name. E.g. <code>FILTER=&quot;includes paths&quot; pnpm test:integration</code>. You can also open up the file and change <code>test</code> to <code>test.only</code>.</p>
+<p>You can run the test server with <code>pnpm go</code> to hit it with your browser.</p>
+<h4 id="breaking-changes">Breaking changes</h4>
+<p>When adding a new breaking change, follow this template in your pull request:</p>
+<div><pre class="line-numbers"><code class="language-md">### New breaking change here
+
+- **Who does this affect**:
+- **How to migrate**:
+- **Why make this breaking change**:
+- **Severity (number of people affected x effort)**:</code></pre></div><h3 id="what-happens-next">What happens next?</h3>
+<p>The core resist.js team will be monitoring for pull requests. Do help us by making your pull request easy to review by following the guidelines above.</p>
+<h2 id="style-guide">Style guide</h2>
+<p><a href="https://eslint.org">Eslint</a> will catch most styling issues that may exist in your code. You can check the status of your code styling by simply running <code>pnpm check</code>.</p>
+<h3 id="coding-style">Coding style</h3>
+<p>There are a few guidelines we follow:</p>
+<ul>
+<li>Internal variables are written with <code>snake_case</code> while external APIs are written with <code>camelCase</code></li>
+<li>Provide a single object as the argument to public APIs. This object can have multiple properties</li>
+<li>Avoid creating new test projects under <code>packages/*/test/apps</code> but reuse an existing one when possible</li>
+<li>Ensure <code>pnpm check</code> pass.</li>
+</ul>
+<h3 id="generating-changelogs">Generating changelogs</h3>
+<p>For changes to be reflected in package changelogs, run <code>pnpx changeset</code> and follow the prompts. All changesets should be <code>patch</code> until resist.js 1.0</p>
+<h3 id="releases">Releases</h3>
+<p>The <a href="https://github.com/changesets/action#with-publishing">Changesets GitHub action</a> will create and update a PR that applies changesets and publishes new versions of changed packages to npm.</p>
+<p>New packages will need to be published manually the first time if they are scoped to the <code>@resistjs</code> organisation, by running this from the package directory:</p>
+<div><pre class="line-numbers"><code class="language-bash">npm publish --access=public</code></pre></div><h2 id="license">License</h2>
+<p>By contributing to resist.js, you agree that your contributions will be licensed under its <a href="https://github.com/resist-js/resist/blob/master/LICENSE">MIT license</a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 0;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'getting-started';
+            var COMPODOC_CURRENT_PAGE_URL = 'contributing.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="./js/libs/custom-elements.min.js"></script>
+       <script src="./js/libs/lit-html.js"></script>
+
+       <script src="./js/menu-wc.js" defer></script>
+       <script nomodule src="./js/menu-wc_es5.js" defer></script>
+
+       <script src="./js/libs/bootstrap-native.js"></script>
+
+       <script src="./js/libs/es6-shim.min.js"></script>
+       <script src="./js/libs/EventDispatcher.js"></script>
+       <script src="./js/libs/promise.min.js"></script>
+       <script src="./js/libs/zepto.min.js"></script>
+
+       <script src="./js/compodoc.js"></script>
+
+       <script src="./js/tabs.js"></script>
+       <script src="./js/menu.js"></script>
+       <script src="./js/libs/clipboard.min.js"></script>
+       <script src="./js/libs/prism.js"></script>
+       <script src="./js/sourceCode.js"></script>
+          <script src="./js/search/search.js"></script>
+          <script src="./js/search/lunr.min.js"></script>
+          <script src="./js/search/search-lunr.js"></script>
+          <script src="./js/search/search_index.js"></script>
+       <script src="./js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
