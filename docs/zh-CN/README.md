@@ -146,13 +146,13 @@
 
 ### 本地安装
 
-### 准备工作
+#### 准备工作
 
 - [如何安装Node和npm](https://nodejs.org/en/download/current/)
 - [如何安装Docker](https://docs.docker.com/get-docker/)
 - [如何安装VSCode](https://vscodium.com/#install)
 
-### 一切就绪之后
+#### 一切就绪之后
 
 - #### 怎样开始开发?
 
