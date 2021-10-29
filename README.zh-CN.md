@@ -171,9 +171,9 @@
 
 若您能熟练使用英语之外的语言, 您的语言能力将能够很好的帮助我们翻译与更新不同语言的文档。若想要进行这方面的工作，您可通过提交和并请求来进行贡献。
 
-若您决定为本项目贡献，请阅览我们的[贡献指南](https://github.com/resist-js/resist/blob/master/CONTRIBUTING.md)。 同时也欢迎加入我们的[Slack](https://resistjs.slack.com)群组来和大家打个招呼。👋
+若您决定为本项目添砖加瓦，请阅览我们的[贡献指南](https://github.com/resist-js/resist/blob/master/CONTRIBUTING.md)。 同时也欢迎加入我们的[Slack](https://resistjs.slack.com)群组来和大家打个招呼。👋
 
-## ✨ 贡献者
+## ✨ 贡献者名单
 
 谢谢你们，你们是最棒的 ([emoji key](https://allcontributors.org/docs/en/emoji-key))
 
