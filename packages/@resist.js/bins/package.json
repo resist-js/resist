@@ -42,7 +42,7 @@
     "stylelint": "^14.0.0",
     "stylelint-config-standard": "^23.0.0",
     "stylelint-config-standard-scss": "^2.0.0",
-    "xo": "^0.45.0"
+    "xo": "^0.46.3"
   },
   "codacy": "9d670d8cdbe243a5b722b5f9d644e406",
   "long_description": "Global package for resist.js that supports Starting, Stopping, Uninstalling resist.js projects and uninstalling resist.js itself. Provided when using @resistjs/go and by typing **resist** in your favourite terminal."
