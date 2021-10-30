@@ -13,7 +13,7 @@
 
 身为OpenJS Foundation成员，resist.js采用[贡献者公约 2.0][cc-20-doc]条例.
 
-若发生了您无法与直接与相关各方解决的问题，您可通过以下方式向resist.js项目TC报告
+若发生了您无法直接与相关各方解决的问题，您可通过以下方式向resist.js项目TC报告: 
 电子邮件：resist-js-coc@lists.openjsf.org
 
 此外，OpenJS Foundation还设有一个行为准则小组（CoCP）。
