@@ -49,12 +49,12 @@
 - [安装“创建问题分支”机器人助手](https://github.com/apps/create-issue-branch)
 - [安装“背景调查”机器人助手](https://github.com/apps/background-check)
 - [安装“自动评论”机器人助手](https://github.com/apps/auto-comment)
-- [安装“全体贡献人”机器人](https://github.com/apps/allcontributors/installations/new)
+- [安装“全体贡献人”机器人助手](https://github.com/apps/allcontributors/installations/new)
 
 ## 3. 设置一个 npm 账户
 
 > 这是什么？
-> 对于诸如resist.js 之类的开源项目，这将能让他人轻松地安装和使用这些产品。创建 npm 帐户之后，您的项目包便可轻松地被自动分发出去，亦会让他人使用自如。
+> 对于诸如resist.js 之类的开源项目，这将能让他人轻松地安装和使用这些开源产品。创建 npm 帐户之后，您的项目包便可轻松地被自动分发出去，亦能让他人使用自如。
 
 > 此步骤仅适用于您打算将单一代码库开源的情况。
 > 如果您打算将其设为私有库（例如供公司内部使用），您可以跳到下一步。
@@ -87,7 +87,7 @@
 ## 5. 设置 Slack 工作空间
 
 > 这是什么？
-> 拥有 Slack 工作空间的目的是创造一个让贡献者和团队成员等可以进行实时讨论的环境。它还将作为持续开发/持续集成生命周期的一部分，因为持续开发/持续集成以及GitHub动作历史都可发布到Slack当中。
+> 拥有 Slack 工作空间的目的是创造一个让贡献者和团队成员等可以进行实时讨论的环境。它还将作为持续开发/持续集成生命周期的一部分，因为持续开发/持续集成信息以及GitHub动作历史都可发布到Slack当中。
 
 > 我该怎么做？
 > 观看下面的视频以详细了解您的 Slack 帐户应该如何设置。
