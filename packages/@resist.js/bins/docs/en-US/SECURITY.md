@@ -1,7 +1,7 @@
 # In Your Language
 
 <p align="center">
-  <a href="https://github.com/resist-js/resist/blob/master/docs/en-US/SECURITY.md"
+  <a href="https://github.com/resist-js/resistblob/master/docs/en-US/SECURITY.md"
     >English</a>
 </p>
 
@@ -110,3 +110,5 @@ on the team completely private to the team. This includes agreeing to not notify
 team of issues that have not yet been disclosed publicly, including the existence of issues,
 expectations of upcoming releases, and patching of any issues other than in the process of their work
 as a member of the Core team.
+
+#### Did you find this helpful? Is there something we can improve? [Click here](https://github.com/resist-js/resistissues/new?assignees=&labels=&template=documentation.yml) to make a suggestion.

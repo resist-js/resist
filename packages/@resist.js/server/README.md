@@ -44,6 +44,12 @@
   <a href="https://resistjs.dev/chat" target="_blank">
     <img src="https://img.shields.io/badge/slack-@@resistjs/server-green.svg?logo=slack"/>
   </a>
+  <a href="https://www.linkedin.com/company/resist-js" target="_blank">
+    <img src="https://img.shields.io/badge/linkedin-resistjs-blue.svg?logo=linkedin"/>
+  </a>
+  <a href="https://twitter.com/resist_js" target="_blank">
+    <img src="https://img.shields.io/badge/twitter-resistjs-blue.svg?logo=twitter"/>
+  </a>
   <a href="https://opencollective.com/@resistjs/server" target="_blank">
     <img alt="Open Collective backers and sponsors" src="https://img.shields.io/opencollective/all/@resistjs/server?style=flat-square"/>
   </a>
@@ -104,6 +110,14 @@ The server that powers @resistjs/go.
 - #### How Do I Do It?
 
   [Getting Started](https://resistjs.dev/)
+
+## 📚 Helpful Information
+
+[How does this all work?](https://github.com/resist-js/resist/docs/en-US/GITHUB_SETUP.md)
+[Structure](https://github.com/resist-js/resist/docs/en-US/STRUCTURE.md)
+[Policies](https://github.com/resist-js/resist/docs/en-US/HOUSEKEEPING.md)
+[Project Charter](https://github.com/resist-js/resist/docs/en-US/PROJECT_CHARTER.md)
+[Governance](https://github.com/resist-js/resist/docs/en-US/GOVERNANCE.md)
 
 ## 🤝 Contributing
 

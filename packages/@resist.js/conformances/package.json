@@ -1,7 +1,7 @@
 {
   "name": "@resistjs/conformances",
   "description": "Utility Package to conform monorepo packages to a base template and/or run prettier and linting on packages.",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/resist-js/resist.git",

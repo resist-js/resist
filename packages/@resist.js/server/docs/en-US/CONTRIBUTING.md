@@ -1,26 +1,27 @@
 # In Your Language
 
 <p align="center">
-  <a href="https://github.com/resist-js/resist/blob/master/docs/en-US/CONTRIBUTING.md"
+  <a href="https://github.com/resist-js/resistblob/master/docs/en-US/CONTRIBUTING.md"
     >English</a>
 </p>
 
 # Contributing to @resistjs/server
 
-The [Open Source Guides](https://opensource.guide/) website has a collection of resources for individuals, communities, and companies. These resources help people who want to learn how to run and contribute to projects in an effective way. Contributors and people new to will find the following guides especially useful:
+The [Open-Source Guides](https://opensource.guide/) website has a collection of resources for individuals, communities, and companies. These resources help people who want to learn how to run and contribute to projects in an effective way. Contributors and people new to will find the following guides especially useful:
 
 - [How to Contribute to Open Source](https://opensource.guide/how-to-contribute/)
 - [Building Welcoming Communities](https://opensource.guide/building-community/)
+- [Code Of Conduct](<[Checks](https://github.com/resist-js/resistblob/master/CODE_OF_CONDUCT.md)>)
 
 ## Get involved
 
 There are many ways to contribute to @resistjs/server, and many of them do not involve writing any code. Here's a few ideas to get started:
 
 - Simply start using @resistjs/server. Go through the [Getting Started](https://resistjs.dev/start) guide. Does everything work as expected? If not, we're always looking for improvements. Let us know by [opening an issue](#reporting-new-issues).
-- Look through the [open issues](https://github.com/resist-js/resistissues). A good starting point would be issues tagged [good first issue](https://github.com/resist-js/resistissues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22). Provide workarounds, ask for clarification, or suggest labels. Help [triage issues](#triaging-issues-and-pull-requests).
+- Look through the [open issues](@resistjs/serverissues). A good starting point would be issues tagged [good first issue](@resistjs/serverissues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22). Provide workarounds, ask for clarification, or suggest labels. Help [triage issues](#triaging-issues-and-pull-requests).
 - If you find an issue you would like to fix, [open a pull request](#your-first-pull-request).
-- Read through our [tutorials](https://resistjs.dev/start). If you find anything that is confusing or can be improved, you can make make a Pull Request.
-- Take a look at the [features requested](https://github.com/resist-js/resistlabels/enhancement) by others in the community and consider opening a pull request if you see something you want to work on.
+- Read through our [tutorials](https://resistjs.dev/start). If you find anything that is confusing or can be improved, you can make a Pull Request.
+- Take a look at the [features requested](@resistjs/serverlabels/enhancement) by others in the community and consider opening a pull request if you see something you want to work on.
 
 Contributions are very welcome. If you think you need help planning your contribution, please ping us on Slack at [https://resistjs.dev/chat](https://resistjs.dev/chat) and let us know you are looking for a bit of help.
 
@@ -37,7 +38,7 @@ One great way you can contribute to the project without writing any code is to h
 
 We use [GitHub issues](https://github.com/resist-js/resistissues) for our public bugs. If you would like to report a problem, take a look around and see if someone already opened an issue about it. If you are certain this is a new unreported bug, you can submit a [bug report](#reporting-new-issues).
 
-If you have questions about using @resistjs/server, contact us on Slack at [https://resistjs.dev/chat]((https://resistjs.dev/chat), and we will do our best to answer your questions.
+If you have questions about using @resistjs/server, contact us on Slack at [https://resistjs.dev/chat](https://resistjs.dev/chat), and we will do our best to answer your questions.
 
 If you see anything you'd like to be implemented, create a [feature request issue](https://github.com/resist-js/resistissues/new?template=feature_request.md)
 
@@ -64,7 +65,7 @@ npm i -g pnpm
 
 ```bash
 git clone git@github.com:resist-js/resist.git
-cd resist
+cd @resistjs/server
 pnpm i
 pnpm build
 ```
@@ -77,7 +78,7 @@ So you have decided to contribute code back to upstream by opening a pull reques
 
 Working on your first Pull Request? You can learn how from this free video series:
 
-[**How to Contribute to an Open Source Project on GitHub**](https://egghead.io/courses/how-to-contribute-to-an-open-source-project-on-github)
+[**How to Contribute to an Open-Source Project on GitHub**](https://egghead.io/courses/how-to-contribute-to-an-open-source-project-on-github)
 
 ### Proposing a change
 
@@ -93,10 +94,14 @@ Please make sure the following is done when submitting a pull request:
 
 1. Fork [the repository](https://github.com/resist-js/resist) and create your branch from `master`.
 1. Describe your **test plan** in your pull request description. Make sure to test your changes.
-1. Make sure your code lints (`pnpm run check`).
-1. Make sure your tests pass (`pnpm run test`).
+1. Make sure your code passes all checks (`pnpm check`).
+1. Make sure your tests pass (`pnpm test`).
 
 All pull requests should be opened against the `master` branch.
+
+### Documentation
+
+If your pull request potentially affects any portion of Documentation either directly or indirectly, make sure that updated translations for all current languages are included. This includes any alteration to how the following processes work: GitHub Actions, GitHub Checks, GitHub Commits, GitHub Documentation, GitHub Issues, GitHub PRs, GitHub Release, GitHub Setup and Housekeeping. Any changes must also be subsequently reflected through the same means in `@@resistjs/server/go/templates`.
 
 #### Test plan
 
@@ -106,7 +111,7 @@ A good test plan has the exact commands you ran and their output, provides scree
 
 #### Testing
 
-Run `pnpm test` to run the tests for all subpackages.
+Run `pnpm test` to run the tests for all sub packages.
 
 You can run the tests for a single package by first moving to that directory. E.g. `cd packages/go`.
 
@@ -131,11 +136,11 @@ When adding a new breaking change, follow this template in your pull request:
 
 ### What happens next?
 
-The core @resistjs/server team will be monitoring for pull requests. Do help us by making your pull request easy to review by following the guidelines above.
+The `@@resistjs/server/core` @resistjs/server team will be monitoring for pull requests. Do help us by making your pull request easy to review by following the guidelines above.
 
 ## Style guide
 
-[Eslint](https://eslint.org) will catch most styling issues that may exist in your code. You can check the status of your code styling by simply running `pnpm run check`.
+Our [Checks](https://github.com/resist-js/resistblob/master/docs/en-US/GITHUB_CHECKS.md) will catch most styling issues that may exist in your code. You can check the status of your code styling by simply running `pnpm check`.
 
 ### Coding style
 
@@ -148,13 +153,13 @@ There are a few guidelines we follow:
 
 ### Generating changelogs
 
-For changes to be reflected in package changelogs, run `pnpx changeset` and follow the prompts.
+For changes to be reflected in package changelogs, run `pnpx changeset` and follow the prompts. All changesets should be `patch` until @resistjs/server 1.0.
 
 ### Releases
 
 The [Changesets GitHub action](https://github.com/changesets/action#with-publishing) will create and update a PR that applies changesets and publishes new versions of changed packages to npm.
 
-New packages will need to be published manually the first time if they are scoped to the `@resistjs` organisation, by running this from the package directory:
+New packages will need to be published manually the first time if they are scoped to the `@@resistjs/server` organisation, by running this from the package directory:
 
 ```bash
 npm publish --access=public
@@ -162,4 +167,6 @@ npm publish --access=public
 
 ## License
 
-By contributing to resist.js, you agree that your contributions will be licensed under its [MIT license](https://github.com/resist-js/resistblob/master/LICENSE).
+By contributing to @resistjs/server, you agree that your contributions will be licensed under its [MIT license](https://github.com/resist-js/resistblob/master/LICENSE.md).
+
+#### Did you find this helpful? Is there something we can improve? [Click here](https://github.com/resist-js/resistissues/new?assignees=&labels=&template=documentation.yml) to make a suggestion.
