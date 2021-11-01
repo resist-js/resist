@@ -16,7 +16,7 @@ As a member of the Open JS Foundation, resist.js has adopted the
 
 If an issue arises and you cannot resolve it directly with the parties
 involved, you can report it to the resist.js project TC through the following
-email: resist-js-coc@lists.openjsf.org
+email: resistjs-coc@lists.openjsf.org
 
 In addition, the OpenJS Foundation maintains a Code of Conduct Panel (CoCP).
 This is a foundation-wide team established to manage escalation when a reporter
@@ -41,23 +41,23 @@ diverse, inclusive, and healthy community.
 Examples of behavior that contributes to a positive environment for our
 community include:
 
-* Demonstrating empathy and kindness toward other people
-* Being respectful of differing opinions, viewpoints, and experiences
-* Giving and gracefully accepting constructive feedback
-* Accepting responsibility and apologizing to those affected by our mistakes,
+- Demonstrating empathy and kindness toward other people
+- Being respectful of differing opinions, viewpoints, and experiences
+- Giving and gracefully accepting constructive feedback
+- Accepting responsibility and apologizing to those affected by our mistakes,
   and learning from the experience
-* Focusing on what is best not just for us as individuals, but for the overall
+- Focusing on what is best not just for us as individuals, but for the overall
   community
 
 Examples of unacceptable behavior include:
 
-* The use of sexualized language or imagery, and sexual attention or advances
+- The use of sexualized language or imagery, and sexual attention or advances
   of any kind
-* Trolling, insulting or derogatory comments, and personal or political attacks
-* Public or private harassment
-* Publishing others' private information, such as a physical or email address,
+- Trolling, insulting or derogatory comments, and personal or political attacks
+- Public or private harassment
+- Publishing others' private information, such as a physical or email address,
   without their explicit permission
-* Other conduct which could reasonably be considered inappropriate in a
+- Other conduct which could reasonably be considered inappropriate in a
   professional setting
 
 ## Enforcement Responsibilities
@@ -74,7 +74,7 @@ moderation decisions when appropriate.
 
 ## Scope
 
-This Code of Conduct applies within all community spaces, and also applies when
+This Code of Conduct applies within all community spaces, and applies when
 an individual is officially representing the community in public spaces.
 Examples of representing our community include using an official e-mail
 address, posting via an official social media account, or acting as an
@@ -111,7 +111,7 @@ actions.
 
 **Consequence**: A warning with consequences for continued behavior. No
 interaction with the people involved, including unsolicited interaction with
-those enforcing the Code of Conduct, for a specified period of time. This
+those enforcing the Code of Conduct, for a specified period. This
 includes avoiding interactions in community spaces as well as external channels
 like social media. Violating these terms may lead to a temporary or permanent
 ban.
@@ -122,7 +122,7 @@ ban.
 sustained inappropriate behavior.
 
 **Consequence**: A temporary ban from any sort of interaction or public
-communication with the community for a specified period of time. No public or
+communication with the community for a specified period. No public or
 private interaction with the people involved, including unsolicited
 interaction with those enforcing the Code of Conduct, is allowed during this
 period. Violating these terms may lead to a permanent ban.
@@ -130,7 +130,7 @@ period. Violating these terms may lead to a permanent ban.
 ### 4. Permanent Ban
 
 **Community Impact**: Demonstrating a pattern of violation of community
-standards, including sustained inappropriate behavior,  harassment of an
+standards, including sustained inappropriate behavior, harassment of an
 individual, or aggression toward or disparagement of classes of individuals.
 
 **Consequence**: A permanent ban from any sort of public interaction within the
@@ -148,3 +148,5 @@ Community Impact Guidelines were inspired by
 For answers to common questions about this code of conduct, see the FAQ at
 [https://www.contributor-covenant.org/faq](https://www.contributor-covenant.org/faq). Translations are available at
 [https://www.contributor-covenant.org/faq](https://www.contributor-covenant.org/translations).
+
+#### Did you find this helpful? Is there something we can improve? [Click here](https://github.com/resist-js/resist/issues/new?assignees=&labels=&template=documentation.yml) to make a suggestion.

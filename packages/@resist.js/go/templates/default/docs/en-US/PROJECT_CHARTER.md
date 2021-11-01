@@ -1,25 +1,21 @@
 # In Your Language
 
 <p align="center">
-  <a href="https://github.com/resist-js/resist/blob/master/docs/en-US/PROJECT_CHARTER.md"
+  <a href="~GITHUB_URL~blob/master/docs/en-US/PROJECT_CHARTER.md"
     >English</a>
-  ·
-  <a
-    href="https://github.com/resist-js/resist/blob/master/docs/zh-CN/PROJECT_CHARTER.md"
-    >简体中文</a>
 </p>
 
-# resist.js Charter
+# ~APP_NAME~ Charter
 
-The resist.js project aims to build a fast and low overhead complete SaaS solution from Architecture through CI/CD to Release.
+The ~APP_NAME~ project aims to build a fast and low overhead complete SaaS solution from Architecture through CI/CD to Release.
 
 ## Section 0: Guiding Principles
 
-The resist.js project is part of the [OpenJS Foundation][openjs foundation]. It operates transparently, openly, collaboratively, and ethically. Project proposals, timelines, and status must not merely be open, but also easily visible to outsiders.
+The ~APP_NAME~ project is part of the [OpenJS Foundation][openjs foundation]. It operates transparently, openly, collaboratively, and ethically. Project proposals, timelines, and status must not merely be open, but also easily visible to outsiders.
 
 ## Section 1: Scope
 
-resist.js is a web framework highly focused on providing the best developer experience with the least overhead and a plugin architecture.
+~DESCRIPTION~
 
 ### 1.1: In-scope
 
@@ -50,9 +46,9 @@ resist.js is a web framework highly focused on providing the best developer expe
 
 ## Section 2: Relationship with OpenJS Foundation CPC
 
-Technical leadership for the projects within the [OpenJS Foundation][openjs foundation] is delegated to the projects through their project charters by the [OpenJS Foundation Cross-Project Council](https://openjsf.org/about/governance/) (CPC). In the case of the resist.js project, it is delegated to the [Collaborators](README.md#team). The OpenJS Foundation's business leadership is the Board of Directors (the "Board").
+Technical leadership for the projects within the [OpenJS Foundation][openjs foundation] is delegated to the projects through their project charters by the [OpenJS Foundation Cross-Project Council](https://openjsf.org/about/governance/) (CPC). In the case of the ~APP_NAME~ project, it is delegated to the [Collaborators](README.md#team). The OpenJS Foundation's business leadership is the Board of Directors (the "Board").
 
-This resist.js Charter reflects a carefully constructed balanced role for the Collaborators and the CPC in the governance of the OpenJS Foundation. The charter amendment process is for the Collaborators to propose change using simple majority of the full Organization, the proposed changes being subject to review and approval by the CPC. The CPC may additionally make amendments to the Collaborators charter at any time, though the CPC will not interfere with day-to-day discussions, votes or meetings of the Organization.
+This ~APP_NAME~ Charter reflects a carefully constructed balanced role for the Collaborators and the CPC in the governance of the OpenJS Foundation. The charter amendment process is for the Collaborators to propose change using simple majority of the full Organization, the proposed changes being subject to review and approval by the CPC. The CPC may additionally make amendments to the Collaborators charter at any time, though the CPC will not interfere with day-to-day discussions, votes or meetings of the Organization.
 
 ### 2.1 Other Formal Project Relationships
 
@@ -60,11 +56,11 @@ Section Intentionally Left Blank
 
 ## Section 3: Governing Body
 
-resist.js is governed by its [maintainers](README.md#team). See [how it is structured](GOVERNANCE.md) for more information.
+~APP_NAME~ is governed by its [maintainers](README.md#team). See [how it is structured](GOVERNANCE.md) for more information.
 
 ## Section 4: Roles & Responsibilities
 
-The roles and responsibilities of resistjs maintainers are described in [the project organization](GOVERNANCE.md).
+The roles and responsibilities of ~APP_NAME~ maintainers are described in [the project organization](GOVERNANCE.md).
 
 ### Section 4.1 Project Operations & Management
 
@@ -74,7 +70,7 @@ Section Intentionally Left Blank
 
 **Decision-making**
 
-resist.js features can be discussed in GitHub issues and/or projects.
+~APP_NAME~ features can be discussed in GitHub issues and/or projects.
 Consensus on a discussion is reached when there is no objection by any
 collaborators.
 
@@ -99,4 +95,4 @@ Section Intentionally Left Blank
 [openjs foundation]: https://openjsf.org
 [consensus seeking]: https://en.wikipedia.org/wiki/Consensus-seeking_decision-making
 
-#### Did you find this helpful? Is there something we can improve? [Click here](https://github.com/resist-js/resist/issues/new?assignees=&labels=&template=documentation.yml) to make a suggestion.
+#### Did you find this helpful? Is there something we can improve? [Click here](~GITHUB_URL~issues/new?assignees=&labels=&template=documentation.yml) to make a suggestion.

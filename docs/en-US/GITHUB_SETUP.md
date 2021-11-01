@@ -51,10 +51,10 @@ These wonderful little helpers will take a lot of the manual work that is requir
 - [Install Auto Comment Bot](https://github.com/apps/auto-comment)
 - [Install All Contributors Bot](https://github.com/apps/allcontributors/installations/new)
 
-## 3. Setting Up An npm Account
+## 3. Setting Up A npm Account
 
 > What is this?
-> For an open source project such as resist.js, it's integral for people anywhere to be able to easily install and use our product. Creating an npm account allows for your projects packages to be easily distributed automatically and installed by anyone with ease.
+> For an open-source project such as resist.js, it's integral for people anywhere to be able to easily install and use our product. Creating a npm account allows for your projects packages to be easily distributed automatically and installed by anyone with ease.
 
 > This step is only applicable if you intend for your mono-repository to be open-source.
 > If you intend for it to be private (such as for internal company use), you can skip to the next step.
@@ -118,17 +118,15 @@ These wonderful little helpers will take a lot of the manual work that is requir
 > [See here](./docs/en-US/GITHUB_RELEASE.md)
 
 > **What are all these files?**
-> You may notice, there are quite a few files as part of your mono-repo. Each of these server a purpose, most of them never need to be modified. They just work!
+> You may notice, there are quite a few files as part of your mono-repo. Each of these serve a purpose, most of them never need to be modified. They just work!
 > However, for clarity and transparency you can press the link below to find detailed explanations about each file and what the purpose of it is.
 
 [What are these files?](./docs/en-US/STRUCTURE.md)
 
-## 7. Do I Need To Do Anything Else?
-
-> Did we miss something? Does anything need more explanation or clarification? If so, open an `Issue` following the `Contributor` guidelines.
-
-## 8. What's Next?
+## 7. What's Next?
 
 > Now that you have an understanding of how everything works...
 > Follow the Installation Section in the `README` to get started.
-> **Happy Coding!** Together, through this open source project we can help make our lives as developers easier. 🎉
+> **Happy Coding!** Together, through this open-source project we can help make our lives as developers easier. 🎉
+
+#### Did you find this helpful? Is there something we can improve? [Click here](https://github.com/resist-js/resist/issues/new?assignees=&labels=&template=documentation.yml) to make a suggestion.

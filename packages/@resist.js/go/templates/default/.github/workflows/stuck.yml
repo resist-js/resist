@@ -2,11 +2,14 @@
 ##
 ## NOTE: Do not make changes here without approval from @resist-js/core.
 
+## NOTE: If updating here, also update the corresponding code block in GITHUB_ACTIONS.md
+
 name: Stuck PRs
 
 on:
   schedule:
     - cron: '0 * * * *' # Run once per hour
+
 jobs:
   stuck-prs:
     runs-on: ubuntu-latest

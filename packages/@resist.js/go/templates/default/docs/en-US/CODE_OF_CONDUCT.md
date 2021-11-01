@@ -1,8 +1,12 @@
 # In Your Language
 
 <p align="center">
-  <a href="https://github.com/~REPO~/blob/master/docs/en-US/CODE_OF_CONDUCT.md"
+  <a href="~GITHUB_URL~blob/master/docs/en-US/CODE_OF_CONDUCT.md"
     >English</a>
+  ·
+  <a
+    href="~GITHUB_URL~blob/master/docs/zh-CN/CODE_OF_CONDUCT.md"
+    >简体中文</a>
 </p>
 
 # Contributor Covenant Code of Conduct
@@ -70,7 +74,7 @@ moderation decisions when appropriate.
 
 ## Scope
 
-This Code of Conduct applies within all community spaces, and also applies when
+This Code of Conduct applies within all community spaces, and applies when
 an individual is officially representing the community in public spaces.
 Examples of representing our community include using an official e-mail
 address, posting via an official social media account, or acting as an
@@ -80,7 +84,7 @@ appointed representative at an online or offline event.
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
 reported to the community leaders responsible for enforcement at
-resistjs-coc@lists.openjsf.org. All complaints will be reviewed and
+~APP_NAME~-coc@lists.openjsf.org. All complaints will be reviewed and
 investigated promptly and fairly.
 
 All community leaders are obligated to respect the privacy and security of the
@@ -107,7 +111,7 @@ actions.
 
 **Consequence**: A warning with consequences for continued behavior. No
 interaction with the people involved, including unsolicited interaction with
-those enforcing the Code of Conduct, for a specified period of time. This
+those enforcing the Code of Conduct, for a specified period. This
 includes avoiding interactions in community spaces as well as external channels
 like social media. Violating these terms may lead to a temporary or permanent
 ban.
@@ -118,7 +122,7 @@ ban.
 sustained inappropriate behavior.
 
 **Consequence**: A temporary ban from any sort of interaction or public
-communication with the community for a specified period of time. No public or
+communication with the community for a specified period. No public or
 private interaction with the people involved, including unsolicited
 interaction with those enforcing the Code of Conduct, is allowed during this
 period. Violating these terms may lead to a permanent ban.
@@ -142,5 +146,7 @@ Community Impact Guidelines were inspired by
 [cc-20-doc]: https://www.contributor-covenant.org/version/2/0/code_of_conduct/
 
 For answers to common questions about this code of conduct, see the FAQ at
-https://www.contributor-covenant.org/faq. Translations are available at
-https://www.contributor-covenant.org/translations.
+[https://www.contributor-covenant.org/faq](https://www.contributor-covenant.org/faq). Translations are available at
+[https://www.contributor-covenant.org/faq](https://www.contributor-covenant.org/translations).
+
+#### Did you find this helpful? Is there something we can improve? [Click here](~GITHUB_URL~issues/new?assignees=&labels=&template=documentation.yml) to make a suggestion.

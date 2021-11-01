@@ -8,7 +8,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
+        Thanks for taking the time to fill out this bug report! Please make sure that you follow the [Contributor Guidelines](https://github.com/resist-js/resist/CONTRIBUTING.md).
   - type: textarea
     id: bug-description
     attributes:
@@ -49,6 +49,21 @@ body:
         - serious, but I can work around it
         - blocking an upgrade
         - blocking all usage of resist.js
+    validations:
+      required: true
+  - type: dropdown
+    id: package
+    attributes:
+      label: Package
+      options:
+        - api
+        - bins
+        - components
+        - conformances
+        - go
+        - server
+        - storage
+        - utils
     validations:
       required: true
   - type: textarea

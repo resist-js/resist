@@ -8,6 +8,10 @@ body:
   - type: markdown
     attributes:
       value: |
+        Thanks for taking the time to fill out this feature request! Please make sure that you follow the [Contributor Guidelines](https://github.com/resist-js/resist/CONTRIBUTING.md).
+  - type: markdown
+    attributes:
+      value: |
         Thanks for taking the time to request this feature! If your feature request is complex or substantial enough to warrant in-depth discussion, maintainers may close the issue and ask you to open an [RFC](https://github.com/resist-js/rfcs).
   - type: textarea
     id: problem

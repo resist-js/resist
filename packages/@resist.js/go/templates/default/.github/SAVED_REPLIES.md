@@ -17,7 +17,7 @@ If the problem persists in your application after upgrading, please open a new i
 ```
 I'm sorry, but we don't understand the problem you are reporting.
 
-Please provide a simple repository reproducing the problem, and describe the difference between the expected and current behavior. You can use `create-nx-workspace my-issue` to create a new project where you reproduce the problem.
+Please provide a simple repository reproducing the problem and describe the difference between the expected and current behavior.
 ```
 
 ## Duplicate
@@ -29,7 +29,7 @@ Thanks for reporting this issue. However, this issue is a duplicate of #<ISSUE_N
 ## Insufficient Information Provided
 
 ```
-Thanks for reporting this issue. However, you didn't provide sufficient information for us to understand and reproduce the problem. Please check out [our submission guidelines](~GITHUB_URL~/blob/master/CONTRIBUTING.md#-submitting-an-issue) to understand why we can't act on issues that are lacking important information.
+Thanks for reporting this issue. However, you didn't provide sufficient information for us to understand and reproduce the problem. Please check out [our submission guidelines](https://github.com/resist-js/resist/blob/master/CONTRIBUTING.md#-submitting-an-issue) to understand why we can't act on issues that are lacking important information.
 
 Please ensure you provide all of the required information when filling out the issue template.
 ```
@@ -37,22 +37,22 @@ Please ensure you provide all of the required information when filling out the i
 ## NPM install issue
 
 ```
-This seems like a problem with your node/npm and not with ~APP_NAME~.
+This seems like a problem with your node/npm and not with resist.js.
 
 Please have a look at the [fixing npm permissions page](https://docs.npmjs.com/getting-started/fixing-npm-permissions), [common errors page](https://docs.npmjs.com/troubleshooting/common-errors), [npm issue tracker](https://github.com/npm/npm/issues), or open a new issue if the problem you are experiencing isn't known.
 ```
 
-## Issue Outside of ~APP_NAME~
+## Issue Outside of resist.js
 
 ```
-I'm sorry, but this issue is not caused by ~APP_NAME~. Please contact the author(s) of the <PROJECT NAME> project or file an issue on their issue tracker.
+I'm sorry, but this issue is not caused by resist.js. Please contact the author(s) of the <PROJECT NAME> project or file an issue on their issue tracker.
 ```
 
 ## Non-reproducible
 
 ```
 I'm sorry, but we can't reproduce the problem following the instructions you provided.
-Remember that we have a large number of issues to resolve, and have only a limited amount of time to reproduce your issue.
+Remember that we have a large number of issues to resolve and have only a limited amount of time to reproduce your issue.
 Short, explicit instructions make it much more likely we'll be able to reproduce the problem so we can fix it.
 ```
 

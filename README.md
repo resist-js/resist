@@ -44,6 +44,12 @@
   <a href="https://resistjs.dev/chat" target="_blank">
     <img src="https://img.shields.io/badge/slack-@resistjs-green.svg?logo=slack"/>
   </a>
+  <a href="https://www.linkedin.com/company/resist-js" target="_blank">
+    <img src="https://img.shields.io/badge/linkedin-resistjs-blue.svg?logo=linkedin"/>
+  </a>
+  <a href="https://twitter.com/resist_js" target="_blank">
+    <img src="https://img.shields.io/badge/twitter-resistjs-blue.svg?logo=twitter"/>
+  </a>
   <a href="https://opencollective.com/resistjs" target="_blank">
     <img alt="Open Collective backers and sponsors" src="https://img.shields.io/opencollective/all/resist-js?style=flat-square"/>
   </a>
@@ -78,7 +84,7 @@
   align="right"
 />
 
-**🌻 The multiverses most complete framework for scaleable websites & SaaS.**
+**🌻 The multiverses most complete framework for scalable websites & SaaS.**
 
 - **Fast:** it's fast – _really really_ fast! 🚀
 - **Customizable:** configure every aspect of your SaaS.
@@ -141,3 +147,5 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+
+#### Did you find this helpful? Is there something we can improve? [Click here](https://github.com/resist-js/resist/issues/new?assignees=&labels=&template=documentation.yml) to make a suggestion.

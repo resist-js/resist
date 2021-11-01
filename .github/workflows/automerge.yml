@@ -4,6 +4,8 @@
 
 name: 👀 Auto Merge
 
+## NOTE: If updating here, also update the corresponding code block in GITHUB_ACTIONS.md as well as @resistjs/go's template.
+
 on:
   workflow_run:
     types:

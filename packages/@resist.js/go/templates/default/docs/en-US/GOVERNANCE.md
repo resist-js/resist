@@ -1,12 +1,8 @@
 # In Your Language
 
 <p align="center">
-  <a href="https://github.com/resist-js/resist/blob/master/docs/en-US/GOVERNANCE.md"
+  <a href="~GITHUB_URL~blob/master/docs/en-US/GOVERNANCE.md"
     >English</a>
-  ·
-  <a
-    href="https://github.com/resist-js/resist/blob/master/docs/zh-CN/GOVERNANCE.md"
-    >简体中文</a>
 </p>
 
 # Project Governance
@@ -26,22 +22,12 @@
 ## Lead Maintainers
 
 Lead Maintainers are the founder of the project and the organization owners.
-They are the only members of the `@resist-js/leads` team.
-The Lead Maintainers are the curator of the resist.js project and their key responsibility is to issue releases of resist.js and its dependencies and handle [Housekeeping](https://github.com/resist-js/resist/blob/master/docs/en-US/HOUSEKEEPING.md).
+They are the only members of the `@~APP_NAME~/leads` team.
+The Lead Maintainers are the curator of the ~APP_NAME~ project and their key responsibility is to issue releases of ~APP_NAME~ and its dependencies and handle [Housekeeping](~GITHUB_URL~blob/master/docs/en-US/HOUSEKEEPING.md).
 
 ## Collaborators
 
-Collaborators maintain the projects of the resist.js organization.
-
-They are split into the following teams:
-
-| Team                   | Responsibility        | Repository                                                    |
-| ---------------------- | --------------------- | ------------------------------------------------------------- |
-| `@resist-js/leads`     | Lead Maintainers      | GitHub organization owners                                    |
-| `@resist-js/core`      | Core development      | `go`, `server`, `conformances`, `utils`, `bins`, `svelte-kit` |
-| `@resist-js/component` | Component development | `components`                                                  |
-| `@resist-js/api`       | API development       | `api`                                                         |
-| `@resist-js/storage`   | Storage development   | `storage`                                                     |
+Collaborators maintain the projects of the ~APP_NAME~ organization.
 
 Collaborators have:
 
@@ -51,7 +37,7 @@ Collaborators have:
 Both Collaborators and non-Collaborators may propose changes to the source code
 of the projects of the organization.
 The mechanism to propose such a change is a GitHub pull request.
-Collaborators review and merge (_land_) pull requests following the [CONTRIBUTING](https://github.com/resist-js/resist/blob/master/CONTRIBUTING.md#rules) guidelines.
+Collaborators review and merge (_land_) pull requests following the [CONTRIBUTING](~GITHUB_URL~blob/master/CONTRIBUTING.md#rules) guidelines.
 
 ### Collaborator activities
 
@@ -67,17 +53,17 @@ status. Past Collaborators may request that the Lead Maintainers restore them to
 
 ## Great Contributors
 
-Great contributors on a specific area in the resist.js ecosystem will be invited to join this group by Lead Maintainers.
+Great contributors on a specific area in the ~APP_NAME~ ecosystem will be invited to join this group by Lead Maintainers.
 This group has the same permissions as a contributor.
 
 ## Collaborator nominations
 
-Individuals making significant and valuable contributions to the project may be a candidate to join the resist.js organization.
+Individuals making significant and valuable contributions to the project may be a candidate to join the ~APP_NAME~ organization.
 
 A Collaborator needs to open a private team discussion on GitHub and list the candidates
 they want to sponsor with a link to the user's contributions. For example:
 
-- Activities in the resist.js organization `[USERNAME](https://github.com/search?q=author:USERNAME+org:resist-js)`
+- Activities in the ~APP_NAME~ organization `[USERNAME](https://github.com/search?q=author:USERNAME+org:~APP_NAME~)`
 
 Otherwise, a Contributor may self-apply if they believe they meet the above criteria by reaching out
 to a Lead Maintainer privately with the links to their valuable contributions.
@@ -96,6 +82,6 @@ A Team Member may be promoted to a Lead Maintainers only through nomination by a
 
 ## Consensus seeking process
 
-The resist.js organization follows a [Consensus Seeking](https://en.wikipedia.org/wiki/Consensus-seeking_decision-making) decision-making model.
+The ~APP_NAME~ organization follows a [Consensus Seeking](https://en.wikipedia.org/wiki/Consensus-seeking_decision-making) decision-making model.
 
-#### Did you find this helpful? Is there something we can improve? [Click here](https://github.com/resist-js/resist/issues/new?assignees=&labels=&template=documentation.yml) to make a suggestion.
+#### Did you find this helpful? Is there something we can improve? [Click here](~GITHUB_URL~issues/new?assignees=&labels=&template=documentation.yml) to make a suggestion.

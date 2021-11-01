@@ -2,12 +2,16 @@
 ##
 ## NOTE: Do not make changes here without approval from @resist-js/core.
 
+## NOTE: If updating here, also update the corresponding code block in GITHUB_ACTIONS.md as well as @resistjs/go's template.
+
 name: Release
 
 on:
-  push:
-    branches:
-      - master
+  workflow_run:
+    types:
+      - completed
+    workflows:
+      - 'CI'
 
 jobs:
   release:
@@ -26,6 +30,7 @@ jobs:
           channel: resistjs
           status: STARTING
           color: warning
+
       - name: Checkout Repo
         uses: actions/checkout@master
         with:
@@ -43,15 +48,15 @@ jobs:
       - run: pnpm run build --filter ./packages
       - run: pnpm run check
 
-      - name: Create Release Pull Request or Publish to npm
+      - name: Create Tag & Publish to npm
         id: changesets
         uses: changesets/action@master
         with:
-          # This expects you to have a script called release which does a build for your packages and calls changeset publish
           publish: pnpm release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
       - name: Workflow Success
         if: success()
         env:

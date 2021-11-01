@@ -17,7 +17,7 @@ If the problem persists in your application after upgrading, please open a new i
 ```
 I'm sorry, but we don't understand the problem you are reporting.
 
-Please provide a simple repository reproducing the problem, and describe the difference between the expected and current behavior. You can use `create-nx-workspace my-issue` to create a new project where you reproduce the problem.
+Please provide a simple repository reproducing the problem and describe the difference between the expected and current behavior.
 ```
 
 ## Duplicate
@@ -52,7 +52,7 @@ I'm sorry, but this issue is not caused by resist.js. Please contact the author(
 
 ```
 I'm sorry, but we can't reproduce the problem following the instructions you provided.
-Remember that we have a large number of issues to resolve, and have only a limited amount of time to reproduce your issue.
+Remember that we have a large number of issues to resolve and have only a limited amount of time to reproduce your issue.
 Short, explicit instructions make it much more likely we'll be able to reproduce the problem so we can fix it.
 ```
 

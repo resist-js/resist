@@ -1,0 +1,50 @@
+## @final
+##
+## NOTE: Do not make changes here without approval from @resist-js/core.
+
+name: "\U0001F41E Documentation"
+description: Report a documentation issue with ~APP_NAME~
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out your suggestion! Please make sure that you follow the [Contributor Guidelines](~GITHUB_URL~/CONTRIBUTING.md).
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Describe the documentation issue
+      description: Please indicate in what way the documentation is lacking.
+      placeholder: Description
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      options:
+        - annoyance
+        - serious, but I can work around it
+        - blocking an upgrade
+        - blocking all usage of ~APP_NAME~
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Markdown File
+      options:
+        - README
+        - CONTRIBUTING
+        - CODE_OF_CONDUCT
+        - GOVERNANCE
+        - PROJECT_CHARTER
+        - SECURITY
+        - STRUCTURE
+        - GITHUB_SETUP
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Information

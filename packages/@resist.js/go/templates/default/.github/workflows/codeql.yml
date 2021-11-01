@@ -2,6 +2,8 @@
 ##
 ## NOTE: Do not make changes here without approval from @resist-js/core.
 
+## NOTE: If updating here, also update the corresponding code block in GITHUB_ACTIONS.md
+
 name: CodeQL
 
 on:
@@ -53,6 +55,7 @@ jobs:
 
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v1
+
       - name: Workflow Success
         if: success()
         env:

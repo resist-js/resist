@@ -103,6 +103,14 @@
 
   [Getting Started](~HOMEPAGE~)
 
+## 📚 Helpful Information
+
+[How does this all work?](https://github.com/~REPO~/docs/en-US/GITHUB_SETUP.md)
+[Structure](https://github.com/~REPO~/docs/en-US/STRUCTURE.md)
+[Policies](https://github.com/~REPO~/docs/en-US/HOUSEKEEPING.md)
+[Project Charter](https://github.com/~REPO~/docs/en-US/PROJECT_CHARTER.md)
+[Governance](https://github.com/~REPO~/docs/en-US/GOVERNANCE.md)
+
 ## 🤝 Contributing
 
 We are always looking for contributors of **all skill levels**! If you're looking to ease your way into the project, try out a [good first issue](https://github.com/~REPO~/labels/🌱%20good%20first%20issue).
