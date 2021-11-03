@@ -17,8 +17,6 @@
   // End: Local Imports
 
   // Start: External Imports
-  import '../styles/tailwind.postcss'
-
   // End: External Imports
 
   // Start: Local component properties

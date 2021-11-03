@@ -41,10 +41,101 @@ services:
       - '${PORT_FLAGS}:4242'
     environment:
       DATABASE_URL: 'postgres://postgres:unleash@flags_db/postgres'
-      DATABASE_SSL: 'false'
+      DATABASE_SSL: 'false' # TODO
     depends_on:
       - flags_db
+  exceptionless:
+    container_name: exception
+    image: exceptionless/app:latest
+    ports:
+      - '${PORT_EXCEPTION}:80'
+      - '${PORT_EXCEPTION_SSL}:443'
+    environment:
+      EX_AppMode: Production
+      EX_ConnectionStrings__Cache: provider=redis
+      EX_ConnectionStrings__Elasticsearch: server=http://elasticsearch:9200
+      EX_ConnectionStrings__MessageBus: provider=redis
+      #EX_ConnectionStrings__Metrics: provider=statsd;server=statsd;
+      EX_ConnectionStrings__Queue: provider=redis
+      EX_ConnectionStrings__Redis: server=redis,abortConnect=false
+      #ASPNETCORE_URLS: http://+;https://+
+      #ASPNETCORE_HTTPS_PORT: 5001
+      #ASPNETCORE_Kestrel__Certificates__Default__Password: password
+      #ASPNETCORE_Kestrel__Certificates__Default__Path: /https/aspnetapp.pfx
+      EX_RunJobsInProcess: 'false'
+    volumes:
+      - exceptionless:/app/storage
+      - exceptionless_ssl:/https
+    depends_on:
+      - elasticsearch
+      - redis
+  exceptionless_jobs:
+    depends_on:
+      - exceptionless
+    image: exceptionless/job:latest
+    environment:
+      EX_AppMode: Production
+      EX_BaseURL: http://localhost:${PORT_EXCEPTION}
+      EX_ConnectionStrings__Cache: provider=redis
+      EX_ConnectionStrings__Elasticsearch: server=http://elasticsearch:9200
+      EX_ConnectionStrings__Email: smtp://localhost:1025
+      EX_ConnectionStrings__MessageBus: provider=redis
+      #EX_ConnectionStrings__Metrics: provider=statsd;server=statsd;
+      EX_ConnectionStrings__Queue: provider=redis
+      EX_ConnectionStrings__Redis: server=redis,abortConnect=false
+      EX_ConnectionStrings__Storage: provider=folder;path=/app/storage
+    volumes:
+      - exceptionless:/app/storage
+  redis:
+    image: redis:6.0-alpine
+    ports:
+      - '${PORT_REDIS}:6379'
+  mail:
+    image: mailhog/mailhog:latest
+    ports:
+      - 8025:8025
+      - 1025:1025
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.15.0
+    container_name: elasticsearch
+    environment:
+      - http.host=0.0.0.0
+      - transport.host=0.0.0.0
+      - 'ES_JAVA_OPTS=-Xms1g -Xmx1g'
+    volumes:
+      - elastic:/usr/share/elasticsearch/data
+      - ./elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
+    ports:
+      - '${PORT_ELASTIC}:9200'
+      - '${PORT_ELASTIC_SSL}:9300'
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+      nofile:
+        soft: 65536
+        hard: 65536
+    mem_limit: 2g
+    cap_add:
+      - IPC_LOCK
+  kibana:
+    depends_on:
+      - elasticsearch
+    image: docker.elastic.co/kibana/kibana:7.15.0
+    container_name: kibana
+    environment:
+      - SERVER_HOST=0.0.0.0
+    volumes:
+      - ./kibana.yml:/usr/share/kibana/config/kibana.yml
+    ports:
+      - '${PORT_KIBANA}:5601'
 volumes:
   uptime:
+    driver: local
+  elastic:
+    driver: local
+  exceptionless:
+    driver: local
+  exceptionless_ssl:
     driver: local
   exclude:

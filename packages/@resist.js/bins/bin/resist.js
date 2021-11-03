@@ -130,7 +130,7 @@ async function run(choice) {
 
         if (
           !launch(
-            `APP_NAME=${container} CWD=$(builtin pwd) PORT_FlAGS=4003 PORT_UPTIME=4002 PORT_STORYBOOK=6006 PORT_SERVER_DEV=3000 PORT_DEV_DEBUG=3001 PORT_SERVER_PROD=4000 PORT_PROD_DEBUG=4001 PORT_HMR=24678 docker-compose --log-level WARNING -f ${path}/config/docker-compose.yml down --rmi all -v --remove-orphans`,
+            `APP_NAME=${container} CWD=$(builtin pwd) PORT_ELASTIC=9200 PORT_ELASTIC_SSL=9300 PORT_KIBANA=5601 PORT_REDIS=6379 PORT_EXCEPTION_SSL=5001 PORT_EXCEPTION=5000 PORT_FLAGS=4003 PORT_UPTIME=4002 PORT_STORYBOOK=6006 PORT_SERVER_DEV=3000 PORT_DEV_DEBUG=3001 PORT_SERVER_PROD=4000 PORT_PROD_DEBUG=4001 PORT_HMR=24678 docker-compose --log-level WARNING -f ${path}/config/docker-compose.yml down --rmi all -v --remove-orphans`,
           )
         ) {
           console.log(bold(red(`✗ ${container} was not removed as it doesn't exist.`)))
@@ -230,7 +230,7 @@ async function run(choice) {
 
             if (
               !launch(
-                `APP_NAME=${PROJECT_NAME.value} CWD=$(builtin pwd) PORT_FlAGS=4003 PORT_UPTIME=4002 PORT_STORYBOOK=6006 PORT_SERVER_DEV=3000 PORT_DEV_DEBUG=3001 PORT_SERVER_PROD=4000 PORT_PROD_DEBUG=4001 PORT_HMR=24678 docker-compose --log-level WARNING -f ${container}/config/docker-compose.yml down --rmi all -v --remove-orphans`,
+                `APP_NAME=${PROJECT_NAME.value} CWD=$(builtin pwd) PORT_ELASTIC=9200 PORT_ELASTIC_SSL=9300 PORT_KIBANA=5601 PORT_REDIS=6379 PORT_EXCEPTION_SSL=5001 =5000 PORT_FLAGS=4003 PORT_UPTIME=4002 PORT_STORYBOOK=6006 PORT_SERVER_DEV=3000 PORT_DEV_DEBUG=3001 PORT_SERVER_PROD=4000 PORT_PROD_DEBUG=4001 PORT_HMR=24678 docker-compose --log-level WARNING -f ${container}/config/docker-compose.yml down --rmi all -v --remove-orphans`,
               )
             ) {
               console.log(bold(red(`✗ ${PROJECT_NAME.value} was not removed as it doesn't exist.`)))

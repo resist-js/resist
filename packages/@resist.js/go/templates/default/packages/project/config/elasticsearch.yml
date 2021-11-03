@@ -1,0 +1,20 @@
+cluster.name: "resist-cluster"
+node.name: "resist-elasticsearch"
+network.host: 0.0.0.0
+
+http.cors.enabled: true
+http.cors.allow-origin: "*"
+http.cors.allow-headers: "Authorization"
+
+xpack.security.enabled: true
+xpack.security.audit.enabled: true
+discovery.type: single-node
+
+xpack.monitoring.collection.enabled: true
+xpack.security.authc.api_key.enabled: true
+
+#xpack.security.transport.ssl.enabled: true
+#xpack.security.transport.ssl.verification_mode: certificate 
+#xpack.security.transport.ssl.client_authentication: required
+#xpack.security.transport.ssl.keystore.path: elastic-certificates.p12
+#xpack.security.transport.ssl.truststore.path: elastic-certificates.p12
