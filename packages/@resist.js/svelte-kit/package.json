@@ -32,7 +32,7 @@
 		"kleur": "^4.1.4",
 		"locate-character": "^2.0.5",
 		"marked": "^3.0.7",
-		"mime": "^2.5.2",
+		"mime": "^3.0.0",
 		"node-fetch": "^3.0.0",
 		"port-authority": "^1.1.2",
 		"rimraf": "^3.0.2",
