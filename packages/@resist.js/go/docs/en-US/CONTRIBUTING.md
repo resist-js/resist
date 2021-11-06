@@ -1,7 +1,7 @@
 # In Your Language
 
 <p align="center">
-  <a href="https://github.com/resist-js/resistblob/master/docs/en-US/CONTRIBUTING.md"
+  <a href="https://github.com/resist-js/resist/blob/master/docs/en-US/CONTRIBUTING.md"
     >English</a>
 </p>
 
@@ -11,17 +11,17 @@ The [Open-Source Guides](https://opensource.guide/) website has a collection of 
 
 - [How to Contribute to Open Source](https://opensource.guide/how-to-contribute/)
 - [Building Welcoming Communities](https://opensource.guide/building-community/)
-- [Code Of Conduct](<[Checks](https://github.com/resist-js/resistblob/master/CODE_OF_CONDUCT.md)>)
+- [Code Of Conduct](<[Checks](https://github.com/resist-js/resist/blob/master/CODE_OF_CONDUCT.md)>)
 
 ## Get involved
 
 There are many ways to contribute to @resistjs/go, and many of them do not involve writing any code. Here's a few ideas to get started:
 
 - Simply start using @resistjs/go. Go through the [Getting Started](https://resistjs.dev/start) guide. Does everything work as expected? If not, we're always looking for improvements. Let us know by [opening an issue](#reporting-new-issues).
-- Look through the [open issues](@resistjs/goissues). A good starting point would be issues tagged [good first issue](@resistjs/goissues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22). Provide workarounds, ask for clarification, or suggest labels. Help [triage issues](#triaging-issues-and-pull-requests).
+- Look through the [open issues](https://github.com/resist-js/resist/issues). A good starting point would be issues tagged [good first issue](https://github.com/resist-js/resist/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22). Provide workarounds, ask for clarification, or suggest labels. Help [triage issues](#triaging-issues-and-pull-requests).
 - If you find an issue you would like to fix, [open a pull request](#your-first-pull-request).
 - Read through our [tutorials](https://resistjs.dev/start). If you find anything that is confusing or can be improved, you can make a Pull Request.
-- Take a look at the [features requested](@resistjs/golabels/enhancement) by others in the community and consider opening a pull request if you see something you want to work on.
+- Take a look at the [features requested](https://github.com/resist-js/resist/labels/enhancement) by others in the community and consider opening a pull request if you see something you want to work on.
 
 Contributions are very welcome. If you think you need help planning your contribution, please ping us on Slack at [https://resistjs.dev/chat](https://resistjs.dev/chat) and let us know you are looking for a bit of help.
 
@@ -30,28 +30,28 @@ Contributions are very welcome. If you think you need help planning your contrib
 One great way you can contribute to the project without writing any code is to help triage issues and pull requests as they come in.
 
 - Ask for more information if you believe the issue does not provide all the details required to solve it.
-- Suggest [labels](https://github.com/resist-js/resistlabels) that can help categorize issues.
+- Suggest [labels](https://github.com/resist-js/resist/labels) that can help categorize issues.
 - Flag issues that are stale or that should be closed.
 - Ask for test plans and review code.
 
 ## Bugs
 
-We use [GitHub issues](https://github.com/resist-js/resistissues) for our public bugs. If you would like to report a problem, take a look around and see if someone already opened an issue about it. If you are certain this is a new unreported bug, you can submit a [bug report](#reporting-new-issues).
+We use [GitHub issues](https://github.com/resist-js/resist/issues) for our public bugs. If you would like to report a problem, take a look around and see if someone already opened an issue about it. If you are certain this is a new unreported bug, you can submit a [bug report](#reporting-new-issues).
 
 If you have questions about using @resistjs/go, contact us on Slack at [https://resistjs.dev/chat](https://resistjs.dev/chat), and we will do our best to answer your questions.
 
-If you see anything you'd like to be implemented, create a [feature request issue](https://github.com/resist-js/resistissues/new?template=feature_request.md)
+If you see anything you'd like to be implemented, create a [feature request issue](https://github.com/resist-js/resist/issues/new?template=feature_request.md)
 
 ## Reporting new issues
 
-When [opening a new issue](https://github.com/resist-js/resistissues/new/choose), always make sure to fill out the issue template. **This step is very important!** Not doing so may result in your issue not being managed in a timely fashion. Don't take this personally if this happens, and feel free to open a new issue once you've gathered all the information required by the template.
+When [opening a new issue](https://github.com/resist-js/resist/issues/new/choose), always make sure to fill out the issue template. **This step is very important!** Not doing so may result in your issue not being managed in a timely fashion. Don't take this personally if this happens, and feel free to open a new issue once you've gathered all the information required by the template.
 
 - **One issue, one bug:** Please report a single bug per issue.
 - **Provide reproduction steps:** List all the steps necessary to reproduce the issue. The person reading your bug report should be able to follow these steps to reproduce your issue with minimal effort.
 
 ## RFCs
 
-If you'd like to propose an implementation for a large new feature or change then please [create an RFC](https://github.com/resist-js/resistrfcs) to discuss it up front.
+If you'd like to propose an implementation for a large new feature or change then please [create an RFC](https://github.com/resist-js/resist/rfcs) to discuss it up front.
 
 ## Developing
 
@@ -82,7 +82,7 @@ Working on your first Pull Request? You can learn how from this free video serie
 
 ### Proposing a change
 
-If you would like to request a new feature or enhancement but are not yet thinking about opening a pull request, you can also file an issue with [feature template](https://github.com/resist-js/resistissues/new?template=feature_request.md).
+If you would like to request a new feature or enhancement but are not yet thinking about opening a pull request, you can also file an issue with [feature template](https://github.com/resist-js/resist/issues/new?template=feature_request.md).
 
 If you're only fixing a bug, it's fine to submit a pull request right away but we still recommend that you file an issue detailing what you're fixing. This is helpful in case we don't accept that specific fix but want to keep track of the issue.
 
@@ -92,7 +92,7 @@ Small pull requests are much easier to review and more likely to get merged. Mak
 
 Please make sure the following is done when submitting a pull request:
 
-1. Fork [the repository](https://github.com/resist-js/resist) and create your branch from `master`.
+1. Fork [the repository](https://github.com/resist-js/resist/) and create your branch from `master`.
 1. Describe your **test plan** in your pull request description. Make sure to test your changes.
 1. Make sure your code passes all checks (`pnpm check`).
 1. Make sure your tests pass (`pnpm test`).
@@ -140,7 +140,7 @@ The `@@resistjs/go/core` @resistjs/go team will be monitoring for pull requests.
 
 ## Style guide
 
-Our [Checks](https://github.com/resist-js/resistblob/master/docs/en-US/GITHUB_CHECKS.md) will catch most styling issues that may exist in your code. You can check the status of your code styling by simply running `pnpm check`.
+Our [Checks](https://github.com/resist-js/resist/blob/master/docs/en-US/GITHUB_CHECKS.md) will catch most styling issues that may exist in your code. You can check the status of your code styling by simply running `pnpm check`.
 
 ### Coding style
 
@@ -167,6 +167,6 @@ npm publish --access=public
 
 ## License
 
-By contributing to @resistjs/go, you agree that your contributions will be licensed under its [MIT license](https://github.com/resist-js/resistblob/master/LICENSE.md).
+By contributing to @resistjs/go, you agree that your contributions will be licensed under its [MIT license](https://github.com/resist-js/resist/blob/master/LICENSE.md).
 
-#### Did you find this helpful? Is there something we can improve? [Click here](https://github.com/resist-js/resistissues/new?assignees=&labels=&template=documentation.yml) to make a suggestion.
+#### Did you find this helpful? Is there something we can improve? [Click here](https://github.com/resist-js/resist/issues/new?assignees=&labels=&template=documentation.yml) to make a suggestion.

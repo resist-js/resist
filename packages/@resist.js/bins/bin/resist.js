@@ -16,6 +16,7 @@ import { IsDockerRunning } from '@resistjs/utils'
 
 import prompts from 'prompts'
 import { bold, cyan, green, red } from 'kleur/colors'
+import { Listr } from 'listr2'
 
 /** @type {!string} */
 const HOME = homedir()
@@ -84,9 +85,9 @@ async function main() {
 async function run(choice) {
   const container = process.argv[3]
 
-  const launch = command => {
+  const launch = async command => {
     try {
-      execSync(command)
+      await execSync(command)
       return true
     } catch (error) {
       return false
@@ -120,7 +121,11 @@ async function run(choice) {
       console.log(bold(red(`✗ There were no containers to stop.`)))
     } else {
       Object.keys(data).forEach(container => {
-        if (launch(`docker stop ${container}`)) {
+        if (
+          launch(
+            `APP_NAME=${container} CWD=$(builtin pwd) PORT_ELASTIC=9200 PORT_ELASTIC_SSL=9300 PORT_KIBANA=5601 PORT_REDIS=6379 PORT_EXCEPTION_SSL=5001 PORT_EXCEPTION=5000 PORT_FLAGS=4003 PORT_UPTIME=4002 PORT_STORYBOOK=6006 PORT_SERVER_DEV=3000 PORT_DEV_DEBUG=3001 PORT_SERVER_PROD=4000 PORT_PROD_DEBUG=4001 PORT_HMR=24678 docker-compose -p ${container} --log-level WARNING -f ${path}/config/docker-compose.yml stop`,
+          )
+        ) {
           console.log(bold(green(`✔ ${container} has been stopped and is no longer running.`)))
         } else {
           console.log(bold(red(`✗ ${container} was not be stopped as it is not running.`)))
@@ -130,7 +135,7 @@ async function run(choice) {
 
         if (
           !launch(
-            `APP_NAME=${container} CWD=$(builtin pwd) PORT_ELASTIC=9200 PORT_ELASTIC_SSL=9300 PORT_KIBANA=5601 PORT_REDIS=6379 PORT_EXCEPTION_SSL=5001 PORT_EXCEPTION=5000 PORT_FLAGS=4003 PORT_UPTIME=4002 PORT_STORYBOOK=6006 PORT_SERVER_DEV=3000 PORT_DEV_DEBUG=3001 PORT_SERVER_PROD=4000 PORT_PROD_DEBUG=4001 PORT_HMR=24678 docker-compose --log-level WARNING -f ${path}/config/docker-compose.yml down --rmi all -v --remove-orphans`,
+            `APP_NAME=${container} CWD=$(builtin pwd) PORT_ELASTIC=9200 PORT_ELASTIC_SSL=9300 PORT_KIBANA=5601 PORT_REDIS=6379 PORT_EXCEPTION_SSL=5001 PORT_EXCEPTION=5000 PORT_FLAGS=4003 PORT_UPTIME=4002 PORT_STORYBOOK=6006 PORT_SERVER_DEV=3000 PORT_DEV_DEBUG=3001 PORT_SERVER_PROD=4000 PORT_PROD_DEBUG=4001 PORT_HMR=24678 docker-compose --log-level WARNING -f ${path}/config/docker-compose.yml -p ${container} down --rmi all -v --remove-orphans`,
           )
         ) {
           console.log(bold(red(`✗ ${container} was not removed as it doesn't exist.`)))
@@ -197,11 +202,32 @@ async function run(choice) {
         }
       }
     } else if (choice === 'stop') {
-      if (launch(`docker stop ${PROJECT_NAME.value}`)) {
-        console.log(bold(green(`✔ ${PROJECT_NAME.value} is stopped and is no longer running.`)))
-      } else {
-        console.log(bold(red(`✗ ${PROJECT_NAME.value} could not be stopped as it is not running.`)))
-      }
+      new Listr(
+        [
+          {
+            title: `Stopping ${PROJECT_NAME.value}`,
+            task: async (ctx, task) => {
+              let data
+              try {
+                data = JSON.parse(fs.readFileSync(CONFIG, 'utf-8'))
+              } catch (error) {
+                // Not important
+              }
+              const container = data[PROJECT_NAME.value]
+
+              if (
+                await launch(`APP_NAME=${PROJECT_NAME.value} CWD=${container}
+               PORT_ELASTIC=9200 PORT_ELASTIC_SSL=9300 PORT_KIBANA=5601 PORT_REDIS=6379 PORT_EXCEPTION_SSL=5001 PORT_EXCEPTION=5000 PORT_FLAGS=4003 PORT_UPTIME=4002 PORT_STORYBOOK=6006 PORT_SERVER_DEV=3000 PORT_DEV_DEBUG=3001 PORT_SERVER_PROD=4000 PORT_PROD_DEBUG=4001 PORT_HMR=24678 docker-compose --log-level WARNING -p ${PROJECT_NAME.value} -f ${container}/config/docker-compose.yml stop`)
+              ) {
+                task.title = `${PROJECT_NAME.value} is stopped and is no longer running.`
+              } else {
+                throw new Error(`${PROJECT_NAME.value} could not be stopped as it is not running.`)
+              }
+            },
+          },
+        ],
+        {},
+      ).run()
     } else if (choice === 'sweep') {
       const CONFIRMED = await prompts({
         type: 'confirm',
@@ -220,31 +246,47 @@ async function run(choice) {
         if (!data) {
           console.log(bold(red(`✗ There were no containers to uninstall.`)))
         } else {
-          const container = data[PROJECT_NAME.value]
-          if (container) {
-            if (launch(`docker stop ${container}`)) {
-              console.log(bold(green(`✔ ${container} has been stopped and is no longer running.`)))
-            } else {
-              console.log(bold(red(`✗ ${container} was not stopped as it is not running.`)))
-            }
+          new Listr(
+            [
+              {
+                title: `Uninstalling ${PROJECT_NAME.value}`,
+                task: async (ctx, task) => {
+                  const container = data[PROJECT_NAME.value]
+                  if (container) {
+                    if (
+                      launch(
+                        `APP_NAME=${PROJECT_NAME.value} CWD=$(builtin pwd) PORT_ELASTIC=9200 PORT_ELASTIC_SSL=9300 PORT_KIBANA=5601 PORT_REDIS=6379 PORT_EXCEPTION_SSL=5001 PORT_EXCEPTION=5000 PORT_FLAGS=4003 PORT_UPTIME=4002 PORT_STORYBOOK=6006 PORT_SERVER_DEV=3000 PORT_DEV_DEBUG=3001 PORT_SERVER_PROD=4000 PORT_PROD_DEBUG=4001 PORT_HMR=24678 docker-compose --log-level WARNING -f ${container}/config/docker-compose.yml -p ${PROJECT_NAME.value} stop`,
+                      )
+                    ) {
+                      task.title = `${container} has been stopped and is no longer running.`
+                    } else {
+                      throw new Error(`${container} was not stopped as it is not running.`)
+                    }
 
-            if (
-              !launch(
-                `APP_NAME=${PROJECT_NAME.value} CWD=$(builtin pwd) PORT_ELASTIC=9200 PORT_ELASTIC_SSL=9300 PORT_KIBANA=5601 PORT_REDIS=6379 PORT_EXCEPTION_SSL=5001 =5000 PORT_FLAGS=4003 PORT_UPTIME=4002 PORT_STORYBOOK=6006 PORT_SERVER_DEV=3000 PORT_DEV_DEBUG=3001 PORT_SERVER_PROD=4000 PORT_PROD_DEBUG=4001 PORT_HMR=24678 docker-compose --log-level WARNING -f ${container}/config/docker-compose.yml down --rmi all -v --remove-orphans`,
-              )
-            ) {
-              console.log(bold(red(`✗ ${PROJECT_NAME.value} was not removed as it doesn't exist.`)))
-            }
+                    if (
+                      !launch(
+                        `APP_NAME=${PROJECT_NAME.value} CWD=$(builtin pwd) PORT_ELASTIC=9200 PORT_ELASTIC_SSL=9300 PORT_KIBANA=5601 PORT_REDIS=6379 PORT_EXCEPTION_SSL=5001 =5000 PORT_FLAGS=4003 PORT_UPTIME=4002 PORT_STORYBOOK=6006 PORT_SERVER_DEV=3000 PORT_DEV_DEBUG=3001 PORT_SERVER_PROD=4000 PORT_PROD_DEBUG=4001 PORT_HMR=24678 docker-compose --log-level WARNING -f ${container}/config/docker-compose.yml -p ${PROJECT_NAME.value} down --rmi all -v --remove-orphans`,
+                      )
+                    ) {
+                      throw new Error(`${PROJECT_NAME.value} was not removed as it doesn't exist.`)
+                    }
 
-            try {
-              fs.rmdirSync(`${container}/config`, { recursive: true, force: true })
-            } catch (error) {
-              // Not important
-            }
-          }
+                    try {
+                      fs.rmdirSync(`${container}/config`, { recursive: true, force: true })
+                    } catch (error) {
+                      // Not important
+                    }
+
+                    task.title = `${PROJECT_NAME.value} has been uninstalled.`
+                  } else {
+                    throw new Error(`${container} was not stopped as it doesn't exist.`)
+                  }
+                },
+              },
+            ],
+            {},
+          ).run()
         }
-
-        console.log(bold(green(`✔ ${PROJECT_NAME.value} has been uninstalled.`)))
       }
     }
   }

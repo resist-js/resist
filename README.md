@@ -45,12 +45,12 @@
     <img src="https://img.shields.io/badge/slack-@resistjs-green.svg?logo=slack"/>
   </a>
   <a href="https://www.linkedin.com/company/resist-js" target="_blank">
-    <img src="https://img.shields.io/badge/linkedin-resistjs-blue.svg?logo=linkedin"/>
+    <img src="https://img.shields.io/badge/linkedin-resist-js-blue.svg?logo=linkedin"/>
   </a>
   <a href="https://twitter.com/resist_js" target="_blank">
-    <img src="https://img.shields.io/badge/twitter-resistjs-blue.svg?logo=twitter"/>
+    <img src="https://img.shields.io/badge/twitter-resist_js-blue.svg?logo=twitter"/>
   </a>
-  <a href="https://opencollective.com/resistjs" target="_blank">
+  <a href="https://opencollective.com/resist-js" target="_blank">
     <img alt="Open Collective backers and sponsors" src="https://img.shields.io/opencollective/all/resist-js?style=flat-square"/>
   </a>
   <a href="https://github.com/resist-js/ama" target="_blank">
@@ -130,6 +130,14 @@
 
   To **update** your project, rerun the above script. It will replace the current version without touching your project.
   <br/>After installation you will be guided through what to do next!
+
+## 📚 Helpful Information
+
+- [How does this all work?](https://github.com/~REPO~/docs/en-US/GITHUB_SETUP.md)
+- [Structure](https://github.com/~REPO~/docs/en-US/STRUCTURE.md)
+- [Policies](https://github.com/~REPO~/docs/en-US/HOUSEKEEPING.md)
+- [Project Charter](https://github.com/~REPO~/docs/en-US/PROJECT_CHARTER.md)
+- [Governance](https://github.com/~REPO~/docs/en-US/GOVERNANCE.md)
 
 ## 🤝 Contributing
 

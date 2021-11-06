@@ -1,7 +1,7 @@
 # In Your Language
 
 <p align="center">
-  <a href="https://github.com/resist-js/resistblob/master/docs/en-US/CODE_OF_CONDUCT.md"
+  <a href="https://github.com/resist-js/resist/blob/master/docs/en-US/CODE_OF_CONDUCT.md"
     >English</a>
 </p>
 
@@ -11,8 +11,8 @@ As a member of the Open JS Foundation, @resistjs/utils has adopted the
 [Contributor Covenant 2.0][cc-20-doc].
 
 If an issue arises and you cannot resolve it directly with the parties
-involved, you can report it to the @resistjs/utils project TC through the following
-email: @resistjs/utils-coc@lists.openjsf.org
+involved, you can report it to the resist-js project TC through the following
+email: resist-js-coc@lists.openjsf.org
 
 In addition, the OpenJS Foundation maintains a Code of Conduct Panel (CoCP).
 This is a foundation-wide team established to manage escalation when a reporter
@@ -80,7 +80,7 @@ appointed representative at an online or offline event.
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
 reported to the community leaders responsible for enforcement at
-@resistjs/utils-coc@lists.openjsf.org. All complaints will be reviewed and
+resist-js-coc@lists.openjsf.org. All complaints will be reviewed and
 investigated promptly and fairly.
 
 All community leaders are obligated to respect the privacy and security of the
@@ -145,4 +145,4 @@ For answers to common questions about this code of conduct, see the FAQ at
 [https://www.contributor-covenant.org/faq](https://www.contributor-covenant.org/faq). Translations are available at
 [https://www.contributor-covenant.org/faq](https://www.contributor-covenant.org/translations).
 
-#### Did you find this helpful? Is there something we can improve? [Click here](https://github.com/resist-js/resistissues/new?assignees=&labels=&template=documentation.yml) to make a suggestion.
+#### Did you find this helpful? Is there something we can improve? [Click here](https://github.com/resist-js/resist/issues/new?assignees=&labels=&template=documentation.yml) to make a suggestion.

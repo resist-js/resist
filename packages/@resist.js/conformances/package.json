@@ -1,13 +1,13 @@
 {
   "name": "@resistjs/conformances",
   "description": "Utility Package to conform monorepo packages to a base template and/or run prettier and linting on packages.",
-  "version": "1.0.15",
+  "version": "1.0.17",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/resist-js/resist.git",
     "directory": "packages/@resist.js/conformances"
   },
-  "author": "",
+  "author": "resist-js",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/resist-js/resist/issues"
@@ -39,11 +39,12 @@
     "eslint-plugin-jsdoc": "^36.1.1",
     "eslint-plugin-sonarjs": "^0.10.0",
     "eslint-plugin-tsdoc": "^0.2.14",
-    "stylelint": "^14.0.0",
+    "stylelint": "^14.0.1",
     "stylelint-config-standard": "^23.0.0",
-    "stylelint-config-standard-scss": "^2.0.0",
+    "stylelint-config-standard-scss": "^2.0.1",
     "xo": "^0.45.0"
   },
   "codacy": "9d670d8cdbe243a5b722b5f9d644e406",
-  "long_description": "Utility Package to conform monorepo packages to a base template and/or run prettier and linting on packages. Powered by: eslint, prettier, xo & stylelint."
+  "long_description": "Utility Package to conform monorepo packages to a base template and/or run prettier and linting on packages. Powered by: eslint, prettier, xo & stylelint.",
+  "twitter": "resist_js"
 }

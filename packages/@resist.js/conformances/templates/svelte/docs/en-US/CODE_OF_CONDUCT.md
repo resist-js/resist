@@ -11,8 +11,8 @@ As a member of the Open JS Foundation, ~APP_NAME~ has adopted the
 [Contributor Covenant 2.0][cc-20-doc].
 
 If an issue arises and you cannot resolve it directly with the parties
-involved, you can report it to the ~APP_NAME~ project TC through the following
-email: ~APP_NAME~-coc@lists.openjsf.org
+involved, you can report it to the ~AUTHOR~ project TC through the following
+email: ~AUTHOR~-coc@lists.openjsf.org
 
 In addition, the OpenJS Foundation maintains a Code of Conduct Panel (CoCP).
 This is a foundation-wide team established to manage escalation when a reporter
@@ -80,7 +80,7 @@ appointed representative at an online or offline event.
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
 reported to the community leaders responsible for enforcement at
-~APP_NAME~-coc@lists.openjsf.org. All complaints will be reviewed and
+~AUTHOR~-coc@lists.openjsf.org. All complaints will be reviewed and
 investigated promptly and fairly.
 
 All community leaders are obligated to respect the privacy and security of the

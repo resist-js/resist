@@ -96,6 +96,11 @@ function main() {
     // eslint-disable-next-line @typescript-eslint/no-var-requires
     const packageData = require(`${CWD}/package.json`)
 
+    let GITHUB_URL = packageData.repository
+      ? packageData.repository.url.replace('git+', '').replace('.git', '')
+      : packageData.homepage
+    if (!GITHUB_URL.endsWith('/')) GITHUB_URL = `${GITHUB_URL}/`
+
     const replacer = s => {
       const data = fs.readFileSync(`${CWD}/${s}`, 'utf-8')
       fs.writeFileSync(
@@ -108,18 +113,14 @@ function main() {
           .replace(/~VERSION~/g, packageData.version)
           .replace(/~HOMEPAGE~/g, packageData.homepage)
           .replace(/~CODACY~/g, packageData.codacy)
+          .replace(/~TWITTER~/g, packageData.twitter)
           .replace(
             /~REPO~/g,
             packageData.repository
               ? packageData.repository.url.replace('git+https://github.com/', '').replace('.git', '')
               : '',
           )
-          .replace(
-            /~GITHUB_URL~/g,
-            packageData.repository
-              ? packageData.repository.url.replace('git+', '').replace('.git', '')
-              : packageData.homepage,
-          ),
+          .replace(/~GITHUB_URL~/g, GITHUB_URL),
       )
     }
 

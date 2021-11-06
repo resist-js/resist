@@ -1,13 +1,13 @@
 {
   "name": "@resistjs/utils",
   "description": "Utility functions for resist.js.",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/resist-js/resist.git",
     "directory": "packages/@resist.js/utils"
   },
-  "author": "",
+  "author": "resist-js",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/resist-js/resist/issues"
@@ -28,14 +28,15 @@
     "eslint-plugin-jsdoc": "^36.1.1",
     "eslint-plugin-sonarjs": "^0.10.0",
     "eslint-plugin-tsdoc": "^0.2.14",
-    "stylelint": "^14.0.0",
+    "stylelint": "^14.0.1",
     "stylelint-config-standard": "^23.0.0",
-    "stylelint-config-standard-scss": "^2.0.0",
+    "stylelint-config-standard-scss": "^2.0.1",
     "xo": "^0.45.0"
   },
   "engines": {
     "node": ">= 16.11.1"
   },
   "codacy": "9d670d8cdbe243a5b722b5f9d644e406",
-  "long_description": "A collection of common node-based utilities that are used across @resistjs packages."
+  "long_description": "A collection of common node-based utilities that are used across @resistjs packages.",
+  "twitter": "resist_js"
 }

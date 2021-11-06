@@ -1,7 +1,7 @@
 # In Your Language
 
 <p align="center">
-  <a href="https://github.com/resist-js/resistblob/master/docs/en-US/SECURITY.md"
+  <a href="https://github.com/resist-js/resist/blob/master/docs/en-US/SECURITY.md"
     >English</a>
 </p>
 
@@ -13,7 +13,7 @@ This document describes the management of vulnerabilities for this project.
 
 Individuals who find potential vulnerabilities in this project are invited
 to complete a vulnerability report via the dedicated HackerOne page:
-[https://hackerone.com/@resistjs/utils](https://hackerone.com/@resistjs/utils).
+[https://hackerone.com/resist-js](https://hackerone.com/resist-js).
 
 ### Strict measures when reporting vulnerabilities
 
@@ -111,4 +111,4 @@ team of issues that have not yet been disclosed publicly, including the existenc
 expectations of upcoming releases, and patching of any issues other than in the process of their work
 as a member of the Core team.
 
-#### Did you find this helpful? Is there something we can improve? [Click here](https://github.com/resist-js/resistissues/new?assignees=&labels=&template=documentation.yml) to make a suggestion.
+#### Did you find this helpful? Is there something we can improve? [Click here](https://github.com/resist-js/resist/issues/new?assignees=&labels=&template=documentation.yml) to make a suggestion.

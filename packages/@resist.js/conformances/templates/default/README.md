@@ -17,8 +17,8 @@
   <a href="https://github.com/~REPO~/blob/master/LICENSE.md" target="_blank">
     <img alt="GitHub" src="https://img.shields.io/github/license/~REPO~?style=flat-square"/>
   </a>
-  <a href="https://www.npmjs.com/package/@~APP_NAME~" target="_blank">
-    <img alt="npm (scoped)" src="https://img.shields.io/npm/v/@~APP_NAME~?label=npm&style=flat-square"/>
+  <a href="https://www.npmjs.com/package/~APP_NAME~" target="_blank">
+    <img alt="npm (scoped)" src="https://img.shields.io/npm/v/~APP_NAME~?label=npm&style=flat-square"/>
   </a>
   <br/>
   <a href="https://github.com/~REPO~/actions" target="_blank">
@@ -42,18 +42,18 @@
   </a>
   <br/>
   <a href="~HOMEPAGE~chat" target="_blank">
-    <img src="https://img.shields.io/badge/slack-@~APP_NAME~-green.svg?logo=slack"/>
+    <img src="https://img.shields.io/badge/slack-~REPO~-green.svg?logo=slack"/>
   </a>
-  <a href="https://www.linkedin.com/company/resist-js" target="_blank">
-    <img src="https://img.shields.io/badge/linkedin-resistjs-blue.svg?logo=linkedin"/>
+  <a href="https://www.linkedin.com/company/~AUTHOR~" target="_blank">
+    <img src="https://img.shields.io/badge/linkedin-~AUTHOR~-blue.svg?logo=linkedin"/>
   </a>
-  <a href="https://twitter.com/resist_js" target="_blank">
-    <img src="https://img.shields.io/badge/twitter-resistjs-blue.svg?logo=twitter"/>
+  <a href="https://twitter.com/~TWITTER~" target="_blank">
+    <img src="https://img.shields.io/badge/twitter-~TWITTER~-blue.svg?logo=twitter"/>
   </a>
-  <a href="https://opencollective.com/~APP_NAME~" target="_blank">
-    <img alt="Open Collective backers and sponsors" src="https://img.shields.io/opencollective/all/~APP_NAME~?style=flat-square"/>
+  <a href="https://opencollective.com/~AUTHOR~" target="_blank">
+    <img alt="Open Collective backers and sponsors" src="https://img.shields.io/opencollective/all/~AUTHOR~?style=flat-square"/>
   </a>
-  <a href="https://github.com/~APP_NAME~/ama" target="_blank">
+  <a href="https://github.com/~AUTHOR~/ama" target="_blank">
     <img alt="Ask Me Anything" src="https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg"/>
   </a>
 </p>
@@ -113,11 +113,11 @@
 
 ## 📚 Helpful Information
 
-[How does this all work?](https://github.com/~REPO~/docs/en-US/GITHUB_SETUP.md)
-[Structure](https://github.com/~REPO~/docs/en-US/STRUCTURE.md)
-[Policies](https://github.com/~REPO~/docs/en-US/HOUSEKEEPING.md)
-[Project Charter](https://github.com/~REPO~/docs/en-US/PROJECT_CHARTER.md)
-[Governance](https://github.com/~REPO~/docs/en-US/GOVERNANCE.md)
+- [How does this all work?](https://github.com/~REPO~/docs/en-US/GITHUB_SETUP.md)
+- [Structure](https://github.com/~REPO~/docs/en-US/STRUCTURE.md)
+- [Policies](https://github.com/~REPO~/docs/en-US/HOUSEKEEPING.md)
+- [Project Charter](https://github.com/~REPO~/docs/en-US/PROJECT_CHARTER.md)
+- [Governance](https://github.com/~REPO~/docs/en-US/GOVERNANCE.md)
 
 ## 🤝 Contributing
 

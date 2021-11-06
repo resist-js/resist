@@ -6,10 +6,12 @@
 //
 // NOTE: Do not make changes here without approval from @resist-js/core.
 
+import { spawn } from 'node:child_process'
 import prompts from 'prompts'
 import { bold, cyan, green, red } from 'kleur/colors'
+import { Listr } from 'listr2'
 
-import { IsURL, CopyTemplate, CWD, CWDName, IsCWDEmpty, Launch, IsDockerRunning } from '@resistjs/utils'
+import { IsURL, CopyTemplate, CWD, CWDName, IsCWDEmpty, IsDockerRunning } from '@resistjs/utils'
 
 import Replacer from './replacer.js'
 
@@ -39,6 +41,35 @@ const messages = {
 }
 
 /**
+ * Spawn a child process.
+ *
+ * @param {!string} command The command to spawn.
+ * @param {!string[]} args Arguments for @command.
+ * @param {string} cwd Working directory.
+ * @returns {!Promise<void>} Resolvable promise.
+ */
+const Launch = (command, args, cwd) => {
+  return new Promise((resolve, reject) => {
+    const child = spawn(command, args, {
+      cwd: cwd,
+      stdio: command.includes('node') ? [process.stdin, process.stdout, process.stderr] : ['pipe', 'pipe', 'pipe'],
+    })
+
+    child.once('exit', code => {
+      if (code === 0) {
+        resolve(undefined)
+      } else {
+        reject(new Error(`Exited with error code: ${code}`))
+      }
+    })
+
+    child.once('error', err => {
+      reject(err)
+    })
+  })
+}
+
+/**
  * Entry point.
  */
 async function main() {
@@ -49,7 +80,7 @@ async function main() {
     return
   }
 
-  await IsCWDEmpty(async () =>
+  const CONTINUE = await IsCWDEmpty(async () =>
     prompts({
       type: 'confirm',
       name: 'value',
@@ -57,6 +88,7 @@ async function main() {
       initial: false,
     }),
   )
+  if (CONTINUE && !CONTINUE.value) return
 
   const APP_AUTHOR = await prompts({
     type: 'text',
@@ -64,6 +96,7 @@ async function main() {
     message: 'Author of project?',
     validate: value => (value?.length > 0 ? true : `A project author is required.`),
   })
+  if (!APP_AUTHOR.value) return
 
   const APP_DESCRIPTION = await prompts({
     type: 'text',
@@ -71,6 +104,7 @@ async function main() {
     message: 'Short description of your project.',
     validate: value => (value?.length > 0 ? true : `A short project description is required.`),
   })
+  if (!APP_DESCRIPTION.value) return
 
   const APP_LONG_DESCRIPTION = await prompts({
     type: 'text',
@@ -78,6 +112,7 @@ async function main() {
     message: 'Detailed description of project.',
     validate: value => (value?.length > 0 ? true : `A detailed project description is required.`),
   })
+  if (!APP_LONG_DESCRIPTION.value) return
 
   const APP_VERSION = await prompts({
     type: 'text',
@@ -86,6 +121,7 @@ async function main() {
     message: 'Starting version of project?',
     validate: value => (value?.length > 0 ? true : `A project version is required.`),
   })
+  if (!APP_VERSION.value) return
 
   const APP_LICENSE = await prompts({
     type: 'select',
@@ -98,6 +134,7 @@ async function main() {
       { title: 'MIT', value: 'MIT' },
     ],
   })
+  if (!APP_LICENSE.value) return
 
   const APP_HOMEPAGE = await prompts({
     type: 'text',
@@ -105,6 +142,7 @@ async function main() {
     message: 'Project homepage?',
     validate: value => (IsURL(value) ? true : `Project homepage must be a valid url (i.e. ${URL}).`),
   })
+  if (!APP_HOMEPAGE.value) return
 
   const APP_REPO = await prompts({
     type: 'text',
@@ -112,6 +150,7 @@ async function main() {
     message: 'Project repository?',
     validate: value => (value.includes('/') ? true : `Project repository must be provided (i.e. resist-js/resist).`),
   })
+  if (!APP_REPO.value) return
 
   const APP_KEYWORDS = await prompts({
     type: 'text',
@@ -147,23 +186,22 @@ async function main() {
     type: 'module',
     scripts: {
       check: 'resist-conform default && resist-conform default check',
-      prepare: 'husky install',
       prebuild: 'rimraf .svelte-kit && rimraf build',
-      'dev:postcss':
-        'cross-env postcss ./project/styles/global.scss -o ./project/public/global.css -w',
+      'dev:postcss': 'cross-env postcss ./project/styles/global.scss -o ./project/public/global.css -w',
       dev: 'svelte-kit dev --host=0.0.0.0',
       'build:scss': 'sass --no-source-map ./project/styles/global.scss ./project/public/global.css',
       'build:postcss':
         'cross-env NODE_ENV=production cross-env-shell postcss ./project/public/global.css -o ./project/public/global.css',
       'build:sveltekit': 'cross-env-shell svelte-kit build',
-      build: 'run-s remove-css build:scss build:postcss build:sveltekit',
+      build: 'run-s build:scss build:postcss build:sveltekit',
       storybook: 'start-storybook -p 6006',
       'build-storybook': 'build-storybook',
     },
-    dependencies: {},
+    dependencies: {
+      '@resistjs/server': '^1.0.1',
+      '@resistjs/svelte-kit': '^1.0.0',
+    },
     devDependencies: {
-      '@resistjs/server': '^1.0.0-next.1',
-      '@resistjs/svelte-kit': '^1.0.0-next.206',
       'svelte-materialify': '^0.3.11',
       '@babel/core': '^7.15.8',
       '@rollup/plugin-json': '^4.1.0',
@@ -194,6 +232,7 @@ async function main() {
       husky: '^7.0.2',
       'image-size': '^1.0.0',
       'lint-staged': '^11.1.2',
+      listr2: '^3.13.3',
       'node-fetch': '^2.6.1',
       'npm-run-all': '^4.1.5',
       postcss: '^8.3.5',
@@ -225,7 +264,7 @@ async function main() {
   }
 
   CopyTemplate(CWD, packageJSON, import.meta.url)
-  Replacer(CWD)
+  Replacer(CWD, packageJSON)
 
   console.log(messages.copied)
   console.log(messages.nextSteps)
@@ -237,9 +276,39 @@ async function main() {
 
   console.log(messages.pleaseWait)
 
-  Launch(
-    `cd ${CWD} && mv resist-ignore .gitignore && pnpm install -g @resistjs/conformances @resistjs/bins && pnpm i && git init && mv ./.githooks/prepare-commit-msg ./.githooks/temp_prepare-commit-msg && git add . && git commit -m "🌻" && git config core.hooksPath .githooks && git checkout --orphan documentation && git commit --allow-empty -m "🌻" && git checkout master && mv ./.githooks/temp_prepare-commit-msg ./.githooks/prepare-commit-msg && git add . && cd ${CWD}/packages/project && resist-conform svelte && node ./config/start ${CWDName}`,
-  )
+  await new Listr(
+    [
+      {
+        title: `Preparing ${CWDName}`,
+        task: async (ctx, task) => {
+          await Launch('cd', [CWD])
+          await Launch('mv', ['resist-ignore', '.gitignore'])
+          task.output = 'Installing global dependencies...'
+          await Launch('pnpm', ['install', '-g', '@resistjs/conformances', '@resistjs/bins', '--reporter=silent'])
+          task.output = 'Installing repository dependencies...'
+          await Launch('pnpm', ['i', '--reporter=silent'])
+          task.output = 'Setting up GitHub...'
+          await Launch('git', ['init'])
+          await Launch('git', ['add', '.'])
+          await Launch('git', ['commit', '-m', '🌻', '--no-verify'])
+          await Launch('git', ['checkout', '--orphan', 'documentation'])
+          await Launch('git', ['commit', '--allow-empty', '-m', '🌻', '--no-verify'])
+          await Launch('git', ['checkout', 'master'])
+          await Launch('cd', [`${CWD}/packages/project`])
+          await Launch('pnpm', ['i', '--reporter=silent'])
+          task.output = 'Applying Conformances...'
+          await Launch('resist-conform', ['svelte'], `${CWD}/packages/project`)
+          await Launch('git', ['add', '.'])
+          await Launch('git', ['commit', '-m', '🌻', '--no-verify'])
+          await Launch('git', ['config', 'core.hooksPath', '.githooks'])
+          task.output = 'Starting...'
+        },
+      },
+    ],
+    {},
+  ).run()
+
+  await Launch('node', [`${CWD}/packages/project/config/start`, CWDName, CWD])
 }
 
 main()

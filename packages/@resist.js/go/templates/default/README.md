@@ -44,11 +44,8 @@
   <a href="~HOMEPAGE~chat" target="_blank">
     <img src="https://img.shields.io/badge/slack-@~APP_NAME~-green.svg?logo=slack"/>
   </a>
-  <a href="https://opencollective.com/~APP_NAME~" target="_blank">
-    <img alt="Open Collective backers and sponsors" src="https://img.shields.io/opencollective/all/~APP_NAME~?style=flat-square"/>
-  </a>
-  <a href="https://github.com/~APP_NAME~/ama" target="_blank">
-    <img alt="Ask Me Anything" src="https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg"/>
+  <a href="https://opencollective.com/~AUTHOR~" target="_blank">
+    <img alt="Open Collective backers and sponsors" src="https://img.shields.io/opencollective/all/~AUTHOR~?style=flat-square"/>
   </a>
 </p>
 
@@ -105,11 +102,11 @@
 
 ## 📚 Helpful Information
 
-[How does this all work?](https://github.com/~REPO~/docs/en-US/GITHUB_SETUP.md)
-[Structure](https://github.com/~REPO~/docs/en-US/STRUCTURE.md)
-[Policies](https://github.com/~REPO~/docs/en-US/HOUSEKEEPING.md)
-[Project Charter](https://github.com/~REPO~/docs/en-US/PROJECT_CHARTER.md)
-[Governance](https://github.com/~REPO~/docs/en-US/GOVERNANCE.md)
+- [How does this all work?](https://github.com/~REPO~/docs/en-US/GITHUB_SETUP.md)
+- [Structure](https://github.com/~REPO~/docs/en-US/STRUCTURE.md)
+- [Policies](https://github.com/~REPO~/docs/en-US/HOUSEKEEPING.md)
+- [Project Charter](https://github.com/~REPO~/docs/en-US/PROJECT_CHARTER.md)
+- [Governance](https://github.com/~REPO~/docs/en-US/GOVERNANCE.md)
 
 ## 🤝 Contributing
 

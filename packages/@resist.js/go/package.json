@@ -1,13 +1,13 @@
 {
   "name": "@resistjs/go",
   "description": "The kitchen sink you've been waiting for.",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/resist-js/resist.git",
     "directory": "packages/@resist.js/go"
   },
-  "author": "",
+  "author": "resist-js",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/resist-js/resist/issues"
@@ -24,8 +24,9 @@
     "templates"
   ],
   "dependencies": {
-    "@resistjs/utils": "^1.0.0",
+    "@resistjs/utils": "workspace:^1.0.3",
     "kleur": "^4.1.4",
+    "listr2": "^3.13.3",
     "prompts": "^2.4.2"
   },
   "devDependencies": {
@@ -34,14 +35,15 @@
     "eslint-plugin-jsdoc": "^36.1.1",
     "eslint-plugin-sonarjs": "^0.10.0",
     "eslint-plugin-tsdoc": "^0.2.14",
-    "stylelint": "^14.0.0",
+    "stylelint": "^14.0.1",
     "stylelint-config-standard": "^23.0.0",
-    "stylelint-config-standard-scss": "^2.0.0",
+    "stylelint-config-standard-scss": "^2.0.1",
     "xo": "^0.45.0"
   },
   "engines": {
     "node": ">= 16.11.1"
   },
   "codacy": "9d670d8cdbe243a5b722b5f9d644e406",
-  "long_description": "There's a lot to be said about @resistjs/go. We suggest heading on over to our [Getting Started](https://resistjs.dev/start) page."
+  "long_description": "There's a lot to be said about @resistjs/go. We suggest heading on over to our [Getting Started](https://resistjs.dev/start) page.",
+  "twitter": "resist_js"
 }

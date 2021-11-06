@@ -10,11 +10,11 @@ import { readFileSync, writeFileSync } from 'node:fs'
  * Entry Point.
  *
  * @param {!string} CWD The directory to operate upon.
+ * @param {!object} packageData The package.json data.
  * @exports
  */
-function main(CWD) {
+function main(CWD, packageData) {
   // eslint-disable-next-line @typescript-eslint/no-var-requires
-  const packageData = JSON.parse(readFileSync(`${CWD}/package.json`, 'utf-8'))
 
   const replacer = s => {
     const data = readFileSync(`${CWD}/${s}`, 'utf-8')
@@ -43,8 +43,8 @@ function main(CWD) {
     )
   }
 
-  replacer('.all-contributorsrc')
   replacer('package.json')
+  replacer('.all-contributorsrc')
   replacer('README.md')
   replacer('CONTRIBUTING.md')
   replacer('CODE_OF_CONDUCT.md')

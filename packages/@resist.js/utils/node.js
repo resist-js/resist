@@ -35,12 +35,8 @@ export const CWDName = path.basename(path.resolve(CWD))
  */
 export async function IsCWDEmpty(cb) {
   if (fs.existsSync(CWD)) {
-    if (fs.readdirSync(CWD).length > 0) {
-      const response = await cb()
-
-      if (!response.value) {
-        throw new Error('Failed.')
-      }
+    if (fs.readdirSync(CWD).filter(entry => !entry.includes('.DS_Store')).length > 0) {
+      return await cb()
     }
   } else {
     mkdirp(CWD)

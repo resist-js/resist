@@ -17,8 +17,8 @@
   <a href="https://github.com/resist-js/resist/blob/master/LICENSE.md" target="_blank">
     <img alt="GitHub" src="https://img.shields.io/github/license/resist-js/resist?style=flat-square"/>
   </a>
-  <a href="https://www.npmjs.com/package/@@resistjs/go" target="_blank">
-    <img alt="npm (scoped)" src="https://img.shields.io/npm/v/@@resistjs/go?label=npm&style=flat-square"/>
+  <a href="https://www.npmjs.com/package/@resistjs/go" target="_blank">
+    <img alt="npm (scoped)" src="https://img.shields.io/npm/v/@resistjs/go?label=npm&style=flat-square"/>
   </a>
   <br/>
   <a href="https://github.com/resist-js/resist/actions" target="_blank">
@@ -42,18 +42,18 @@
   </a>
   <br/>
   <a href="https://resistjs.dev/chat" target="_blank">
-    <img src="https://img.shields.io/badge/slack-@@resistjs/go-green.svg?logo=slack"/>
+    <img src="https://img.shields.io/badge/slack-resist-js/resist-green.svg?logo=slack"/>
   </a>
   <a href="https://www.linkedin.com/company/resist-js" target="_blank">
-    <img src="https://img.shields.io/badge/linkedin-resistjs-blue.svg?logo=linkedin"/>
+    <img src="https://img.shields.io/badge/linkedin-resist-js-blue.svg?logo=linkedin"/>
   </a>
   <a href="https://twitter.com/resist_js" target="_blank">
-    <img src="https://img.shields.io/badge/twitter-resistjs-blue.svg?logo=twitter"/>
+    <img src="https://img.shields.io/badge/twitter-resist_js-blue.svg?logo=twitter"/>
   </a>
-  <a href="https://opencollective.com/@resistjs/go" target="_blank">
-    <img alt="Open Collective backers and sponsors" src="https://img.shields.io/opencollective/all/@resistjs/go?style=flat-square"/>
+  <a href="https://opencollective.com/resist-js" target="_blank">
+    <img alt="Open Collective backers and sponsors" src="https://img.shields.io/opencollective/all/resist-js?style=flat-square"/>
   </a>
-  <a href="https://github.com/@resistjs/go/ama" target="_blank">
+  <a href="https://github.com/resist-js/ama" target="_blank">
     <img alt="Ask Me Anything" src="https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg"/>
   </a>
 </p>
@@ -113,11 +113,11 @@ There's a lot to be said about @resistjs/go. We suggest heading on over to our [
 
 ## 📚 Helpful Information
 
-[How does this all work?](https://github.com/resist-js/resist/docs/en-US/GITHUB_SETUP.md)
-[Structure](https://github.com/resist-js/resist/docs/en-US/STRUCTURE.md)
-[Policies](https://github.com/resist-js/resist/docs/en-US/HOUSEKEEPING.md)
-[Project Charter](https://github.com/resist-js/resist/docs/en-US/PROJECT_CHARTER.md)
-[Governance](https://github.com/resist-js/resist/docs/en-US/GOVERNANCE.md)
+- [How does this all work?](https://github.com/resist-js/resist/docs/en-US/GITHUB_SETUP.md)
+- [Structure](https://github.com/resist-js/resist/docs/en-US/STRUCTURE.md)
+- [Policies](https://github.com/resist-js/resist/docs/en-US/HOUSEKEEPING.md)
+- [Project Charter](https://github.com/resist-js/resist/docs/en-US/PROJECT_CHARTER.md)
+- [Governance](https://github.com/resist-js/resist/docs/en-US/GOVERNANCE.md)
 
 ## 🤝 Contributing
 

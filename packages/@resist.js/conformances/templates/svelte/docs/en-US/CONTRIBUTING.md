@@ -18,10 +18,10 @@ The [Open-Source Guides](https://opensource.guide/) website has a collection of 
 There are many ways to contribute to ~APP_NAME~, and many of them do not involve writing any code. Here's a few ideas to get started:
 
 - Simply start using ~APP_NAME~. Go through the [Getting Started](~HOMEPAGE~start) guide. Does everything work as expected? If not, we're always looking for improvements. Let us know by [opening an issue](#reporting-new-issues).
-- Look through the [open issues](~APP_NAME~issues). A good starting point would be issues tagged [good first issue](~APP_NAME~issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22). Provide workarounds, ask for clarification, or suggest labels. Help [triage issues](#triaging-issues-and-pull-requests).
+- Look through the [open issues](~GITHUB_URL~issues). A good starting point would be issues tagged [good first issue](~GITHUB_URL~issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22). Provide workarounds, ask for clarification, or suggest labels. Help [triage issues](#triaging-issues-and-pull-requests).
 - If you find an issue you would like to fix, [open a pull request](#your-first-pull-request).
 - Read through our [tutorials](~HOMEPAGE~start). If you find anything that is confusing or can be improved, you can make a Pull Request.
-- Take a look at the [features requested](~APP_NAME~labels/enhancement) by others in the community and consider opening a pull request if you see something you want to work on.
+- Take a look at the [features requested](~GITHUB_URL~labels/enhancement) by others in the community and consider opening a pull request if you see something you want to work on.
 
 Contributions are very welcome. If you think you need help planning your contribution, please ping us on Slack at [~HOMEPAGE~chat](~HOMEPAGE~chat) and let us know you are looking for a bit of help.
 

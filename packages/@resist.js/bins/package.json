@@ -1,13 +1,13 @@
 {
   "name": "@resistjs/bins",
   "description": "Global package for resist.js that supports Starting, Stopping, Uninstalling resist.js projects and uninstalling resist.js itself.",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/resist-js/resist.git",
     "directory": "packages/@resist.js/bins"
   },
-  "author": "",
+  "author": "resist-js",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/resist-js/resist/issues"
@@ -29,8 +29,9 @@
     "node": ">= 16.11.1"
   },
   "dependencies": {
-    "@resistjs/utils": "^1.0.0",
+    "@resistjs/utils": "workspace:^1.0.3",
     "kleur": "^4.1.4",
+    "listr2": "^3.13.3",
     "prompts": "^2.4.2"
   },
   "devDependencies": {
@@ -39,11 +40,12 @@
     "eslint-plugin-jsdoc": "^36.1.1",
     "eslint-plugin-sonarjs": "^0.10.0",
     "eslint-plugin-tsdoc": "^0.2.14",
-    "stylelint": "^14.0.0",
+    "stylelint": "^14.0.1",
     "stylelint-config-standard": "^23.0.0",
-    "stylelint-config-standard-scss": "^2.0.0",
+    "stylelint-config-standard-scss": "^2.0.1",
     "xo": "^0.45.0"
   },
   "codacy": "9d670d8cdbe243a5b722b5f9d644e406",
-  "long_description": "Global package for resist.js that supports Starting, Stopping, Uninstalling resist.js projects and uninstalling resist.js itself. Provided when using @resistjs/go and by typing **resist** in your favourite terminal."
+  "long_description": "Global package for resist.js that supports Starting, Stopping, Uninstalling resist.js projects and uninstalling resist.js itself. Provided when using @resistjs/go and by typing **resist** in your favourite terminal.",
+  "twitter": "resist_js"
 }

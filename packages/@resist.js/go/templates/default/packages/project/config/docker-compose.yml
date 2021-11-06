@@ -1,9 +1,9 @@
 version: '3.9'
 
 services:
-  app:
-    image: app
-    container_name: '${APP_NAME}'
+  frontend:
+    image: frontend
+    container_name: '${APP_NAME}_frontend'
     restart: on-failure
     build:
       context: $CWD
@@ -18,8 +18,11 @@ services:
     volumes:
       - $CWD:/usr/local/app
       - exclude:/usr/local/app/node_modules
+    expose:
+      - ${PORT_SERVER_DEV}
+      - ${PORT_SERVER_PROD}
   uptime:
-    container_name: uptime
+    container_name: '${APP_NAME}_uptime'
     image: louislam/uptime-kuma:1
     restart: always
     volumes:
@@ -27,16 +30,18 @@ services:
     ports:
       - '${PORT_UPTIME}:3001'
   flags_db:
-    container_name: flags_db
+    container_name: '${APP_NAME}_flags_db'
     image: postgres:10-alpine
+    restart: on-failure
     environment:
       POSTGRES_DB: 'flags_db'
       POSTGRES_HOST_AUTH_METHOD: 'trust'
     expose:
       - 5432
   flags:
-    container_name: flags
+    container_name: '${APP_NAME}_flags'
     image: unleashorg/unleash-server:latest
+    restart: on-failure
     ports:
       - '${PORT_FLAGS}:4242'
     environment:
@@ -45,8 +50,9 @@ services:
     depends_on:
       - flags_db
   exceptionless:
-    container_name: exception
+    container_name: '${APP_NAME}_exceptionless'
     image: exceptionless/app:latest
+    restart: on-failure
     ports:
       - '${PORT_EXCEPTION}:80'
       - '${PORT_EXCEPTION_SSL}:443'
@@ -70,9 +76,11 @@ services:
       - elasticsearch
       - redis
   exceptionless_jobs:
+    container_name: '${APP_NAME}_exceptionless_jobs'
     depends_on:
       - exceptionless
     image: exceptionless/job:latest
+    restart: on-failure
     environment:
       EX_AppMode: Production
       EX_BaseURL: http://localhost:${PORT_EXCEPTION}
@@ -87,17 +95,20 @@ services:
     volumes:
       - exceptionless:/app/storage
   redis:
+    container_name: '${APP_NAME}_redis'
     image: redis:6.0-alpine
     ports:
       - '${PORT_REDIS}:6379'
   mail:
+    container_name: '${APP_NAME}_mail'
     image: mailhog/mailhog:latest
     ports:
       - 8025:8025
       - 1025:1025
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:7.15.0
-    container_name: elasticsearch
+    container_name: '${APP_NAME}_elasticsearch'
+    restart: on-failure
     environment:
       - http.host=0.0.0.0
       - transport.host=0.0.0.0
@@ -122,7 +133,8 @@ services:
     depends_on:
       - elasticsearch
     image: docker.elastic.co/kibana/kibana:7.15.0
-    container_name: kibana
+    restart: on-failure
+    container_name: '${APP_NAME}_kibana'
     environment:
       - SERVER_HOST=0.0.0.0
     volumes:
