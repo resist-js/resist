@@ -38,7 +38,7 @@
     "stylelint": "^14.0.1",
     "stylelint-config-standard": "^23.0.0",
     "stylelint-config-standard-scss": "^2.0.1",
-    "xo": "^0.45.0"
+    "xo": "^0.46.4"
   },
   "engines": {
     "node": ">= 16.11.1"
