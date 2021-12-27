@@ -11,7 +11,7 @@
 
 # 结构
 
-本指南的目的是描述`resistjs`的整体结构，并对结构中的每个文件的用途进行简单易懂的描述。
+本指南的目的是描述`resistjs`的整体结构，并用简单易懂的方式解释结构当中的每个文件的用途。
 
 ## base
 
@@ -20,43 +20,41 @@
 [什么是单一代码库？](https://en.wikipedia.org/wiki/Monorepo)
 
 - [.all-contributorsrc](https://github.com/resist-js/resist/blob/master/.all-contributorsrc)
-  [这是什么？](https://github.com/all-contributors/all-contributors)
+  [是什么？](https://github.com/all-contributors/all-contributors)
 
 > 这是对开源项目贡献者的认可规范，奖励每一种贡献，而不仅仅是代码贡献。
 
 - [.czrc](https://github.com/resist-js/resist/blob/master/.czrc)
-  [这是什么？](https://github.com/commitizen/cz-cli)
+  [是什么？](https://github.com/commitizen/cz-cli)
 
-> 获取关于你的Commit注释格式的即时反馈，并被提示为必要的字段。例如，在对mono-repo的任何分支进行任何Push/commit时，都会参考这个文件。
+> 让您获得提交说明信息（commit message）格式的即时反馈，并提示您填写必填项。例如，在对单一代码库的任何分支进行任何推送/提交(push/commit)操作时，都会参考这个文件。
 
 - [.editorconfig](https://github.com/resist-js/resist/blob/master/.editorconfig)
-  [这是什么？](https://editorconfig.org/)
+  [是什么？](https://editorconfig.org/)
 
 > EditorConfig帮助多个开发者在不同的编辑器和IDE中为同一个项目工作时保持一致的编码风格。
 
 - [.eslintignore](https://github.com/resist-js/resist/blob/master/.eslintignore)
-  [这是什么？](https://eslint.org/docs/user-guide/configuring/ignoring-code)
+  [是什么？](https://eslint.org/docs/user-guide/configuring/ignoring-code)
 
-> 当使用Eslint时，这个文件被用来排除文件、目录或模式，使其不被包括在这个语义分析过程中。
-> 这是整个mono-repo使用的最高级别的忽略文件。
+> 当使用ESLint时，这个文件可用来排除一些文件、目录或命名模式，这样这些文件或目录将不被包含在这个代码格式化过程中。
+> 这是整个单一代码库的最顶层忽略文件。
 >
-> - 子包可以定义他们自己的`.eslintignore`，它将取代这个文件。
-> - 这个文件将被引用，例如在运行`pnpm run check`时，以及。拉动请求，提交/推送，GitHub行动 CI。
+> - 子包可以定义属于他们自己的`.eslintignore`来取代顶层的这个文件。
+> - 这个文件将在运行`pnpm run check`时，以及代码和并请求（PR），提交/推送，GitHub持续集成（GitHub Actions CI）这些动作发生时被引用。
 
 - [.eslintrc.json](https://github.com/resist-js/resist/blob/master/.eslintrc.json)]
-  [这是什么？](https://eslint.org/)
+  [是什么？](https://eslint.org/)
 
-> 当使用Eslint时，这个文件提供了将被使用的设置。
-> 这是整个mono-repo使用的顶层设置文件。
+> 当使用ESLint时，这个文件用来存放配置选项。这是整个单一代码库的最顶层设置文件。
 >
-> - 子包可以定义他们自己的`.eslintrc`，它将取代这个文件。
-> - 例如在运行`pnpm run check`时将会引用这个文件，还有。拉动请求，推送，GitHub行动 CI。
+> - 子包可以定义他们自己的`.eslintrc`来取代顶层的这个文件。
+> - 这个文件将在运行`pnpm run check`时，以及代码和并请求（PR），提交/推送，GitHub持续集成（GitHub Actions CI）这些动作发生时被引用。
 
 - [.gitattributes](https://github.com/resist-js/resist/blob/master/.gitattributes)
-  [这是什么？](https://git-scm.com/docs/gitattributes)
+  [是什么？](https://git-scm.com/docs/gitattributes)
 
-> 在执行git操作时，这个文件被git用于与项目的顶层有关。
-> 子包可以定义自己的`.gitattributes`，它将取代这个文件。
+> [To be translated: 待翻译]
 
 - [.gitignore](https://github.com/resist-js/resist/blob/master/.gitignore)
   [这是什么？](https://git-scm.com/docs/gitignore)
@@ -74,7 +72,7 @@
 - [.nvmrc](https://github.com/resist-js/resist/blob/master/.nvmrc)
   [这是什么？](https://github.com/nvm-sh/nvm)
 
-> 这个文件的目的是推断出这个单体repo及其所有子包必须使用特定的`node`版本。
+> 这个文件的目的是推断出这个单一代码库及其所有子包必须使用特定的`node`版本。
 
 - [.prettierignore](https://github.com/resist-js/resist/blob/master/.prettierignore)
   [这是什么？](https://prettier.io/docs/en/ignore.html)

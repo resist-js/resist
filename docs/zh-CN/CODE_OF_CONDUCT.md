@@ -95,4 +95,6 @@ coc-escalation@lists.openjsf.org。
 
 指导方针借鉴自Mozilla纪检分级。
 
-此行为标准常见问题请洽：https://www.contributor-covenant.org/faq。 另有诸译本：https://www.contributor-covenant.org/translations。
+关于此行为标准常见问题请见：https://www.contributor-covenant.org/faq。 另有诸译本：https://www.contributor-covenant.org/translations。
+
+#### 这份说明对您有帮助吗? 我们是否有可以改进的地方? [点击此处](https://github.com/resist-js/resist/issues/new?assignees=&labels=&template=documentation.yml)来提出您的建议.

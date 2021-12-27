@@ -130,7 +130,7 @@
 <p align="center">
 <a href="https://resistjs.dev/docs" target="_blank"><strong>浏览resists.js文档&nbsp;&nbsp;▶</strong></a>
 <br/>
-<a href="https://resistjs.dev/what" target="_blank"><strong>它能拿来做什么?&nbsp;&nbsp;▶</strong></a>
+<a href="https://resistjs.dev/what" target="_blank"><strong>它能用来做什么?&nbsp;&nbsp;▶</strong></a>
 </p>
 
 <a name="🚀-installation"></a>
@@ -169,7 +169,7 @@
 
 我们长期欢迎**各种经验和水平**的开发者为本项目做出贡献！如果您正在思索如何迈出第一步, 来试试 [提一条你所发现的问题](https://github.com/resist-js/resist/labels/🌱%20good%20first%20issue)。
 
-若您能熟练使用英语之外的语言, 您的语言能力将能够很好的帮助我们翻译与更新不同语言的文档。若想要进行这方面的工作，您可通过提交和并请求来进行贡献。
+若您能熟练使用英语之外的语言, 您的语言能力将能够很好的帮助我们翻译与更新不同语言的文档。若想要进行这方面的工作，您可通过提交合并请求来进行贡献。
 
 若您决定为本项目添砖加瓦，请阅览我们的[贡献指南](https://github.com/resist-js/resist/blob/master/CONTRIBUTING.md)。 同时也欢迎加入我们的[Slack](https://resistjs.slack.com)群组来和大家打个招呼。👋
 
@@ -181,3 +181,5 @@
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 本项目遵守 [all-contributors](https://github.com/all-contributors/all-contributors) 规范。 欢迎任何形式的贡献！
+
+#### 这份说明对您有帮助吗? 我们是否有可以改进的地方? [点击此处](https://github.com/resist-js/resist/issues/new?assignees=&labels=&template=documentation.yml)来提出您的建议.
