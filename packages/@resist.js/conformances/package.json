@@ -42,7 +42,7 @@
     "stylelint": "^14.0.1",
     "stylelint-config-standard": "^23.0.0",
     "stylelint-config-standard-scss": "^2.0.1",
-    "xo": "^0.45.0"
+    "xo": "^0.52.4"
   },
   "codacy": "9d670d8cdbe243a5b722b5f9d644e406",
   "long_description": "Utility Package to conform monorepo packages to a base template and/or run prettier and linting on packages. Powered by: eslint, prettier, xo & stylelint.",
