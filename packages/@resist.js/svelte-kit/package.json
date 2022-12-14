@@ -10,7 +10,7 @@
 	"type": "module",
 	"dependencies": {
 		"@rollup/plugin-commonjs": "^21.0.1",
-		"@rollup/plugin-node-resolve": "^13.0.6",
+		"@rollup/plugin-node-resolve": "^15.0.1",
 		"@sveltejs/vite-plugin-svelte": "^1.0.0-next.30",
 		"cheap-watch": "^1.0.4",
 		"sade": "^1.7.4",
