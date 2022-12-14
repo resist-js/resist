@@ -43,7 +43,7 @@
     "fastify-compress": "^3.6.1",
     "fastify-cookie": "^5.3.2",
     "fastify-express": "^0.3.3",
-    "fastify-helmet": "^5.3.2",
+    "fastify-helmet": "^7.1.0",
     "fastify-http2https": "^0.0.3",
     "fastify-no-icon": "^4.0.0",
     "fastify-peekaboo": "^2.3.1",
