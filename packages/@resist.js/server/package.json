@@ -39,7 +39,7 @@
     "@types/express": "^4.17.13",
     "@types/node": "^16.11.6",
     "@types/pino": "^6.3.12",
-    "fastify": "^3.23.0",
+    "fastify": "^4.11.0",
     "fastify-compress": "^3.6.1",
     "fastify-cookie": "^5.3.2",
     "fastify-express": "^0.3.3",
