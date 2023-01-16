@@ -31,7 +31,7 @@
     "node": ">= 16.11.1"
   },
   "dependencies": {
-    "glob": "^7.2.0"
+    "glob": "^8.1.0"
   },
   "devDependencies": {
     "cz-conventional-changelog": "^3.3.0",
